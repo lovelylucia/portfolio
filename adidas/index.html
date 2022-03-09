@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>adidas football</title>
+<meta charset="utf-8">
+<meta name = "keywords" content = "lucia's portfolio, adidas, adidas football, One Page Website, portfolio " />
+<meta name = "description" content = "SMINT is a simple plugin for lovers of one page websites, which helps with sticky menus and page scrolling." />
+<meta name="viewport" content="width=device-width">
+
+
+<link href="css/demo.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="jquery.bxslider.css">
+<link rel="STYLESHEET" type="text/css" href="css/style.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script	src="js/jquery.smint.js"></script>
+<!--<script src="http://code.jquery.com/jquery-migrate-1.4.1.js"></script><!--호환성 유지 스크립트-->
+<script src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript" src="js/jquery.sudoSlider.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			auto:false,
+		  });
+		});
+	
+	//기존 1000을 500으로 수정
+	$(document).ready( function() {
+		$('.subMenu').smint({
+			'scrollSpeed' : 500
+		});
+	});
+
+	
+</script>
+
+<script src="js/jquery.sudoSlider.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){	
+		    var speed = 800;
+		    var sudoSlider = $("#slider").sudoSlider({
+                speed: speed,
+		        beforeAnimation: function(t){ 
+		            var substract = $('#slidemenu ul').offset();
+      					var posi = $('#slidemenu ul li').eq(t-1).offset();
+      					var left =  posi.left - substract.left;
+      					var width = $('#slidemenu ul li').eq(t-1).width();
+      					$('#slidemenu ul li.currentone').animate({
+      						left: left
+      						}, speed).children().animate({
+      						width: width
+      						}, speed);
+      					oldt = t;
+      		        },
+      		        customLink: '.custom'
+      		    });
+		});
+</script>
+</head>
+<body>
+  <div class="wrap">
+  	<div class="sTop">
+  		<div class="gnb">
+  			<ul class="gnb_menu">
+              	<li><a href="#sTop">로그인</a></li>
+                  <li><a href="#">회원가입</a></li>
+                  <li><a href="#">고객센터</a></li>
+                  <li><a href="#">장바구니</a></li>
+              </ul>
+  		</div>
+  	</div>
+
+  	<div class="subMenu" >
+      	<div class="inner">
+          	<a href="http://studiolux.or.kr/adidas"><img src="images/4598600946_246x163.png" alt="로고" class="subNavBtn"></a>
+  	 		<div>
+                  <a href="#sTop" class="subNavBtn">INNOVATION</a> 
+                  <a href="#s2" class="subNavBtn">NEW</a>
+                  <a href="#s4" class="subNavBtn">SUPPORT</a>
+                  <a href="#s5" class="subNavBtn">EVENT</a>
+                  <a href="http://shop.adidas.co.kr/adiMain.action" class="subNavBtn">온라인 스토어</a>
+              </div>	
+  		</div>
+  	</div>
+      
+  	<div class="section s1">
+      	<ul class="bxslider">
+             <li>
+  			 <video autoplay="true" loop="loop" muted="muted" controls="false">
+                 <source src="http://studiolux.or.kr/adidas/son.mp4" type="video/mp4">
+                 <source src="http://studiolux.or.kr/adidas/son.WebM" type="video/webm">
+               </video>
+             </li>
+             <li><img src="images/COPA_Boots.jpg" alt="copa 신상">
+               <h1 class="s1_title01">OUTCLASS</h1>
+             </li>
+             <li><img src="images/new.jpg" alt="신상">
+  			   <h1 class="s1_title02">아디다스 풋볼,16/17 시즌을 위한 새로운 축구화<br>Speed of Light(스피드 오브 라이트)</h1>
+             </li>
+          </ul>
+  	</div>
+
+  	<div class="section s2">
+      	<img src="images/COPA_Boots.jpg" alt="신상">
+          <h1 class="s2_title">차원이 다른 퍼포먼스의 결정체<br>COPA 17</h1>
+        	<div>
+          	<a href="http://shop.adidas.co.kr/PF020611.action?pn=FOOTBALL#ace_16" class="ghost_button"> 더 보러 가기</a>
+          </div>     
+  	</div>
+  	
+      <div class="section s3">   
+           <div class="player">
+              <div>
+              	<a href="#"><img src="images/DT_Messi-teaser.png" alt="축구선수 메시" /><span>더 보러가기</span></a>
+             	</div>
+              <div><a href="#"><img src="images/DT_Teaser-ACE_tcm49-111497.png" alt="축구선수 포그바" /><span>더 보러가기</span></a>
+              </div>
+              <div>
+              	<a href="#"><img src="images/DT_X-teaser-desktop_tcm49-111157.png" alt="" /><span>더 보러가기</span></a>
+              </div>
+           </div>
+  	</div>
+  	
+      <div class="section s4">
+          <div id="container">
+         		<h1>SUPPORT</h1>
+              <div style="position:relative;">
+                   <div id="slidemenu">
+                      <ul style="position:relative;">
+                         <li data-target="1" class="custom current"><a href="javascript:void(0);">울산 현대</a></li>
+                         <li data-target="2" class="custom"><a href="javascript:void(0);">수원 삼성</a></li>
+                         <li data-target="3" class="custom"><a href="javascript:void(0);">부산 아이파크</a></li>
+                         <li class="currentone" style="position: absolute; left: 0px; "><div class="hover" style="display: block; width: 200px; "></div></li>
+                      </ul>
+                  </div>
+                  <div id="slider" style="position:relative;" class="slidecontainer slider">
+                      <ul>                
+                         <li><img src="images/울산 현대.jpg"/></li>
+                         <li><img src="images/suwon.jpg"/></li>
+                         <li><img src="images/Busan_ipark.jpg"/></li>           
+                      </ul>
+                 </div>
+              </div>
+          </div>
+              <!--<div id="tab">
+                  	<input id="first" type="radio" name="tab" checked="checked" />
+                      <input id="second" type="radio" name="tab" />
+                      <input id="third" type="radio" name="tab" />
+                      <section class="buttons">
+                          <label for="first">울산 현대</label>
+                          <label for="second">수원 삼성</label>
+                          <label for="third">부산 아이파크</label>
+                      </section>
+                      <div class="tab_item">
+  						<img src="images/울산 현대.jpg" alt="울산 현대팀">
+  					</div>
+                      <div class="tab_item">
+                       	<img src="images/suwon.jpg" alt="수원 삼성팀">
+                    	</div>
+                      <div class="tab_item">
+                          <img src="images/Busan_ipark.jpg" alt="부산 아이파크팀">
+  					</div>
+             	</div>-->
+      </div>
+
+  	<div class="section s5">
+  		<div class="event_inner">
+  			<h1>EVENT</h1>
+              <div class="event01">
+              	<a target="_blank" href="http://www.alladidas.com/football/13451/">
+                  	<img src="images/Mu2.jpg" alt="맨체스터유나이티드">
+                  	<p>아디다스와 함께 하는 <br>맨체스터 유나이티드 아시아 투어 이벤트 </p>
+                  	<span class="event_detail">자세히 보기</span>
+                  </a>  
+              </div>
+              <div class="event02">
+              	<a target="_blank" href="http://www.alladidas.com/football/12502/">
+                  	<img src="images/event3.jpg" alt="유소년 축구팀">
+                  	<p>아디다스와 풋볼과 함께하는<br>첼시 FC 유소년 축구팀 교실 모집 안내</p>
+                  	<span class="event_detail">자세히 보기</span>
+                  </a>
+              </div>
+              <div class="event03">
+              	<a target="_blank" href="http://www.alladidas.com/football/14767/">
+                  	<img src="images/Finalfor-Delivery.jpg" alt="구자철,김승규,이승우">
+                  	<p>아디다스 풋볼과 함께하는<br> 2016년 연말 이벤트</p>
+                  	<span class="event_detail">자세히 보기</span>
+                  </a>
+              </div>
+              <div class="event04">
+              	<a target="_blank" href="http://www.alladidas.com/football/14609/">
+                  	<img src="images/fifa_online_event.jpg" alt="폴 바그너">
+                  	<p>EA SPOTS FIFA 온라인3 이벤트,<br>내 아이템이 최고니까!</p>
+                  	<span class="event_detail">자세히 보기</span>
+                  </a>
+              </div>
+              <div class="event05">
+              	<a target="_blank" href="http://www.alladidas.com/uncategorized/14365/">
+                  	<img src="images/event5.jpg" alt="김승규">
+                  	<p>최고의 속도'스피드 오브 라이트'<br>챌린지에 도전하라</p>
+                  	<span class="event_detail">자세히 보기</span>
+                  </a>
+              </div>
+  		</div>
+  	</div>
+
+
+    <!--footer영역-->
+
+
+    <footer>
+      <div class="footer_inner">
+      	<div class="footer01">
+              <div class="f_icon">
+              	<ul class="f_icon_list">
+                      <li>
+                      	<a href="#f_icon01" class="f_icon01">
+                              <img src="images/Location.png" alt="매장지점 아이콘">
+                              <p>FIND A STORE 매장안내</p>
+                          </a>
+                      </li>
+                      <li>
+                      	<a href="#f_icon02" class="f_icon02">
+                          	<img src="images/clothes_outline.png" alt="단체복 아이콘" />
+                              <p>TEAM WEAR 팀/단체복 구매</p>
+                          </a>
+                      </li>
+                      <li>
+                      	<a href="#f_icon03" class="f_icon03">
+                          	<img src="images/member.png" alt="회원가입 아이콘" />
+                              <p>MEMBER JOIN 회원가입</p>
+                          </a>
+                      </li>
+                      <li>
+                        <form name="form" id="form">
+                            <select name="jumpMenu" id="jumpMenu" onChange="MM_jumpMenu('parent',this,0)">
+                              <option>FAMILY SITE</option>
+                              <option>아디다스 농구</option>
+                              <option>아디다스 런닝</option>
+                              <option>아디다스 아웃도어</option>
+                              <option>아디다스 트레이닝</option>
+                          </select>
+                        </form>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+          <div class="footer02">
+        		<div class="f_info">
+              <ul>
+                  <li><a href="#" class="f_info_title">NEED HELP?</a></li>
+                  <li><a href="#">고객상담실</a></li>
+                  <li><a href="#">FAQs</a></li>
+                  <li><a href="#">1:1문의</a></li>
+                  <li><a href="#">통합마일리지 안내</a></li>
+                  <li><a href="#">팀/단체복 안내</a></li>
+              </ul>
+              <ul>
+                  <li><a href="#" class="f_info_title">ORDER</a></li>
+                  <li><a href="#">주문/배송조회</a></li>
+                  <li><a href="#">온라인쿠폰</a></li>
+                  <li><a href="#">사이즈 정보</a></li>
+                  <li><a href="#">배송 및 교환/반품 안내</a></li>
+                  <li><a href="#">세탁 및 손질방법 안내</a></li>
+              </ul>
+              <ul>
+                 <li><a href="#" class="f_info_title">ABOUT adidas</a></li>
+                 <li><a href="#">100년 역사</a></li>
+                 <li><a href="#">사회공헌</a></li>
+                 <li><a href="#">공지사항</a></li>
+                 <li><a href="#">지난 이벤트/당첨자 발표</a></li>
+              </ul> 
+              <ul>
+                 <li><a href="#" class="f_info_title">STAY CONNECTED</a>
+                    <ul class="f_info_sns">
+                        <li><a href="#" target="_self"><img src="images/Twitter.png" alt="트위터"></a></li>
+                        <li><a href="#" target="_self"><img src="images/Facebook.png" alt="페이스북"></a></li>
+                        <li><a href="#" target="_self"><img src="images/Instagram.png" alt="인스타그램"></a></li>			 
+                   </ul>
+                 </li>
+              </ul> 
+            </div>   
+          </div>
+         <div class="footer03">
+           <div class="footer03_inner"> 
+              <div class="f_inner_info">
+                  <ul>
+                     <li><a href="#">개인정보 처리방침</a></li>
+                     <li><a href="#">이용약관</a></li>
+                     <li><a href="#">직원채용</a></li>
+                     <li><a href="#">찾아오시는 길</a></li>
+                  </ul>
+              </div>
+              <div class="f_inner_coryright">
+                  <p>(주)아디다스 코리아/서울특별시 서초구 서초대로 74길 4, 삼성생명 서초타워 23층 06620
+                          고객센터:1588-8241 대표이사 : 에드워드닉슨<br>사업자 등록번호:113-35-19036/통신판매업신고:금천구청 제2005-01053<br>
+                          coryright 2016 adidas KOREA</p>
+           	</div>
+           </div>
+         </div>
+        </div>
+    </footer>
+  </div>
+</body>
+</html>

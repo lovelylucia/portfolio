@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>화현</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="화현 홈페이지">
+    <meta property="og:description" content="건강하고 아름다운 기업 화현입니다">
+    <meta name="keywords" content="화현, (주)화현, 맨들맨들, 코스메틱, 왁싱, 화장품" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:url" content="http://www.hwahyun.co.kr/">
+    <meta property="al:web:url" content="http://www.hwahyun.co.kr/">
+    <link rel="canonical" href="http://www.hwahyun.co.kr/">
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.gnb').mouseenter(function() {
+                $(".white-bg").stop().slideDown();
+                $("#header .gnb > ul > li > ul").stop().slideDown();
+                $("#header .white-bg").stop().slideDown();
+            });
+            $('.gnb').mouseleave(function() {
+                $(".white-bg").stop().slideUp();
+                $("#header .gnb > ul > li > ul").stop().slideUp();
+                $("#header .white-bg").stop().slideUp();
+            });
+            $('.family_site_wrap > h2 > a').click(function () {
+                $('#family_site').toggleClass('active');
+            })
+        });
+        $('#swiper_last').bind('mousewheel DOMMouseScroll', function (e) { return false; });
+
+    </script>
+    <script>
+        $(document).ready(function () {
+            $('.all_menu > ul> li > a').on('click', function(){
+                $(this).parent().siblings().children('a').removeClass('on');
+                $(this).parent().siblings().find('.m_depth2').stop().slideUp(400);
+                if($(this).hasClass('on')){
+                    $(this).removeClass('on');
+                    $(this).next().stop().slideUp(400);
+                }else{
+                    $(this).addClass('on');
+                    $(this).next().stop().slideDown(400);
+                }
+            });
+        });
+
+    </script>
+    <!-- Demo styles -->
+    <style>
+        .page {
+            overflow: hidden;
+            overflow-y: auto;
+        }
+        #page_bottom {
+            height:1200px;
+        }
+    </style>
+
+</head>
+<body>
+<div id="header">
+    <div class="gnb">
+        <div class="logo">
+            <a href="index.html" title="main"><img src="img/logo.png" alt="화현 로고"></a>
+        </div>
+        <ul class="menu">
+            <li class="">
+                <a href="brandstory.html">회사소개</a>
+                <ul class="sub_menu">
+                    <li><a href="brandstory.html">브랜드 스토리</a></li>
+                    <li><a href="history.html">연혁</a></li>
+                    <li><a href="ci.html">CI소개</a></li>
+                    <li><a href="location.html">오시는 길</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="lab.html">R&D 센터</a>
+                <ul class="sub_menu">
+                    <li><a href="lab.html">기업부설 연구소</a></li>
+                    <li><a href="marketing_lab.html">기업부설 마케팅연구소</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="mendle.html">사업소개</a>
+                <ul class="sub_menu">
+                    <li><a href="mendle.html">맨들맨들</a></li>
+                    <li><a href="puremay.html">puremay</a></li>
+                    <li><a href="koreanwax.html">코리안왁스센터</a></li>
+                    <li><a href="oxygen.html">oxygen</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="http://www.hwahyun.co.kr/test/notice.php">커뮤니티</a>
+                <ul class="sub_menu">
+                    <li><a href="http://www.hwahyun.co.kr/test/notice.php">공지사항</a></li>
+                    <li><a href="http://www.hwahyun.co.kr/test/notice.php">컴퍼니 뉴스</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="white-bg"></div>
+        <button class="nav-open-btn" title="네비게이션 열기">
+            <span class="line line1"></span>
+            <span class="line line2"></span>
+            <span class="line line3"></span>
+        </button>
+    </div>
+    <div id="m_header">
+        <div class="all_menu">
+            <h2 class="blind">주메뉴</h2>
+            <ul class="m_depth1">
+                <li>
+                    <a href="javascript:;">회사소개<span class="gnb-icon close-icon"></span></a>
+                    <ul class="m_depth2">
+                        <li><a href="brandstory.html">브랜드 스토리</a></li>
+                        <li><a href="history.html">연혁</a></li>
+                        <li><a href="ci.html">CI소개</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">R&D 센터</a>
+                    <ul class="m_depth2">
+                        <li><a href="lab.html">기업부설 연구소</a></li>
+                        <li><a href="marketing_lab.html">기업부설 마케팅연구소</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">사업소개</a>
+                    <ul class="m_depth2">
+                        <li><a href="mendle.html">맨들맨들</a></li>
+                        <li><a href="puremay.html">puremay</a></li>
+                        <li><a href="koreanwax.html">코리안왁스센터</a></li>
+                        <li><a href="oxygen.html">oxygen</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:;">커뮤니티</a>
+                    <ul class="m_depth2">
+                        <li><a href="http://www.hwahyun.co.kr/test/notice.php">공지사항</a></li>
+                        <li><a href="http://www.hwahyun.co.kr/test/notice.php">컴퍼니 뉴스</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="bg_overlay"></div>
+</div>
+

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>내가 처음으로 만든 게시판</title>
+<style>
+	*{margin:0; padding:0; border:0;}
+	ul, li{padding:0; list-style:none; }
+	.wrapper{width:960px; margin:0 auto;}
+	header{background-color:#333; height:100px;position:relative;}
+	header h1{color:white; position:absolute; top:30px; left:30px;}
+	nav{border:1px solid white; width:600px; float:right; margin-top:40px;}
+	nav ul li{display:inline-block;}
+	nav ul li a{padding:20px 30px; color:white; text-decoration:none; font-size:18px;
+				font-weight:bold;}
+	.main{background-color:#999; overflow:hidden;}
+	.subMenu,.board{float:left;}
+	.subMenu{width:160px;min-height:400px;box-sizing:border-box; padding-left:30px; padding-top:30px;}
+	.subMenu ul li a{display:block; padding-top:10px;}
+	.board{width:800px; background-color:white; min-height:400px; box-sizing:border-box; text-align:center; padding-top:20px;}
+	footer{background-color:black; color:#ccc; text-align:center; height:100px;}
+	footer p{margin-top:10px;}
+	address{font-style:normal; margin-top:20px; display:inline-block;}
+</style>
+</head>
+
+<body>
+	<div class="wrapper">
+    	<header>
+        	<h1>studioLux</h1>
+            
+        </header>
+        <div class="main">
+        	<div class="subMenu">
+            	<ul>
+                	<li><a href="#">QnA</a></li>
+                    <li><a href="#">Freeboard</a></li>
+                    <li><a href="#">Psd</a></li>                   	 
+                </ul>
+            </div>
+            <div class="board"> 
+            	여기에 게시판이 들어갑니다.
+            </div>
+          </div>
+        <footer>
+        	<address>대전 광역시 서구 둔산동 123-123 오라클빌딩 3층 그린컴퓨터학원</address>
+            <p>coryright&copy; studioLux@naver.com 2016, all right reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>

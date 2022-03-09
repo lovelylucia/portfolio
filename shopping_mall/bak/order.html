@@ -1,0 +1,374 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>KSEEKMALL</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+        <link rel="stylesheet" type="text/css" href="css/order_style.css">
+	<script src="../js/jquery-1.8.2.min.js"></script>
+	<script src="../js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript" src="js/graph.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <!--headerStart-->
+        <div class="header_wrap">
+            <div class="gnb_wrap">
+                <div class="gnb_inner">
+                    <ul class="gnb_left">
+                            <li><a href="#">즐겨찾기</a></li>
+                            <li><a href="#">입점문의</a></li>
+                            <li><a href="#">쇼핑몰관리자바로가기</a></li>
+                    </ul>
+                    <ul class="gnb_right">
+                            <li><a href="#">로그인</a></li>
+                            <li><a href="#">회원가입</a></li>
+                            <li><a href="#">고객센터</a></li>
+                    </ul>
+                </div>
+            </div>
+            <header>
+                    <h1 class="logo">
+                            <a href="http://w45.thankage.com/shop/html/customer/index.html"><img src="image/logo_black_.png"></a>
+                    </h1> 
+                    <div class="search_area">
+                            <div class="srcbar">
+                                    <form name="search_form" method="get" action="">
+                                            <fieldset>
+                                                    <legend>상품검색</legend>
+                                                    <label for=""><input type="text" title="검색어 입력" placeholder="요즘은 사과가 맛있는 계절이죠!" /></label>
+                                                    <button type="submit" id="" class="btn btn_search"><img src="image/search_icon_red.png" alt="검색 아이콘">검색</button>
+                                            </fieldset>
+                                    </form>
+                            </div>
+                    </div>
+                    <div class="icon_menu">
+                            <ul>
+                                    <li>
+                                            <a href="#">
+                                                    <span class="myshop_icon"><img src="image/customer_small.png" alt="마이페이지 아이콘"></span>
+                                                    <span class="myshop_title">마이페이지</span>
+                                            </a>
+                                    </li>
+                                    <li>
+                                            <a href="#">
+                                                    <span class="cart_icon"><img src="image/cart_small.png" alt="장바구니 아이콘"></span>
+                                                    <span class="cart_title">장바구니</span>
+                                            </a>
+                                    </li>
+                            </ul>
+                    </div>
+            </header>
+	</div>
+        <!--headerEnd-->
+        
+        <!--contentStart-->
+        <div class="order_wrap">
+            <div class="order_inner">
+                <div class="order_title">
+                        <h1>주문/결제</h1>
+                        <ol class="order_breadCrumbs">
+                                <li>
+                                        <span class="cart">장바구니</span>
+                                </li>
+                                <li>
+                                        <em class="order">주문/결제</em>
+                                </li>
+                                <li>
+                                        <span class="orderend">주문완료</span>
+                                </li>
+                        </ol>
+                </div>
+                <div class="order_prd">
+                        <h2>주문상품</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>주문상품</caption>
+                                <colgroup>
+                                        <col width="15%"/>
+                                        <col width="30"/>
+                                        <col width="15%"/>
+                                        <col width="10%"/>
+                                        <col width="15%"/>
+                                        <col width="15%"/>
+                                </colgroup>
+                                <thead>
+                                        <tr>
+                                                <th>&nbsp;</th>
+                                                <th>상품/옵션정보</th>
+                                                <th>판매자</th>
+                                                <th>수량</th>
+                                                <th>상품금액</th>
+                                                <th>배송비</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <td class="thumb_goods"><p><img src="image/onlee9.jpg" alt="상품"></p></td>
+                                                <td>껍질째 먹는 청송꿀떙이 사과 9월 햇사과 홍로 10kg 5kg</td>
+                                                <td>송중기</td>
+                                                <td>1개</td>
+                                                <td>22,900원</td>
+                                                <td>2,500원</td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </div>
+                <div class="customer_info">
+                        <h2>구매자 정보</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>구매자 정보</caption>
+                                <colgroup>
+                                        <col width="20%">
+                                        <col width="80%">
+                                </colgroup>
+                                <tr>
+                                        <th>주문자</th>
+                                        <td>홍진영</td>
+                                </tr>
+                                <tr>
+                                        <th>휴대폰</th>
+                                        <td>010-1111-2222</td>
+                                </tr>
+                                <tr>
+                                        <th>이메일</th>
+                                        <td>hong@naver.com</td>
+                                </tr>
+                        </table>
+                </div>
+                <div class="delivery_info">
+                        <h2>배송지 정보</h2>
+                        <div class="addr_select">
+                                <ul>
+                                        <li>
+                                                <input type="radio" checked="checked" id="" name="addr_type" />
+                                                <label for="">기본배송지</label>
+                                        </li>
+                                        <li>
+                                                <input type="radio" checked="checked" id="" name="addr_type" />
+                                                <label for="">새로운 배송지</label>
+                                        </li>
+                                </ul>
+                                <button class="btn_order" type="button" onclick="window.open('',width=500px, height=400px, resizeable=no, min-height=100px');">최근배송지</button>
+                        </div>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>배송지 정보</caption>
+                                <colgroup>
+                                        <col width="20%">
+                                        <col width="80%">
+                                </colgroup>
+                                <tr>
+                                        <th scope="row">주문자</th>
+                                        <td>홍진영</td>
+                                </tr>
+                                <tr>
+                                        <th scope="row">휴대폰</th>
+                                        <td>
+                                                <div class="contact_wrap">
+                                                        <select name="mobile1" id="">
+                                                                <option value="010" selected="selected">010</option>
+                                                                <option value="011">011</option>
+                                                                <option value="016">016</option>
+                                                                <option value="017">017</option>
+                                                                <option value="018">018</option>
+                                                                <option value="019">019</option>
+                                                        </select>
+                                                        <input type="text" value="1111" maxlength="4" name="mobile2" id="" />
+                                                        <span>-</span>
+                                                        <input type="text" value="2222" maxlength="4" name="mobile3" id="" /> 
+                                                </div>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <th scope="row">주소</th>
+                                        <td>
+                                                <div class="zipcode">
+                                                        <input type="text" id="" readonly="readonly" />
+                                                        <button id="" class="btn btn_addr">우편번호</button>
+                                                </div>
+                                                <p class="addr_input">
+                                                        <input type="text" value="대전광역시 서구 둔산남로9번길 71 향천빌딩 3층" name="addr1" id="" readonly="readonly" />
+                                                        <input type="text" value="" name="addr2" id="" />
+                                                </p>
+                                        </td>
+                                </tr>
+                                <tr>
+                                        <th scope="row">배송메세지</th>
+                                        <td>
+                                                <div>
+                                                        <select>
+                                                                <option value="" selected="selected">배송메모를 선택해 주세요</option>
+                                                                <option value="">배송 전 연락바랍니다</option>
+                                                                <option value="">경비실에 맡겨주세요</option>
+                                                                <option value="">집앞에 놔주세요</option>
+                                                                <option value="">택배함에 놔주세요</option>
+                                                                <option value="">부재시 핸드폰으로 연락주세요</option>
+                                                                <option value="">부재시 경비실에 맡겨주세요</option>
+                                                                <option value="">부재시 집앞에 놔주세요</option>
+                                                                <option value="">직접입력</option>
+                                                        </select>
+                                                </div>
+                                        </td>
+                                </tr>
+                        </table>
+                </div>
+                <div class="checkout_sum">
+                        <h2>결제 금액</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>결제 금액</caption>
+                                <colgroup>
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="40%">
+                                </colgroup>
+                                <thead>
+                                        <tr>
+                                                <th>주문금액</th>
+                                                <th>배송비</th>
+                                                <th>할인금액</th>
+                                                <th class="noborder">결제 예정금액</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <td>22,900<span class="txt_won">원</span></td>
+                                                <td>3,000<span class="txt_won">원</span></td>
+                                                <td>0<span class="txt_won">원</span></td>
+                                                <td class="red noborder">25,900<span class="txt_won">원</span></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                </div>
+                <div class="checkout_info">
+                        <h2>결제 정보</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>결제 정보</caption>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="80">
+                                </colgroup>
+                                        <tr>
+                                                <th scope="row">결제 방법</th>
+                                                <td>
+                                                        <ul>
+                                                                <li>
+                                                                        <input type="radio" checked="checked" id="" name="addr_type" />
+                                                                        <label for="">신용카드</label>
+                                                                </li>
+                                                                <li>
+                                                                        <input type="radio" checked="checked" id="" name="addr_type" />
+                                                                        <label for="">무통장 입금</label>
+                                                                </li>
+                                                        </ul>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <th scope="row">카드 종류</th>
+                                                <td>
+                                                        <select>
+                                                                <option value="" selected="selected">카드를 선택해주세요</option>
+                                                                <option value="">신한카드</option>
+                                                                <option value="">삼성카드</option>
+                                                                <option value="">롯데카드</option>
+                                                                <option value="" >BC카드</option>
+                                                                <option value="">하나카드</option>
+                                                                <option value="">외한카드</option>
+                                                                <option value="">우리카드</option>
+                                                        </select>
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <th scope="row">할부 개월</th>
+                                                <td>
+                                                        <select>
+                                                                <option value="" selected="selected">일시불</option>
+                                                                <option value="">2개월</option>
+                                                                <option value="">3개월</option>
+                                                                <option value="">5개월</option>
+                                                        </select>
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                        <div class="next">
+                                <input type="checkbox" name="" id="" class="" checked="checked" />
+                                <label>지금 선택하신 결제수단을 다음에도 사용</label>
+                        </div>
+                </div>
+                <div class="agree_info">
+                        <h2>주문/약관 동의</h2>
+                        <div class="agree_wrap">
+                                <div class="left_box">
+                                        <dl>
+                                                <dt>
+                                                        <label class="checkBoxAll">
+                                                                <input type="checkbox" id="" class="" />
+                                                                <span>전체 동의하기</span>
+                                                        </label>
+                                                </dt>
+                                                <dd>
+                                                        <ul>
+                                                                <li>
+                                                                        <label class="checkBox01">
+                                                                                <input type="checkbox" name="" id="" class="">
+                                                                                <span>개인정보 제 3자 제공에 제공합니다.</span>
+                                                                        </label>
+                                                                        <a href="#상세보기" class="detail pesonal_terms_layer">상세보기</a>
+                                                                </li>
+                                                                <li>
+                                                                        <label class="checkBox01">
+                                                                                <input type="checkbox" name="" id="" class="">
+                                                                                <span>결제대행서비스 이용약관에 동의합니다.</span>
+                                                                        </label>
+                                                                        <a href="#상세보기" class="detail pay_terms_layer">상세보기</a>
+                                                                </li>
+                                                                <li>
+                                                                        <label class="checkBox01">
+                                                                                <input type="checkbox" name="" id="" class="">
+                                                                                <span>주문할 상품설명에 명시된 내용과 사용조건을 확인하였으며, 취소&middot;환불규정에 동의합니다.</span>
+                                                                        </label>
+                                                                </li>
+                                                        </ul>
+                                                </dd>
+                                        </dl>
+                                </div>
+                                <div class="right_box">
+                                        <div id="total_pay"class="total_pay">
+                                                <ul>
+                                                        <li>
+                                                                <span>총 상품금액</span>
+                                                                <span>22,900원</span>
+                                                        </li>
+                                                        <li>
+                                                                <span>배송비</span>
+                                                                <span>2,500원</span>
+                                                        </li>
+                                                        <li>
+                                                                <span>할인금액</span>
+                                                                <span>0원</span>
+                                                        </li>
+                                                </ul>
+                                            <div class="total">
+                                                        <p class="total_sum">총 결제금액</p>
+                                                        <p class="total_number">23,400원</p>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="sell_decision">
+                <p>
+                        <button type="button" class="btn btn_pay_decision" onclick="">결제하기</button>
+                </p>
+        </div>
+        <!--contentEnd-->
+        
+        <!--footerStart-->
+        <? require_once("footer.php");?>
+        <!--footerEnd-->
+    </div>
+</body>

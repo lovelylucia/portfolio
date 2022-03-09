@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>상세보기</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            $(function(){
+                //QnA 답글 눌렀을때 관리자답글 보이기
+               $('.cmt_btn').click(function(e){
+                   $('.a_area').toggle();
+                        return false;
+                });
+            });           
+        </script>
+</head>
+<body>
+<div id="wrapper">
+    <!-- MODAL LAYERPOPUP start-->
+        <div class="layer_popup">
+            <div class="cart_info">
+                <p class="cart_msg">
+                    <span>장바구니 추가</span>
+                    상품을 장바구니에 담았습니다.
+                </p> 
+            </div>
+            <div class="action_area">
+                <a href="" class="btn go_shopping">쇼핑계속 하기</a>
+                <a href="cart.php" class="btn go_cart">장바구니 가기</a>
+            </div>
+            <a onclick="" class="btn_clear">팝업 닫기</a>
+        </div>
+        <div class="mask"></div> 
+    <!-- MODAL LAYERPOPUP end-->
+    <!-- HEADER start -->
+       <? require_once("top.php");?>
+    <!-- HEADER end -->   
+        <div class="breadCrumbs">
+            <h3>
+                    <i class="arr"> > </i>
+                    <a href="index.php"><span><img src="image/home.png" alt="홈 버튼"></span></a>
+                    <div class="cate_layer">
+                        <ul>
+                            <li>
+                                <a href="">과일&middot;채소</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="arr"> > </i>
+                    <a href="#">식품</a> 
+                    <div class="cate_layer">
+                        <ul>
+                            <li>
+                                <a href="">과일&middot;채소</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <i class="arr"> > </i>
+                    <a href="#">과일&middot;채소</a> 
+                     >
+                    <a>대전 송중기</a>
+            </h3>
+        </div>
+        <!-- CONTENT start-->
+        <div id="content_wrap">
+            <div class="content_inner">
+        	<div class="product_top">
+	        	<div class="detail_column_left">
+	        		<div class="detail_img_area"></div>
+	        			<h4 class="blind">상품 이미지</h4>
+	        			<p class="prd_img"><img src="image/info.png" class="img_center" alt="고급스런 녹차의 진한맛, 제주가 빚은 발효 이미지. 차 따르는 이미지. 녹차" /></p>
+	        	</div>
+	        	<div class="detail_column_right">
+	        		<div class="detail_name">
+	        			<p class="store">대전 송중기</p>
+	        			<h3 class="title">껍질째 먹는 청송꿀땡이 사과 9월 햇사과 홍로 10kg 5kg </h3>
+	        			<strong class="price">22,900원</strong>
+	        		</div>
+	        		<div class="detail_delivery">
+	        			<p class="delivery_price">택배배송&nbsp;&nbsp; 3000원 <span>주문시 결제</span></p>
+	        			<p>50,000원 이상 구매 시 무료/제주 추가 3,000원. </p>
+	        			<p>제주 외 도서지역 추가 3,000원</p>
+	        		</div>
+	        		<div class="prd_option">
+	        			<a class="select_title">필수선택</a>
+	        			<ul class="combobox_list">
+	        				<li class="list_option select"><a href="#">햇사과 홍로 10kg</a></li>
+	        				<li class="list_option"><a href="#">햇사과 홍로 5kg</a></li>
+	        			</ul>
+	        		</div>
+	        		<div class="prd_option add_option">
+	        			<a class="select_title">옵션선택</a>
+	        			<ul class="combobox_list">
+	        				<li class="list_option select"><a href="#">햇배 10kg</a></li>
+	        				<li class="list_option"><a href="#">햇배 20kg</a></li>
+	        			</ul>
+	        		</div>
+	        		<div class="prd_result">
+	        			<p> [햇사과 홍로 10kg] </p>
+	        			<div class="quantity">
+	        				<a class="btn minus_indent" href="#"></a>
+	        				<input type="text" id="option_count" class="input_number" value="1" title="구매수량" />
+	        				<a class="btn plus_indent" href="#"></a>
+	        			</div>
+	        			<p class="price"><strong>22,900원</strong></p>
+	        			<a class="btn delete"></a>
+	        		</div>
+	        		<div class="detail_total">
+	        			<p>총 상품금액</p>
+	        			<div class="total_price">
+	        				<span>총 수량 1개</span>
+	        				<strong>22,900</strong>
+	        				<span>원</span>
+	        			</div>
+	        		</div>
+	        		<div class="indent_btn_area">
+	        			<a class="btn cart" onclick="">장바구니</a>
+	        			<a class="btn buy" href="order.php">바로구매</a>
+	        		</div>
+	        	</div>
+	        </div>
+	        <div class="product_display">
+	        	<div class="">
+	        		<ul class="info_tab">
+	        			<li class="select_li"><a href="#상품정보">상품정보</a></li>
+	        			<li><a href="#상품정보">판매정보</a></li>
+                                        <li><a href="#QnA">Q&A</a></li>
+	        			<li><a href="#반품교환안내">반품/교환안내</a></li>	
+	        		</ul>
+	        		<div class="tab_box detail_info">
+		        		<h4 class="blind">제품 상세 정보</h4>
+		        		<div class="product_imgArea">
+		        			<img src="image/summary.jpg" alt="제품 사진">
+		        		</div>
+		        	</div>
+                                <div class="tab_box seller_info" style="display: none">
+		        		<h4>판매자 정보</h4>
+		        		<div>
+                           <table class="tbTypeB">
+                                    <caption>판매자정보</caption>
+                                    <colgroup>
+                                            <col width="15%">
+                                            <col width="35%">
+                                            <col width="15%">
+                                            <col width="35%">
+                                    </colgroup>
+                                    <tbody>
+                                    <tr>
+                                            <th class="th" scope="row">상호명</th>
+                                            <td class="td">농업회사법인 송중기 주식회사<sapn>(사업자/법인사업자)</sapn></td>
+                                            <th class="th" scope="row">대표자</th>
+                                            <td class="td">송중기</td>
+                                    </tr>
+                                    <tr>
+                                            <th class="th" scope="row">사업자등록번호</th>
+                                            <td class="td">224-81-48856</td>
+                                            <th class="th" scope="row">통신판매업번호</th>
+                                            <td class="td">제2015-대전-00049호</td>
+                                    </tr>
+                                    <tr>
+                                            <th class="th" scope="row">사업장소재지</th>
+                                            <td class="td" colspan="3">
+                                                    대전 어디쯤
+                                                                                                            (메일:grfarm@naver.com)
+                                            </td>
+                                    </tr>
+                                    </tbody>
+                            </table>
+		        		</div>
+		        	</div>
+		        	<div class="tab_box qna_info" style="display: none">
+		        		<h4 class="blind">QnA</h4>
+		        		<div class="qna_info_inner">
+                            <div class="notice">
+                                <h2>상품에 대해 궁금한 점을 물어보세요</h2>
+                                <ul>
+                                    <li>취소/반품/교환/환불 문의는 <em>마이페이지 구매내역</em>에서 신청 가능합니다.</li>
+                                    <li>상품문의를 통한 취소나 반품, 환불 등은 처리되지 않습니다.</li>
+                                    <li>가격, 판매자, 교환/환불 및 배송 등 해당 상품 자체와 관련 없는 문의는 고객센터 내 <em>1:1 문의하기</em>를 이용해주세요.</li>
+                                    <li><em>상품과 관계없는 글, 양도, 광고성, 욕설, 비방, 도배</em> 등의 글은 예고없이 삭제됩니다.</li>
+                                    <li>개인정보보호로 인해 <em>개인정보가 기재된 게시글은 통보 없이 삭제</em>될 수 있습니다.</li>
+                                </ul>
+                                <div class="btn_group">
+                                    <a href="center_write.php" class="btn btn_edit_1on1">1:1 문의하기</a>
+                                    <a href="faq.php" class="btn go_faq">자주묻는 질문 바로가기</a>
+                                </div>
+                            </div>
+                            <div class="write">
+                                <!--<label id="qnaPlaceholder" for="qna_content">
+                                    <span>전화번호, 성명, 주소, 이메일을 남기면 타인에 의해 도용될 수 있습니다.</span>
+                                    <span>Q&A에 개인정보를 남기지 말아주세요</span>
+                                </label>-->
+                                <textarea id="qna_content" name="qna_content" placeholder="궁금하신 내용을 적어주세요. 개인정보에 유의해주세요"></textarea>
+                                <button type="button">등록</button>
+                            </div>
+                            <div class="sec_qna">
+                                <ul class="qna_list">
+                                    <li>
+                                        <div class="q_area">
+                                            <div class="info_area">
+                                                    <strong>ms****@ha</strong>
+                                                    <span class="info_base">
+                                                        <span class="date">17/09/11 06:11:55</span>
+                                                        <a href="#">수정</a>
+                                                        <a href="#">삭제</a>
+                                                    </span>
+                                            </div>
+                                            <div class="txt_area">
+                                                    <p>사과 한개 크기는 대략 어느정도 인가요?</p>
+                                            </div>
+                                            <div class="tool_area">
+                                                <a href="" class="cmt_btn" onclick="">
+                                                    <em class="reply_txt">답글</em>
+                                                    <span class="reply_count">1</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="a_area">
+                                                <div class="reply_cmt_edit">
+                                                    <textarea cols="30" rows="10" title="문의" placeholder="궁금하신 내용을 적어주세요. 개인정보에 유의해주세요"></textarea>
+                                                    <button type="button" class="" id="">등록</button>
+                                                </div>
+                                                <span class="info_base">
+                                                    <strong>관리자</strong>
+                                                    <span class="date">17/09/11 06:11:55</span>
+                                                    <a href="#">수정</a>
+                                                    <a href="#">삭제</a>
+                                                </span>
+                                                <div class="txt_area">
+                                                <p>5kg에 대략 10~19개 정도 됩니다</p>
+                                                </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="q_area">
+                                            <div class="info_area">
+                                                    <strong>sap****@na</strong>
+                                                    <span class="info_base">
+                                                        <span class="date">17/09/11 06:11:55</span>
+                                                        <a href="#">수정</a>
+                                                        <a href="#">삭제</a>
+                                                    </span>
+                                            </div>
+                                            <div class="txt_area">
+                                                    <p>당도는 어떻게 되나요??</p>
+                                            </div>
+                                            <div class="tool_area">
+                                                <a href="" class="cmt_btn" onclick="">
+                                                    <em class="reply_txt">답글</em>
+                                                    <span class="reply_count">1</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="a_area">
+                                                <div class="reply_cmt_edit">
+                                                    <textarea cols="30" rows="10" title="문의" placeholder="궁금하신 내용을 적어주세요. 개인정보에 유의해주세요"></textarea>
+                                                    <button type="button" class="" id="">등록</button>
+                                                </div>
+                                                <span class="info_base">
+                                                    <strong>관리자</strong>
+                                                    <span class="date">17/09/11 06:11:55</span>
+                                                    <a href="#">수정</a>
+                                                    <a href="#">삭제</a>
+                                                </span>
+                                                <div class="txt_area">
+                                                <p>13~15Brix 정도 됩니다</p>
+                                                </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+		        		</div>
+		        	</div>
+		        	<div class="tab_box return_info" style="display: none">
+		        		<h4>반품/교환안내</h4>
+		        		<div class="return_info_inner">
+                                            <table class="tbTypeB">
+                                                    <caption class="title">대전 송중기 반품/교환 안내</caption>
+                                                    <p class="info">반품/교환에 관한 일반적인 사항은 판매자 제시사항보다 관계법령이 우선합니다.</p>
+                                                    <colgroup>
+                                                            <col width="20%">
+                                                            <col width="40%">
+                                                            <col width="20%">
+                                                            <col>
+                                                    </colgroup>
+                                                    <tbody>
+                                                    <tr>
+                                                            <th class="th" scope="row">판매자 지정택배사</th>
+                                                            <td class="td" colspan="3">CJ대한통운</td>
+                                                    </tr>
+                                                    <tr>
+                                                            <th class="th" scope="row">반품배송비</th>
+                                                            <td class="td">편도 3,000원 (최초 배송비 무료인 경우  6,000원 부과)</td>
+                                                            <th class="th" scope="row">교환배송비</th>
+                                                            <td class="td">3,000 원</td>
+                                                    </tr>
+                                                    <tr>
+                                                            <th class="th" scope="row">보내실 곳</th>
+                                                            <td class="td" colspan="3">(우 : 111-222) 대전 어디쯤</td>
+                                                    </tr>
+                                                    </tbody>
+                                            </table>
+                                            <h4 class="subtitle">반품/교환 사유에 따른 요청 가능 기간</h4>
+                                            <p class="info">반품 시 먼저 판매자와 연락하셔서 반품사유, 택배사, 배송비, 반품지 주소 등을 협의하신 후 반품상품을 발송해 주시기 바랍니다.</p>
+                                            <ol class="list">
+                                                    <li><span class="number">1</span>구매자 단순 변심은 상품 수령 후 7일 이내 <em class="about">(구매자 반품배송비 부담)</em></li>
+                                                    <li><span class="number">2</span>표시/광고와 상이, 상품하자의 경우 상품 수령 후 3개월 이내 혹은 표시/광고와 다른 사실을 안 날로부터 30일 이내.<br>둘 중 하나 경과 시 반품/교환 불가 <em class="about">(판매자 반품배송비 부담)</em></li>
+                                            </ol>
+                                            <h4 class="subtitle">반품/교환 불가능 사유</h4>
+                                            <p class="info">아래와 같은 경우 반품/교환이 불가능합니다.</p>
+                                            <ol class="list">
+                                                    <li><span class="number">1</span>반품요청기간이 지난 경우</li>
+                                                    <li><span class="number">2</span>구매자의 책임 있는 사유로 상품 등이 멸실 또는 훼손된 경우 <em class="about">(단, 상품의 내용을 확인하기 위하여 포장 등을 훼손한 경우는 제외)</em></li>
+                                                    <li><span class="number">3</span>포장을 개봉하였으나 포장이 훼손되어 상품가치가 현저히 상실된 경우 <em class="about">(예: 식품, 화장품, 향수류, 음반 등)</em></li>
+                                                    <li><span class="number">4</span>구매자의 사용 또는 일부 소비에 의하여 상품의 가치가 현저히 감소한 경우 <em class="about">(라벨이 떨어진 의류 또는 태그가 떨어진 명품관 상품인 경우)</em></li>
+                                                    <li><span class="number">5</span>시간의 경과에 의하여 재판매가 곤란할 정도로 상품 등의 가치가 현저히 감소한 경우</li>
+                                                    <li><span class="number">6</span>고객주문 확인 후 상품제작에 들어가는 주문제작상품 <em class="about">(판매자에게 회복불가능한 손해가 예상되고, 그러한 예정으로 청약철회권 행사가 불가하다는 사실을 서면 동의 받은 경우)</em></li>
+                                                    <li><span class="number">7</span>복제가 가능한 상품 등의 포장을 훼손한 경우 <em class="about">(CD/DVD/GAME/도서의 경우 포장 개봉 시)</em></li>
+                                            </ol>
+                                        </div>
+		        	</div>
+
+		        </div>
+        	</div>
+            </div>
+        </div>
+    <!--  CONTENT end-->
+    <!-- FOOTER -->
+        <? require_once("footer.php");?>
+    <!-- FOOTER end-->    
+        </div>
+    
+</div>
+</body>
+<script type="text/javascript">
+    function wrapWindowByMask(){
+        // 화면의 높이와 너비를 변수로 만듭니다.
+        var maskHeight = $(document).height();
+        var maskWidth = $(window).width();
+ 
+        // 마스크의 높이와 너비를 화면의 높이와 너비 변수로 설정합니다.
+        $('.mask').css({'width':maskWidth,'height':maskHeight});
+ 
+        // 80%의 불투명으로 변합니다.
+
+        $('.mask').fadeTo("fast",0.5);
+ 
+        // 레이어 팝업을 가운데로 띄우기 위해 화면의 높이와 너비의 가운데 값과 스크롤 값을 더하여 변수로 만듭니다.
+        var left = ( $(window).scrollLeft() + ( $(window).width() - $('.layer_popup').width()) / 2 );
+        var top = ( $(window).scrollTop() + ( $(window).height() - $('.layer_popup').height()) / 2 );
+ 
+        // css 스타일을 변경합니다.
+        $('.layer_popup').css({'left':left,'top':top, 'position':'absolute'});
+ 
+        // 레이어 팝업을 띄웁니다.
+        $('.layer_popup').show();
+    }
+ 
+    $(document).ready(function(){
+        // showMask를 클릭시 작동하며 검은 마스크 배경과 레이어 팝업을 띄웁니다.
+        $('.cart').click(function(e){
+            // preventDefault는 href의 링크 기본 행동을 막는 기능입니다.
+            e.preventDefault();
+            wrapWindowByMask();
+        });
+ 
+        // 닫기(close)를 눌렀을 때 작동합니다.
+        $('.layer_popup .btn_clear').click(function (e) {
+            e.preventDefault();
+            $('.mask,.layer_popup').hide();
+        });
+ 
+        // 뒤 검은 마스크를 클릭시에도 모두 제거하도록 처리합니다.
+        $('.mask').click(function () {
+            $(this).hide();
+            $('.layer_popup').hide();
+        });
+    });
+</script>
+</html>
+
+

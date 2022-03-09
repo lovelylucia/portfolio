@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>화현</title>
+	<meta name="author" content="" />
+	<meta name="description" content="" />
+	<meta name="keywords"  content="" />
+
+	<link rel="stylesheet" href="css/fullpage.min.css" />
+	<link rel="stylesheet" href="css/examples.css" />
+	<link rel="stylesheet" href="css/style.css" />
+
+
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript" src="js/fullpage.js"></script>
+	<script>
+		$(window).on("scroll",function(){
+			if($(window).scrollTop() > 200) {
+				$(".logo").addClass("scroll");
+			}else {
+				$(".logo").removeClass("scroll");
+			}
+		});
+	</script>
+	<script type="text/javascript">
+		$(document).ready(function () {
+			$('#myContainer').fullpage({
+				sectionsColor: ['#4A6FB1', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff'],
+				anchors: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
+				resize: true,
+				animateAnchor:false,
+				autoScrolling:true,
+				fitSection: false,
+				navigation:true,
+				continuousVertical:false,
+				paddingTop: '20px',
+				responsiveHeight: 600,
+				afterResponsive: function(isResponsive){
+				},
+				onLeave : function (origin, destination, direction) {
+					if(destination == 1) {
+						$(".visionArea .txtArea").addClass("on");
+						if($(window).scrollTop() == 0) $("header").addClass("color");
+					}
+				}
+			});
+		});
+		$(window).on("scroll",function(){
+			if($(window).scrollTop() > 200) {
+				$(".logo").addClass("scroll");
+			}else {
+				$(".logo").removeClass("scroll");
+			}
+		});
+	</script>
+	<style>
+		.section {height:820px; background: #ccc;}
+	</style>
+</head>
+
+<body>
+	<div id="header">
+
+		<div class="lnb">
+			<ul id="menu">
+				<li data-menuanchor="firstPage"><a href="brandstory.html">회사소개</a></li>
+				<li data-menuanchor="secondPage"><a href="lab.html">R&D 센터</a></li>
+				<li data-menuanchor="3rdPage"><a href="mendle">사업소개</a></li>
+				<li data-menuanchor="4thpage"><a href="notice.php">커뮤니티</a></li>
+			</ul>
+		</div>
+		<div class="white_bg">
+		</div>
+		<div class="gnb">
+			<div class="logo">
+				<a href="index.html" title="main"><img src="img/logo.png" alt="화현 로고"></a>
+			</div>
+			<ul id="menu">
+				<li data-menuanchor="firstPage">
+					<a href="brandstory.html">회사소개</a>
+					<ul>
+						<li><a href="brandstory.html">브랜드 스토리</a></li>
+						<li><a href="history.html">연혁</a></li>
+						<li><a href="ci.html">CI소개</a></li>
+						<li><a href="location.html">오시는 길</a></li>
+					</ul>
+				</li>
+				<li data-menuanchor="secondPage">
+					<a href="lab.html">R&D 센터</a>
+					<ul>
+						<li><a href="lab.html">기업부설 연구소</a></li>
+						<li><a href="marketing_lab.html">기업부설 마케팅연구소</a></li>
+					</ul>
+				</li>
+				<li data-menuanchor="3rdPage">
+					<a href="mendle.html">사업소개</a>
+					<ul>
+						<li><a href="mendle.html">맨들맨들</a></li>
+						<li><a href="puremay.html">puremay</a></li>
+						<li><a href="koreanwax.html">코리안왁스센터</a></li>
+						<li><a href="oxygen.html">oxygen</a></li>
+					</ul>
+				</li>
+				<li data-menuanchor="4thpage">
+					<a href="notice.php">커뮤니티</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div id="myContainer">
+
+		<div class="section" id="section0">
+			<div class="slide" id ="slide1.1">
+				<h1>Section 1</h1>
+				<button class="btn">click me</button>
+			</div>
+			<div class="slide" id="slide1.2"><h1>Slide 1.2</h1></div>
+			<div class="slide" id="slide1.3"><h1>Slide 1.3</h1></div>
+		</div>
+		<div class="section" id="section1">
+			<div class="slide"><h1>Section 2</h1></div>
+		</div>
+		<div class="section" id="section2"><h1>Section 3</h1></div>
+		<div class="section" id="section3"><h1>Section 4</h1></div>
+		<div class="" id="null"><h1>Section 4</h1></div>
+	</div>
+</body>
+
+
+</html>

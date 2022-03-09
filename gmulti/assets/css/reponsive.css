@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+@media screen and (max-width: 1300px) {
+    .header_wrap.fixed .logo {display: block; left: 10%}
+    .gnb_wrap .gnb {display: none;}
+    .banner_section, .banner_inner {height:auto}
+    .lbanner, .rbanner {width:100%; float:none; padding:20px; box-sizing: border-box;}
+    .lbanner {background: url(./../images/left_banner_mobile.jpg) no-repeat 90% 0/auto 100%;}
+    .rbanner {background: url(./../images/right_banner_mobile.jpg) no-repeat 100% 0/auto 100%;}
+    .guide_inner ul {width:70%; margin:0 auto;}
+    .guide_inner ul li {width:49.5%; margin-right:1%; margin-bottom: 25px; box-sizing: border-box}
+    .guide_inner ul li:nth-child(even) {margin-right:0}
+    .guide_inner ul li img {display: block; margin:0 auto; max-width: 100%}
+    .sns_section .sns_inner .sns_pc li {width:50%; float:left;padding:0 0 25px 0;}
+    .sns_section .sns_inner .sns_pc li a {display: block; text-align: center}
+    .footer_inner {padding: 25px 20px 40px;}
+    .site_map_inner {padding:30px 20px}
+    .site_map_wrap {right:20px;}
+}
+@media screen and (max-width: 1024px){
+    .header_wrap.fixed {min-height: 60px;}
+    .header_wrap.fixed .logo {top:-3px;}
+    .header_wrap.fixed .btn_category {top:15px;}
+    .content_section {padding:0;}
+    .cont_review, .cont_product {width:100%; float:none;}
+    .cont_inner h2 {font-size: 2.8rem}
+    .cont_review ul, .cont_inner .cont_product ul {width:100%}
+    .cont_review ul li {width:49.3%; float:left;}
+    .cont_review ul li:nth-child(odd) {margin-right: 10px;}
+    .cont_product .prd_thumb {width:180px; height:280px;}
+    .cont_product .prd_info {width: calc(100% - 280px);}
+    .cont_product .prd_info p {font-size: 2.8rem}
+    .cont_product .prd_info span {font-size: 2rem}
+    .guide_inner ul {width:90%;}
+    .news_section {padding:90px 30px; box-sizing: border-box}
+    .news_inner h3 {font-size: 3rem}
+    .news_inner p {font-size: 2rem;}
+    .site_map_wrap {display: none}
+    .site_map_section {height:auto}
+    .site_map_inner {padding:15px 20px; box-sizing: border-box;}
+    .footer_logo_wrap a {width:190px; margin-top:0;}
+
+}
+@media screen and (max-width: 768px) {
+    .cont_review ul li {width:100%}
+    .lbanner {background-position: 85% 0}
+    .rbanner {background-position: 90% 0}
+    .guide_inner ul li {min-height:430px;}
+    .sns_section {background: #cccccc;}
+    .sns_section .sns_inner .sns_pc {display: none}
+    .sns_section .sns_inner .sns_mobile {display: block; text-align: center; padding:20px 0;}
+    .sns_section .sns_inner .sns_mobile li {display: inline-block; padding:0 20px;}
+    .sns_section .sns_inner .sns_mobile li a {width:45px; height:45px;}
+    .sns_section .sns_inner .sns_mobile li a img {max-width: 100%;}
+    .banner_inner h2 {font-size: 2.5rem}
+    .banner_inner p {font-size: 1.5rem;}
+    .lbanner a, .rbanner span {font-size: 1.6rem}
+}
+@media screen and (max-width: 480px) {
+    .header_wrap.fixed .logo {top:0;}
+    .btn_category {width:30px; height:30px; left:4%;}
+    .cont_inner h2 {font-size:2rem}
+    .cont_review ul, .cont_inner .cont_product ul {margin-top: 20px;}
+    .cont_review ul li {margin-right:0; padding:10px;}
+    .cont_review ul li p {font-size:1.6rem; margin-bottom: 10px;}
+    .cont_product .prd_thumb {width:150px; height:230px;}
+    .cont_product .prd_info {width: calc(100% - 170px);}
+    .cont_product .prd_info p {font-size: 2rem;}
+    .cont_product .prd_info span {font-size: 1.6rem}
+    .cont_product .prd_info a {font-size: 16px; padding:10px 50px;}
+    .guide_inner h2 {font-size: 3rem; padding:20px 0}
+    .guide_inner ul {width:100%; padding:20px; box-sizing: border-box}
+    .guide_inner ul li {min-height:290px;}
+    .guide_inner ul li h3 {font-size: 2.3rem; text-align: left}
+    .guide_inner ul li span {font-size: 1.8rem; margin-top: 10px;}
+    .guide_inner ul li p {font-size:1.8rem; margin-bottom: -7px;}
+    .news_section {padding:40px 20px}
+    .news_inner h3 {font-size: 2.5rem}
+    .news_inner a {font-size: 2rem}
+    .sns_seciton .sns_inner ul li {width:50%;}
+    .sns_section .sns_inner .sns_mobile li a {width:45px; height:45px;}
+    .footer_inner .footer_util ul li a {font-size: 1.4rem}
+    .footer_inner .co_info {font-size: 1.2rem}
+}

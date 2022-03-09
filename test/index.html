@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Fixed fullscreen backgrounds - fullPage.js</title>
+    <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/fullpage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/examples.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="../js/typed.js"></script>
+    <script>
+        $(function(){
+            $("#typed").typed({
+                typeSpeed: 40, // typing speed
+                backDelay: 750, // pause before backspacing
+                loop: true, // loop on or off (true or false)
+                loopCount: false, // number of loops, false = infinite
+                callback: function(){ } // call function after typing is done
+            });
+        }, 0);
+    </script>
+    <style>
+	/* Style for our header texts
+	* --------------------------------------- */
+	h1{
+		font-size: 5em;
+		font-family: arial,helvetica;
+		color: #fff;
+		margin:0;
+		padding:0;
+	}
+
+	/* Centered texts in each section
+	* --------------------------------------- */
+	.section{
+		text-align:center;
+	}
+
+
+	/* Backgrounds will cover all the section
+	* --------------------------------------- */
+	#section0,
+	#section1,
+	#section2,
+	#section3,
+    #slide1,
+    #slide2{
+		background-size: cover;
+		background-attachment: fixed;
+	}
+    /* Defining each sectino background and styles
+    * --------------------------------------- */
+
+    #section0 h1{
+        top: 50%;
+        transform: translateY(-50%);
+        position: relative;
+    }
+    #section2{
+        background-image: url(../images/bg3.jpg);
+        padding: 6% 0 0 0;
+    }
+    #section3{
+        background-image: url(../images/bg4.jpg);
+        padding: 6% 0 0 0;
+    }
+    #section3 h1{
+        color: #000;
+    }
+
+
+    /*Adding background for the slides
+    * --------------------------------------- */
+    #slide1{
+        background-image: url(../images/bg2.jpg);
+        padding: 6% 0 0 0;
+    }
+    #slide2{
+        background-image: url(../images/bg5.jpg);
+        padding: 6% 0 0 0;
+    }
+
+
+    /* Bottom menu
+    * --------------------------------------- */
+    #infoMenu li a {
+        color: #fff;
+    }
+    </style>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+</head>
+<body>
+<div id="fullpage">
+	<div class="section " id="section0">
+        <div class="page-left">
+            <img class="page-left-swirl" src="../images/bg_left.svg" />
+        </div>
+        <div class="page-right">
+            <div class="video-visual">
+                <video autoplay="true">
+                    <source src="http://www.studiolux.or.kr/images/Ipad.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="text">
+            <div>I'M A</div>
+            <span id="typed" style="white-space:pre;"></span>
+        </div>
+    </div>
+	<div class="section" id="section1">
+		<div class="slide" id="slide1"><h1>Slide Backgrounds</h1></div>
+		<div class="slide" id="slide2"><h1>Totally customizable</h1></div>
+	</div>
+	<div class="section" id="section2"><h1>Lovely images <br />for a lovely page</h1></div>
+	<div class="section" id="section3"><h1>One Image = One thousand words</h1></div>
+</div>
+
+<script type="text/javascript" src="../js/fullpage.js"></script>
+<script type="text/javascript" src="../js/examples.js"></script>
+
+<script type="text/javascript">
+    var myFullpage = new fullpage('#fullpage', {
+        verticalCentered: false,
+
+        //to avoid problems with css3 transforms and fixed elements in Chrome, as detailed here: https://github.com/alvarotrigo/fullPage.js/issues/208
+        css3:false
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,767 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Studio LUX</title>
+<link rel="shortcut icon" type="image/x-icon" href="http://studiolux.or.kr/images/favicon.ico">
+<!--font
+    ========================================================-->
+<link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Lato:400,700,900,300" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css"><!--simple timeline-->
+
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css"><!--simple timeline-->
+<link rel="stylesheet" href="css/timelify.css"><!--simple timeline-->
+<link rel="stylesheet" href="css/lightbox.css"/><!--light box-->
+<link rel="stylesheet" href="css/slick.css"/>
+<link rel="stylesheet" href="fancybox/jquery.fancybox.css?v=2.1.6" media="screen" /><!--fancybox-->
+<link rel="stylesheet" href="fancybox/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+<!-- Animate.css -->
+<link rel="stylesheet" href="css/animate.css">
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css" >
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="fancybox/jquery.fancybox-buttons.js"></script>
+<script src="fancybox/jquery.fancybox.pack.js?v=2.1.6"></script><!--fancybox-->
+<script src="fancybox/jquery.fancybox-media.js"></script>
+<script src="js/lightbox.js"></script>
+<script src="js/modernizr.js"></script>
+<script src="js/common.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<!-- Portfolio Filter Mixitup -->
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+<!--contact-->
+<script src="js/jqBootstrapValidation.js"></script> 
+<script src="js/prefixfree.js"></script>
+<!--simple timeline-->
+<script src="js/jquery.timelify.js"></script>
+<script src="js/typed.js"></script>
+<script type="text/javascript" src="js/slick.js"></script>
+<script>
+
+	$(document).ready(function() {
+		$(".fancybox-effects-c").fancybox({
+			closeClick : true,
+			autoSize : false,
+			scrolling : true,
+	});
+	   $(window).scroll(function(){ 
+		  if($(this).scrollTop() < 450){
+						  
+				$(".self_text").hide();
+						  
+				}else{
+							
+				$(".self_text").fadeIn(1000);
+				
+				}
+		  
+		  if($(this).scrollTop() < 500){    
+	
+			 $(".sec01_inner").hide();  
+	
+			 }else{        
+	
+			 $(".sec01_inner").fadeIn(1000); 
+	
+		  }
+	   });
+	});
+
+	$(function(){
+        $("#typed").typed({
+            typeSpeed: 40, // typing speed
+            backDelay: 750, // pause before backspacing
+            loop: true, // loop on or off (true or false)
+            loopCount: false, // number of loops, false = infinite
+            callback: function(){ } // call function after typing is done
+        });
+    }, 0);
+
+
+ </script>
+</head>
+
+
+<body>  
+<!--반응형 내비게이션 시작-->
+	<header class="main_h">
+
+	    <div class="header_inner">
+	        <a class="logo" href="http://studiolux.or.kr">S/L</a>
+	        <div class="mobile-toggle">
+	            <span></span>
+	            <span></span>
+	            <span></span>
+	        </div>
+
+	        <nav>
+	            <ul>
+	                <li><a href="#">intro</a></li>
+	                <li><a href=".sec01">about me</a></li>
+	                <li><a href=".sec02">portfolio</a></li>
+	                <li><a href=".sec03">contact</a></li>
+	            </ul>
+	        </nav>
+
+	    </div> <!-- / row -->
+
+	</header>
+	 <div class="modalpop">
+		<div class="popup-wrap pop_simulation">
+			<h1>모바일 시뮬레이션</h1>
+			<button type="button" class="btn-popclose" title="close" onclick="modalHide('pop_simulation')">팝업닫기</button>
+			<div class="popcontents">
+				<div class="mobile-slide">
+					<ul class="slick-slider slick-initialized">
+						<div class="slick-list draggable">
+							<div class="slick-track">
+								<li class="slick-slide"><span class="pic"><img src="images/slide_img1.png" /></span></li>
+								<li class="slick-slide"><span class="pic"><img src="images/slide_img2.png" /></span></li>
+								<li class="slick-slide"><span class="pic"><img src="images/slide_img3.png" /></span></li>
+								<li class="slick-slide"><span class="pic"><img src="images/slide_img4.png" /></span></li>
+								<li class="slick-slide"><span class="pic"><img src="images/slide_img5.png" /></span></li>
+							</div>
+						</div>
+					</ul>
+					<p class="btnset">
+						<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+						<button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="display: block;">Next</button>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- The Modal -->
+	<div id="myModal" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal_content">
+	    <span class="btn-close">&times;</span>
+	    <p><img src="images/groupware_mobile.jpg"></p>
+	  </div>
+
+	</div>	
+	<!-- The Modal2 -->
+	<div id="myModal2" class="modal">
+
+	  <!-- Modal content -->
+	  <div class="modal-content">
+	    <span class="btn-close">&times;</span>
+	    <p><img src="images/groupware_mobile.jpg"></p>
+	  </div>
+
+	</div>	
+	<!--메인-->
+	<div class="wrapper">
+		<a class="logo" href="http://studiolux.or.kr">S/L</a>
+		<div class="Box">
+	    	<div id="top"></div>
+	    	<div id="right"></div>
+	  		<div id="bottom"></div>
+	   		<div id="left"></div>
+	    </div> 
+	    
+	    <h1 class="intro">WELCOME TO<br>MY<br>PORTFOLIO</h1>
+	    <div class="text">
+	        <div>I'M A</div>
+			<span id="typed" style="white-space:pre;"></span>
+	    </div>     
+
+	   
+
+
+	<!--마우스버튼-->
+	    <div class="mouse">
+	        <span></span>
+	    </div>
+
+	</div>
+
+
+	<!--컨텐츠 시작-->
+	<div class="row content">
+		<!--sec01 aoubt me-->
+	    <section class="sec01">
+	        <h1>ABOUT ME</h1>
+	        <div class="bottom_line"></div>
+	        <p class="self_text">성실하고 책임감있게 행동하는</br> 웹디자이너 & 퍼블리셔 조경아입니다</p>
+	        <div class="sec01_inner">
+	            <div id="detail" class="is-hidden timeline-item inverted" >
+	                <h2 style="color:white">INTRODUCE</h2>
+	                <p>Name:Cho Kyung A</p>
+	                <p>Birthday: 7.27</p>
+	                <p>Hobby: Enjoy movie</p>
+	                <p>Talent: Cooking</p>
+	                <p>Favorite: Coffee, Workout</p>
+	                <p>Dislike: Dish-washing</p>
+	            </div>
+	            <div id="photo">
+	            </div>
+	            <div id="skill">
+	            	<h2 style="color:white">SKILL</h2>
+	                <ul id="skill-inner">
+	                    <li><span class="bar graphic-design"></span><h3>Graphic Design</h3></li>
+	                    <li><span class="bar html-css"></span><h3>Html // Css</h3></li>
+	                    <li><span class="bar jquery"></span><h3>jQuery</h3></li>
+	                    <li><span class="bar wordpress"></span><h3>AferEffect//vegas</h3></li>
+	                </ul>
+	            </div>
+	        </div>
+	    </section>
+	    <!--sec02 portfolio-->
+	    <section class="sec02">
+	      <h1>PORTFOLIO</h1>
+	      <div class="bottom_line"></div>
+			<div id="fh5co-portfolio-section">
+				<div class="container">
+					<ul id="filters" class="clearfix animate-box">
+						<li><span class="filter active" data-filter=".all">All</span></li>
+						<li><span class="filter" data-filter=".web">Web</span></li>
+						<li><span class="filter" data-filter=".app">App</span></li>
+						<li><span class="filter" data-filter=".video">video</span></li>
+						<li><span class="filter" data-filter=".pop_art">pop art</span></li>					
+					</ul>
+					<div id="portfoliolist" class="animate-box">
+						
+						<div class="portfolio all app" data-cat="app">
+							<div class="portfolio-wrapper">
+								<img src="images/segio groupware.jpg" alt="segio_groupware" />
+								<a id="myBtn" data-lightbox="image-1"></a>								
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">쎄지오 그룹웨어 모바일</a>
+										<span class="text-category">app</span>
+										<span class="text-category">디자인+퍼블리싱</span>
+									</div>
+								</div>
+							</div>	
+						</div>
+						<div class="portfolio all web" data-cat="web">
+							<div class="portfolio-wrapper">						
+								<img src="images/kseek_mall.png" alt="케이시크 쇼핑몰" />
+								<a class="text-title" href="http://studiolux.or.kr/shopping_mall/index.php" target="_blank"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">케이시크 쇼핑몰</a>
+										<span class="text-category">web</span>
+										<span class="text-category">디자인+퍼블리싱</span>
+									</div>
+									<div class="label-bg"></div>
+								</div>
+							</div>
+						</div>				
+						<div class="portfolio all app" data-cat="app">
+							<div class="portfolio-wrapper">						
+								<img src="images/portfolio_pic4.png" alt="케이시크 쇼핑몰 모바일" />
+								<a onclick="modalView('pop_simulation')" class=""></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">케이시크 쇼핑몰 모바일</a>
+										<span class="text-category">app</span>
+										<span class="text-category">디자인+퍼블리싱</span>
+									</div>
+								</div>
+							</div>
+							
+						</div>	
+						
+						<!--
+						<div class="portfolio all video" data-cat="video">
+							<div class="portfolio-wrapper">			
+								<img src="images/portfolio_pic5.jpg" alt="킬미힐미 패러디" />
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title" href="https://www.youtube.com/embed/7eRzl_WUWs8?autoplay=1">킬미힐미 패러디</a>
+										<span class="text-category">video</span>
+									</div>
+								</div>
+							</div>
+						</div>	-->
+						
+						
+						
+						
+						<div class="portfolio all web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolio_pic12.jpg" alt="에이전시" />
+								<a data-fancybox="gallery" href="http://opilates.kr/smain.html" target="_blank"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">오진희 필라테스</a>
+										<span class="text-category">반응형 web</span>
+										<span class="text-category">템플렛&컨텐츠 수정</span>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="portfolio all web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolio_pic11.jpg" alt="에이전시" />
+								<a data-fancybox="gallery" href="http://com.skhu.ac.kr/" target="_blank"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">성공회대 전자계산소</a>
+										<span class="text-category">web</span>
+										<span class="text-category">디자인+감수</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio all web" data-cat="web">
+							<div class="portfolio-wrapper">			
+								<img src="images/portfolio_pic2.jpg" alt="남성쇼핑몰 LUKE" />
+								<a id="item" class="text-title" href="http://studiolux.or.kr/men" target="_blank"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">남성쇼핑몰 LUKE</a>
+										<span class="text-category">web</span>
+										<span class="text-category">기획+디자인+퍼블리싱</span>
+									</div>
+								</div>
+							</div>
+						</div>		
+						<div class="portfolio all web" data-cat="web">
+							<div class="portfolio-wrapper">			
+								<img src="images/portfolio_pic3.jpg" alt="adidas" />
+								<a id="item" class="text-title" href="http://studiolux.or.kr/adidas" target="_blank"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">adidas</a>
+										<span class="text-category">web</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio all video" data-cat="app">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolio_pic6.jpg" alt="진잠성당설립 17주년 기념영상" />
+								<a class="text-title" href="https://www.youtube.com/watch?v=gJNsZizo2II"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">진잠성당설립 17주년 기념영상</a>
+										<span class="text-category">video</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio all video" data-cat="app">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolio_pic7.jpg" alt="고희 기념영상" />
+								<a class="text-title" href="https://www.youtube.com/embed/UjlP2gi5f0E?autoplay=1"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">고희기념 영상</a>
+										<span class="text-category">video</span>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="portfolio all app" data-cat="app">
+							<div class="portfolio-wrapper">						
+								<img src="images/portfolio_pic13.png" alt="창페 투표 이미지" />
+								<a class="button" href="#popup1"></a>
+								<div class="label">
+									<div class="label-text">
+										<a href="#poll" class="text-title">K-POP 페스티벌 모바일 투표</a>
+										<span class="text-category">app</span>
+										<span class="text-category">디자인+퍼블리싱</span>
+									</div>
+								</div>
+								<!--<div id="popup1" class="overlay">
+									<div class="popup">
+										<a class="btn-close">&times;</a>
+										<div class="proto-content">
+											<img src="images/prototype_cf.png" />
+										</div> 
+									</div>
+								</div>-->
+							</div>
+						</div>
+						
+													
+					</div>											
+						
+								
+						<!--
+						<div class="portfolio all web" data-cat="web">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolio_pic1.jpg" alt="에이전시" />
+								<a data-fancybox="gallery" href="http://studiolux.woobi.co.kr" target="_blank"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title">웹에이전시</a>
+										<span class="text-category">web</span>
+										<span class="text-category">기획+디자인+퍼블리싱</span>
+									</div>
+								</div>
+							</div>
+						</div>	
+						<div class="portfolio all pop_art" data-cat="pop_art">
+							<div class="portfolio-wrapper">
+								<img src="images/portfolio_pic8.jpg" alt="할리퀸" />				
+								<a data-fancybox="gallery" class="fancybox-effects-c" href="images/queen.jpg"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title fancybox-effects-c">Harley Quinn</a>
+										<span class="text-category">Pop art</span>
+									</div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="portfolio all pop_art" data-cat="pop_art">
+							<div class="portfolio-wrapper">			
+								<img src="images//portfolio_pic9.jpg" alt="이상한 나라의 앨리스" />
+								<a data-fancybox="gallery" class="fancybox-effects-c" href="images//portfolio_pic9.jpg"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title fancybox-effects-c">White queen</a>
+										<span class="text-category">Pop art</span>
+									</div>
+								</div>
+							</div>
+						</div>	
+
+						<div class="portfolio all pop_art" data-cat="pop_art">
+							<div class="portfolio-wrapper">			
+								<img src="images/portfolio_pic10.jpg" alt="구르미 그린 달빛" />
+								<a data-fancybox="gallery" class="text-title fancybox-effects-c" href="images/portfolio_pic10.jpg"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title fancybox-effects-c">이영 세자</a>
+										<span class="text-category">Pop art</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="portfolio all web" data-cat="web">
+							<div class="portfolio-wrapper">			
+								<img src="images/krispy.png" alt="크림크리스피" />
+								<a class="text-title" href="http://studiolux.or.kr/krispy" target="_blank"></a>
+								<div class="label">
+									<div class="label-text">
+										<a class="text-title fancybox-effects-c">krispy creme dounut</a>
+										<span class="text-category">web</span>
+									</div>
+								</div>
+							</div>
+						</div>-->
+
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- END fh5co-portfolio-section -->
+		<!-- <section class="sec03">
+	        <div class="section-inner">
+	            <div class="timeline">
+	                <h2>WEB PROJECT</h2>
+	                <ul class="timeline-items">
+	                    <li class="is-hidden timeline-item"> 
+	                        <h3>Web agency project</h3>
+	                        <hr>
+	                        <p>normal version</p>
+	                        <a class="fancybox" href="http://studiolux.woobi.co.kr" target="_blank"><img src="images/agency.jpg" alt="에이전시 프로젝트 메인"></a>
+	                        <p><a href="http://studiolux.woobi.co.kr">Link</a>
+	                        <hr>
+	                        <p class="time">November 2016</p>
+	                    </li>
+	                    
+	                    <li class="is-hidden timeline-item inverted">
+	                        <h3>LUKE project</h3>
+	                        <hr>
+	                        <p>남성복 쇼핑몰 프로젝트</p>
+	                        <a class="fancybox" href="http://studiolux.or.kr/men" target="_blank"><img src="images/men.jpg" alt="남성복 쇼핑몰 프로젝트 메인"></a>
+	                        <p><a href="http://studiolux.or.kr/men">Link</a></p>
+	                        <hr>
+	                        <p class="time">December 2016</p>
+	                    </li>
+
+	                    <li class="is-hidden timeline-item "> 
+	                        <h3>adidas project</h3>
+	                        <hr>
+	                        <p>onepage site</p>
+	                        <a class="fancybox" href="http://studiolux.or.kr/adidas" target="_blank"><img src="images/adidas.jpg" alt="아디다스 프로젝트 메인"></a>
+	                        <p><a href="http://studiolux.or.kr/adidas">Link</a>
+	                        <hr>
+	                        <p class="time">December 2016</p>
+	                    </li>
+
+	                    <li class="is-hidden timeline-item inverted"> 
+	                        <h3>KANU project</h3>
+	                        <hr>
+	                        <p>onepage site</p>
+	                        <a class="fancybox" href="http://studiolux.or.kr/kanu" target="_blank"><img src="images/kanu.jpg" alt="kanu"></a>
+	                        <p><a href="http://studiolux.or.kr/kanu">Link</a></p>
+	                        <hr>
+	                        <p class="time">December 2016</p>
+	                    </li>
+
+	                    <li class="is-hidden timeline-item">
+	                        <h3>krispy creme dounut project</h3>
+	                        <hr>
+	                        <p>Grid design</p>
+	                        <a class="fancybox" href="http://studiolux.or.kr/krispy" target="_blank"><img src="images/krispy.png" alt="크리스피 크림"></a>
+	                        <p><a href="http://studiolux.or.kr/kanu">Link</a></p>
+	                        <hr>
+	                        <p class="time">January 2017</p>
+	                    </li>
+	                    
+	                    <li class="is-hidden timeline-item inverted">
+	                        <h3>진잠성당 홈페이지</h3>
+	                        <hr>
+	                        <p>진잠성당 홈페이지 유지 보수</p>
+	                        <a class="fancybox" href="http://www.jinjam.org" target="_blank"><img src="images/jinjam.jpg" alt="진잠성당 홈페이지"></a>
+	                        <p><a href="http://www.jinjam.org">Link</a></p>
+	                        <hr>
+	                        <p class="time">December 2016</p>
+	                    </li>
+	                </ul>
+
+	    
+	    
+	                <h2>video</h2>
+	                <ul class="timeline-items">
+	                    <li class="is-hidden timeline-item left">
+	                        <h3>고희기념 영상</h3>
+	                        <hr>
+	                        <p>Lee jun yeop & Lee hwa gu 70th birthday celebarated video</p>
+	                        <a class="various fancybox.iframe" href="https://www.youtube.com/embed/UjlP2gi5f0E?autoplay=1"><img src="images/70th.jpg" alt="고희기념영상"></a>
+	                        <hr>
+	                        <p class="time">July 2015</p>
+	                    </li>
+	                    <li class="is-hidden timeline-item inverted">
+	                        <h3>Father teophilo ordinatio celebrated video</h3>
+	                        <hr>
+	                        <p></p>
+	        				<a class="various fancybox.iframe" href="https://www.youtube.com/embed/aDI4ehvwt3o?autoplay=1"><img src="images/teophilo.jpg" alt="테오필로 신부님 서품기념 영상"></a>
+	                        <hr>
+	                        <p class="time">January 2017</p>
+	                    </li>
+	                    <li class="is-hidden timeline-item left">
+	                        <h3>Kill Me Hill Me fan UCC </h3>
+	                        <hr>
+	                        <p></p>
+	                        <a class="various fancybox.iframe" href="https://www.youtube.com/embed/7eRzl_WUWs8?autoplay=1"><img src="images/kangnam.jpg" alt="킬미힐미 강남스타일"></a>
+	                        <hr>
+	                        <p class="time">May 2015</p>
+	                    </li>
+	                </ul>
+	                <h2>pop art</h2>
+	                <ul class="timeline-items">
+	                    <li class="is-hidden timeline-item inverted">
+	                        <h3>Harley Quinn Pop art</h3>
+	                        <hr>
+	                        <p>Harley Quinn is the Joker's frequent accomplice and lover</p>
+	                        <a class="fancybox-effects-c" href="images/queen.jpg"><img src="images/queen.jpg" alt="할리퀸"></a>
+	                        <hr>
+	                        <p class="time">October 2016</p>
+	                    </li>
+	                    <li class="is-hidden timeline-item left">
+	                        <h3>alice in wonderland white witch</h3>
+	                        <hr>
+	                        <p>Mirana of Marmoreal, also known as The White Queen, is a fictional character from the novel Through the Looking-Glass, and What Alice Found There by Lewis Carroll.</p>
+	                        <a class="fancybox-effects-c" href="images/alice.jpg"><img src="images/alice.jpg" alt="백색마녀"></a>
+	                        <hr>
+	                        <p class="time">November 2016</p>
+	                    </li>
+	                    <li class="is-hidden timeline-item inverted">
+	                        <h3>Park bo-gum Pop art</h3>
+	                        <hr>
+	                        <p>drama 'Love in the Moonlight', Character Lee young</p>
+	                        <a class="fancybox-effects-c" href="images/보검이 리터칭 (1).jpg"><img src="images/보검이 리터칭 (1).jpg" alt="이영"></a>
+	                        <hr>
+	                        <p class="time">October 2016</p>
+	                    </li>
+	                </ul>
+	        
+	            </div>
+	        </div>
+	    </div>  
+	    </section> -->
+	</div>
+	  <!--sec3 portfolio end-->
+	 <!-- Contact Section -->
+	<div id="contact" class="text-center sec03">
+	  
+	  <div class="contact_inner">
+	    <div class="section-title center">
+	      <h1 style="color:#fff;">CONTACT</h1>
+		  <div class="bottom_line"></div>
+	    </div>
+	    <div class="col-md-12">
+	      <div class="col-md-4"> <i class="fa fa-map-marker fa-2x"></i>
+	        <p>30, Jinjam-ro 42beon-gil, Yuseong-gu, Daejeon</p>
+	          
+	      </div>
+	      <div class="col-md-4"> <i class="fa fa-envelope-o fa-2x"></i>
+	        <p>lovelylucia@naver.com</p>
+	      </div>
+	      <div class="col-md-4"> <i class="fa fa-phone fa-2x"></i>
+	        <p> 010 2234 7125</p>
+	      </div>
+	      <div class="clearfix"></div>
+	    </div>
+	    <div class="social">  
+	      
+	        <ul>
+	          <li><a href="https://www.facebook.com/profile.php?id=100007405369043"><i class="fa fa-facebook"></i></a></li>
+	          <li><a href="#twitter"><i class="fa fa-twitter"></i></a></li>
+	          <li><a href="#dribble"><i class="fa fa-dribbble"></i></a></li>
+	          <li><a href="https://www.instagram.com/lovely_rucia/"><i class="fa fa-instagram"></i></a></li>
+	        </ul>
+	     
+	    </div>
+	  </div>
+
+
+	<!--footer-->
+	<div id="footer">
+	  <div class="footer_inner text-center">
+	    <div class="fnav">
+	      <p>Copyright &copy; 2017 studioLux</p>
+	    </div>
+	  </div>
+	</div>
+
+
+</div>
+
+<!-- Main JS (Do not remove) -->
+<script src="js/main.js"></script>
+
+<script type="text/javascript">
+$(function () {
+
+var filterList = {
+
+	init: function () {
+
+		// MixItUp plugin
+		// http://mixitup.io
+		$('#portfoliolist').mixItUp({
+		selectors: {
+		  target: '.portfolio',
+		  filter: '.filter'	
+	  },
+	  load: {
+	  filter: '.all'  
+	}     
+		});								
+
+	}
+
+};
+
+// Run the show!
+filterList.init();
+
+
+
+});	
+</script>
+<script><!--반응형 레이아웃-->
+$(window).scroll(function() {
+
+    if ($(window).scrollTop() > 300) {
+        $('.main_h').addClass('sticky');
+    } else {
+        $('.main_h').removeClass('sticky');
+    }
+	if ($(window).scrollTop() > 1000) {
+        $('.main_h').addClass('#detail');
+    } else {
+        $('.main_h').removeClass('#detail');
+    }
+});
+
+// Mobile Navigation
+$('.mobile-toggle').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.main_h').removeClass('open-nav');
+    } else {
+        $('.main_h').addClass('open-nav');
+    }
+});
+
+$('.main_h li a').click(function() {
+    if ($('.main_h').hasClass('open-nav')) {
+        $('.navigation').removeClass('open-nav');
+        $('.main_h').removeClass('open-nav');
+    }
+});
+
+// navigation scroll lijepo radi materem
+$('nav a').click(function(event) {
+    var id = $(this).attr("href");
+    var offset = 70;
+    var target = $(id).offset().top - offset;
+    $('html, body').animate({
+        scrollTop: target
+    }, 500);
+    event.preventDefault();
+});
+//simple timeline
+$('.timeline').timelify({
+			animLeft: "fadeInLeft",
+		animCenter: "fadeInUp",
+		animRight: "fadeInRight",
+		animSpeed: 600,
+		offset: 150
+	});
+$('.sec01').timelify({
+		animLeft: "fadeInLeft",
+		animCenter: "fadeInUp",
+		animRight: "fadeInRight",
+		animDown: "fadeInDown",
+		animSpeed: 600,
+		offset: 150
+	});
+</script>
+<script type="text/javascript">
+	//slick
+	$(".slick-track").slick({
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		speed:300,
+		swipeToSlide: true,
+		appendArrows:$(".mobile-slide .btnset")
+	});
+</script>
+<script>
+// Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("btn-close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+$(function(){
+	$(".btn-close").click(function(){
+	$("#popup1").hide();
+	});
+});
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>화현</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, minimum-scale=1.0, user-scalable=yes, target-densitydpi=medium-dpi">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="화현 홈페이지">
+    <meta property="og:description" content="건강하고 아름다운 기업 화현입니다">
+    <meta name="keywords" content="화현, (주)화현, 맨들맨들, 코스메틱, 왁싱, 화장품" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:url" content="http://www.hwahyun.co.kr/">
+    <meta property="al:web:url" content="http://www.hwahyun.co.kr/">
+    <link rel="canonical" href="http://www.hwahyun.co.kr/">
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <!--<link rel="stylesheet" href="css/animate.css" />-->
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/sub.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function(){
+             $('.gnb').mouseenter(function() {
+                 $(".white-bg").stop().slideDown();
+                 $("#header .gnb > ul > li > ul").stop().slideDown();
+                 $("#header .white-bg").stop().slideDown();
+             });
+             $('.gnb').mouseleave(function() {
+                 $(".white-bg").stop().slideUp();
+                 $("#header .gnb > ul > li > ul").stop().slideUp();
+                 $("#header .white-bg").stop().slideUp();
+             });
+             $('.family_site_wrap > h2 > a').click(function () {
+                 $('#family_site').toggleClass('active');
+             })
+          });
+         $('#swiper_last').bind('mousewheel DOMMouseScroll', function (e) { return false; });
+
+     </script>
+    <script>
+        $(document).ready(function () {
+            var mySwiper = new Swiper ('.visual_wrapper', {
+                autoplay: true,
+                speed:800,
+                pagination: {
+                    el: '.swiper-pagination',
+                    type: 'bullets',
+                    clickable: true,
+                },
+                loop:true,
+                autoReload: true,
+                clickable:true,
+                breakpoints: {
+                    768: {
+                        slidesPerView: 'auto',
+                        slideToClickedSlide: false,
+                        simulateTouch: false,
+                        touchRatio: 0,
+                        allowTouchMove: false
+                    }
+                }
+            })
+            $('.all_menu > ul> li > a').on('click', function(){
+                $(this).parent().siblings().children('a').removeClass('on');
+                $(this).parent().siblings().find('.m_depth2').stop().slideUp(400);
+                if($(this).hasClass('on')){
+                    $(this).removeClass('on');
+                    $(this).next().stop().slideUp(400);
+                }else{
+                    $(this).addClass('on');
+                    $(this).next().stop().slideDown(400);
+                }
+            });
+        });
+
+    </script>
+     <!-- Demo styles -->
+    <style>
+        .page {
+            overflow: hidden;
+            overflow-y: auto;
+        }
+        #page_bottom {
+            height:1200px;
+        }
+    </style>
+
+</head>
+<body>
+    <div id="header">
+        <div class="gnb">
+            <div class="logo">
+                <a href="index.html" title="main"><img src="img/logo.png" alt="화현 로고"></a>
+            </div>
+            <ul class="menu">
+                <li class="">
+                    <a href="brandstory.html">회사소개</a>
+                    <ul class="sub_menu">
+                        <li><a href="brandstory.html">브랜드 스토리</a></li>
+                        <li><a href="history.html">연혁</a></li>
+                        <li><a href="ci.html">CI소개</a></li>
+                        <li><a href="location.html">오시는 길</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="lab.html">R&D 센터</a>
+                    <ul class="sub_menu">
+                        <li><a href="lab.html">기업부설 연구소</a></li>
+                        <li><a href="marketing_lab.html">기업부설 마케팅연구소</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="mendle.html">사업소개</a>
+                    <ul class="sub_menu">
+                        <li><a href="mendle.html">맨들맨들</a></li>
+                        <li><a href="puremay.html">puremay</a></li>
+                        <li><a href="koreanwax.html">코리안왁스센터</a></li>
+                        <li><a href="oxygen.html">oxygen</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://www.hwahyun.co.kr/test/notice.php">커뮤니티</a>
+                    <ul class="sub_menu">
+                        <li><a href="http://www.hwahyun.co.kr/test/notice.php">공지사항</a></li>
+                        <li><a href="http://www.hwahyun.co.kr/test/notice.php">컴퍼니 뉴스</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="white-bg"></div>
+            <button class="nav-open-btn" title="네비게이션 열기">
+                <span class="line line1"></span>
+                <span class="line line2"></span>
+                <span class="line line3"></span>
+            </button>
+        </div>
+        <div id="m_header">
+            <div class="all_menu">
+                <h2 class="blind">주메뉴</h2>
+                <div class="m_logo">
+                    <a href="index.html" title="main"><img src="img/logo.png" alt="화현 로고"></a>
+                </div>
+                <ul class="m_depth1">
+                    <li>
+                        <a href="javascript:;">회사소개<span class="gnb-icon close-icon"></span></a>
+                        <ul class="m_depth2">
+                            <li><a href="brandstory.html">브랜드 스토리</a></li>
+                            <li><a href="history.html">연혁</a></li>
+                            <li><a href="ci.html">CI소개</a></li>
+                            <li><a href="location.html">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">R&D 센터</a>
+                        <ul class="m_depth2">
+                            <li><a href="lab.html">기업부설 연구소</a></li>
+                            <li><a href="marketing_lab.html">기업부설 마케팅연구소</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">사업소개</a>
+                        <ul class="m_depth2">
+                            <li><a href="mendle.html">맨들맨들</a></li>
+                            <li><a href="puremay.html">puremay</a></li>
+                            <li><a href="koreanwax.html">코리안왁스센터</a></li>
+                            <li><a href="oxygen.html">oxygen</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;">커뮤니티</a>
+                        <ul class="m_depth2">
+                            <li><a href="http://www.hwahyun.co.kr/test/notice.php">공지사항</a></li>
+                            <li><a href="http://www.hwahyun.co.kr/test/notice.php">컴퍼니 뉴스</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="bg_overlay"></div>
+    </div>
+    <!-- Swiper -->
+
+    <div id="page_switch" class="swiper-container swiper-container-initialized swiper-container-vertical" >
+        <div class="swiper-wrapper">
+            <div class="swiper-container visual_wrapper swiper-slide">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide bg01">
+                        <section class="sec01">
+                            <div class="visual_tit_01">
+                                <p>사람을 이롭게, 세상을 이롭게</p>
+                                <h2>Benefit to the person, <br/>
+                                    Benefit to the world</h2>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide bg03">
+                        <section class="sec01">
+                            <div class="visual_tit_01">
+                                <p>사람을 이롭게, 세상을 이롭게</p>
+                                <h2>Benefit to the person, <br/>
+                                    Benefit to the world</h2>
+                            </div>
+                        </section>
+                    </div>
+                    <div class="swiper-slide bg02">
+                        <section class="sec01">
+                            <div class="visual_tit_01">
+                                <p>사람을 이롭게, 세상을 이롭게</p>
+                                <h2>Benefit to the person, <br/>
+                                    Benefit to the world</h2>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="swiper-slide business_list">
+                <div class="item mendle">
+                    <a href="mendle.html" class="bs_headline" title="맨들맨들">
+                        <p>왁싱전문 모바일 예약앱</p>
+                        <h3>맨들맨들</h3>
+                    </a>
+                </div>
+                <div class="item puremay">
+                    <a href="puremay.html" class="bs_headline" title="퓨어메이">
+                        <p>피부와 가장 가까운 천연화장품</p>
+                        <h3>퓨어메이</h3>
+                    </a>
+                </div>
+                <div class="item korean_wax">
+                    <a href="koreanwax.html" class="bs_headline" title="코리안왁스센터">
+                        <p>깨끗하고 자신있는 아름다움</p>
+                        <h3>코리안 왁스센터</h3>
+                    </a>
+                </div>
+                <div class="item oxygen">
+                    <a href="oxygen.html" class="bs_headline" title="옥시젠">
+                        <p>피부과학속에 산소케어</p>
+                        <h3>옥시젠 슈티컬스</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-slide page" id="swiper_last">
+                <div id="page_bottom">
+                    <div id="scroller">
+                        <div class="news_wrap">
+                            <div class="inner">
+                                <h4>컴퍼니 뉴스</h4>
+                                <p>NEWS</p>
+                                <ul class="news_list">
+                                    <li>
+                                        <a href="http://www.hwahyun.co.kr/test/notice.php">
+                                            <figure>
+                                                <img src="img/cafedepuremay.jpg" />
+                                            </figure>
+                                            <div class="news_text_box">
+                                                <h4>퓨어메이 양재점 오픈(예정)</h4>
+                                                <p>2019.10.23</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                       <a href="http://www.hwahyun.co.kr/test/notice.php">
+                                           <figure>
+                                               <img src="img/chunho.jpg" />
+                                           </figure>
+                                           <div class="news_text_box">
+                                               <h4>퓨어메이 벨라시타 일산점 오픈</h4>
+                                               <p>2019.10.26</p>
+                                           </div>
+                                       </a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.hwahyun.co.kr/test/notice.php">
+                                            <figure>
+                                                <img src="img/seminar.jpg" />
+                                            </figure>
+                                            <div class="news_text_box">
+                                                <h4>코리안왁싱센터 10월 세미나</h4>
+                                                <p>2019.10.23</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="partners_wrap">
+                            <div class="inner">
+                                <h4>화현의 파트너입니다</h4>
+                                <p>PARTNERS</p>
+                                <ul class="partners_list">
+                                    <li>
+                                        <a href="http://www.arcowaxing.co.kr/" title="아르코왁스"><img src="img/arco_logo.png" alt="아르코왁스 로고" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.arcowaxing.co.kr/" title="코이즈"><img src="img/coiz_logo.jpg" alt="코이즈 로고" /></a>
+                                    </li>
+                                    <li>
+                                        <a href="http://www.arcowaxing.co.kr/" title="이니스트"><img src="img/inist_logo.png" alt="이니스트" /></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <footer id="footer">
+                            <div class="footer_inner">
+                                <div class="info_wrap">
+                                    <dl>
+                                        <dt>(주)화현</dt>
+                                        <dd>
+                                            <p>
+                                                대표 : 장화현 <span class="line"></span>
+                                                사업자등록번호 : 378-88-01104
+                                            </p>
+                                            <p>
+                                                경기도 수원시 팔달구 경수대로 561 금호빌딩 402호 <span class="line"></span>
+                                                FAX  031.238.9997
+                                            </p>
+                                            <p>
+                                                개인정보 관리자 r0110@naver.com
+                                            </p>
+                                            <p>
+                                                Copyright(c) 화현. All Rights Reserved.
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </div>
+                                <div class="tel_wrap">
+                                    <em class="number">1577-4910</em>
+                                    <em class="time">AM 10:00~PM 18:00</em>
+                                </div>
+                                <div class="family_site_wrap">
+                                    <h2>
+                                        <a href="#family_site">
+                                            FAMILY SITE <span class="sel_arrow">&nbsp;</span>
+                                        </a>
+                                    </h2>
+                                    <dl id="family_site" class="">
+                                        <dt class="no_tit"><span class="blind">화현 패밀리 사이트</span></dt>
+                                        <dd><a class="clickable" href="http://www.mendlemendle.com" target="_blank" title="새창 열림">맨들맨들</a></dd>
+                                        <dd><a class="clickable" href="http://kwaxcenter.com" target="_blank" title="새창 열림">코리안왁스센터</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </footer>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+@media screen and (max-width: 1220px) {
+    .wrapper, .wrapper_inner {width:100%;}
+    nav .nav_inner {width:100%; box-sizing: border-box}
+    nav .nav_inner .logo {width:190px; top:17px; left:10px;}
+    nav #topMenu {width: 100%;}
+    nav #topMenu .main_menu {display: none;}
+    .nav_open_btn {display: block; right: 14px; top: 24px;}
+    .gnb_wrap .gnb_inner {width:100%;}
+    .gnb_wrap .gnb_inner .util_menu {margin-right: 10px;}
+    .m_menu_inner {min-width: 950px;}
+    .navi_container .depth1 > li > a {display:block; font-size:22px;}
+    .navi_container .depth1 > li > .depth2 {margin:10px 0}
+    .content_wrap, section {width:100%!important;}
+    .Nb_slt ul li span {width:21%}
+    #laArea {padding:20px; box-sizing: border-box;}
+    .ban_wrap, footer, footer .ft_info .ft_inner {width: 100%;}
+    footer .ft_menu, footer .ft_info {padding:0 20px; box-sizing: border-box;}
+
+    /*sub*/
+    .subCont_inner {width:100%;}
+    .subCont_inner .lnb {display:none;}
+    .subCont_inner .sub_contents {width:100%; padding:0 20px 30px;}
+    .subCont_inner .sub_contents .cont_area img {max-width: 100%;}
+    .subCont_inner .sub_contents .cont_area .tit_box {background-size: cover;}
+    .tbl_head01 thead th:nth-of-type(4) {display: none;}
+    #bo_list .td_num {display: none;}
+
+    /*회원가입*/
+    .member_join {width:100%; padding:0 15px; box-sizing: border-box;}
+    #fregister {padding-top: 20px;}
+    #fregister_chkall {padding-top:20px;}
+    #register_form {width:100%;}
+}
+@media screen and (max-width: 980px) {
+    .m_menu_inner {width:100%; min-width:100%; padding: 6%; top:46px; left:0; transform: translate(0, 0); box-sizing: border-box}
+    .nav_open_btn {top:24px;}
+    .navi_container .depth1 > li {border-bottom: 1px solid #ededed; padding:0}
+    .navi_container .depth1 > li a {padding:15px 0}
+    .navi_container .depth1 > li > a:after {display: block;}
+    .navi_container .depth1 > li > .depth2 {display: none}
+    .navi_container .depth1 > li > .depth2 li {width:100%; padding:8px}
+    .navi_container .depth1 > li > .depth2 li:first-child {padding-left: 8px}
+    .navi_container .depth1 > li > .depth2 li a {font-size: 20px}
+    section .gallery, section .notice {width:100%; clear: both;}
+    #laArea {padding:20px;}
+    .pic_lt li {width:30.9%; padding-right: 3.5%;}
+    .gallery .pic_lt {position: relative; margin-bottom: 5px; overflow: hidden;}
+    .gallery .pic_lt .lt_more {right:0;}
+
+    footer .ft_info .ft_inner h2 {width:230px;}
+
+}
+@media screen and (max-width: 768px) {
+    .gnb_wrap {display: none;}
+    .m_menu_inner {top:0;}
+    .m_menu .m_nav_util {padding:25px 0;}
+    .m_menu .m_nav_util ul li a {font-size: 22px;}
+    .navi_container .depth1 > li > a {font-size: 20px;}
+    section .quick_box ul li {width:33.3%; height: 120px;}
+    section .quick_box ul li div {width: 65px; height: 65px;}
+    section .quick_box ul li div:after {width:37px; height:55px; background-size: 310px 41px;}
+    section .quick_box ul li div.qbg01:after {background-position: -1px 0;}
+    section .quick_box ul li div.qbg02:after {background-position: -55px 2px;}
+    section .quick_box ul li div.qbg03:after {background-position: -103px 1px;}
+    section .quick_box ul li div.qbg04:after {background-position: -157px 2px;}
+    section .quick_box ul li div.qbg05:after {background-position: -208px 3px;}
+    section .quick_box ul li div.qbg06:after {background-position: -208px 3px;}
+    #fambanArea {display: none;}
+    .ban_wrap ul li {width:33.3%;}
+    footer .ft_info .ft_inner h2 {display: none;}
+
+    .sub_visual {height:110px;}
+    .sub_visual .assist_tit {font-size: 14px; padding-top: 28px;}
+    .sub_visual .sub_tit {font-size: 22px; line-height: 1.1;}
+    .subCont_inner .sub_contents .cont_tit h4 {font-size: 20px; padding: 30px 0 15px;}
+    .subCont_inner .sub_contents .cont_tit ul {display: none}
+    .subCont_inner .sub_contents .cont_area .tit_box {height:auto}
+    .subCont_inner .sub_contents .cont_area .tit_box p {font-size: 20px; line-height: 60px;}
+    .history_area {padding:0;}
+    .history_area ul li {display: inline-block; padding:0;}
+    .history_area ul li span {display: block; text-align: left}
+    .history_area dt {text-align:left}
+    .ex1 dd .p_bold {margin-top: 15px;}
+    .ex1 dt, .ex3 dt, .ex1 dd, .ex3 dd, .ex_box dt, .ex_box dd {width:100%; float:none;}
+    .ex_box dt {margin-bottom: 10px;}
+    #bo_gall .gall_box .gall_text_href a {text-overflow: ellipsis; white-space: nowrap; overflow: hidden;}
+    #bo_list .td_name {width:80px;}
+    #bo_list .td_datetime {width:50px; font-size: 13px;}
+    .gall_row .col-gn-4 {width:50%;}
+
+}
+@media screen and (max-width: 500px) {
+    nav {height:60px;}
+    nav .nav_inner .logo {top:15px; left:10px;}
+    nav .nav_inner .logo img {width:70%;}
+    .m_menu_inner {top:-6px;}
+    .m_menu .m_nav_util {padding:22px 0;}
+    .m_menu .m_nav_util ul li a {font-size: 18px;}
+    .navi_container .depth1 > li > a {font-size: 16px;}
+    .navi_container .depth1 > li > a:after {top:21px;}
+    .navi_container .depth1 > li > .depth2 {margin: 0 0 10px 10px}
+    .navi_container .depth1 > li > .depth2 li a {display: block; font-size: 15px; padding:10px 0;}
+    .nav_open_btn {top:15px;}
+    .nav_open_btn span {width:23px!important;}
+    section .quick_box ul li {height:100px;}
+    section .quick_box ul li a {margin-top: 20px;}
+    section .quick_box ul li div {width: 45px; height: 45px;}
+    section .quick_box ul li div:after {left:9px; top:9px;width:27px; height:31px; background-size: 216px 30px;}
+    section .quick_box ul li div.qbg01:after {background-position: 2px -3px;}
+    section .quick_box ul li div.qbg02:after {background-position: -36px 0;}
+    section .quick_box ul li div.qbg03:after {background-position: -70px -2px;}
+    section .quick_box ul li div.qbg04:after {background-position: -108px 0;}
+    section .quick_box ul li div.qbg05:after {background-position: -143px -2px;}
+    section .quick_box ul li div.qbg06:after {background-position: -181px -2px;}
+    .Nb_slt ul li a {width:72%; font-size: 14px; padding:7px 0}
+    .Nb_slt ul li a:before {top:14px;}
+    .Nb_slt ul li span {padding:7px 0;}
+    .Nb_slt ul li span.title {width:70%;}
+    .Nb_slt ul li span.title a {font-size: 14px}
+    .Nb_slt ul li span.date {width:24%;}
+    .Nb_slt ul li span.date span {font-size: 13px;}
+    footer .ft_info .ft_inner .cnt {font-size: 13px; margin: 15px 0;}
+    footer .ft_info .ft_inner .cnt p {margin-bottom: 4px; font-size: 13px;}
+    footer .ft_info .ft_inner .cnt address,
+    footer .ft_info .ft_inner .cnt p.copyright {font-size: 13px; line-height: 1.2;}
+    #layer_popup, #layer_popup2, #layer_popup3 {width:90%; left:0; right:0; top:0; bottom:0; margin:50px auto}
+    .hd_pops img {max-width: 100%;}
+
+    .subCont_inner .sub_contents {padding:0 15px 30px;}
+    .subCont_inner .sub_contents .cont_tit h4 {font-size: 18px;}
+    .subCont_inner .sub_contents .cont_area {margin-top: 20px;}
+    .subCont_inner .sub_contents .cont_area .tit_box p {font-size: 16px; line-height: 30px;}
+    .tit_box p {padding:10px; font-size: 16px;}
+    .tit_box2 h4 {font-size: 17px; padding: 20px 0;}
+    .policy_wrap .tab_content .ordinary_top {height:120px; padding:35px 0}
+    .policy_wrap .tab_content .ordinary_top h4 {font-size: 20px; text-align: center}
+    .policy_wrap .tab_content .ordinary_top h3 {text-align: center; font-size: 26px}
+    .policy_wrap .tab_content .letter_con h2 {font-size: 22px}
+}

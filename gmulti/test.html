@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .popup {
+            position:fixed;
+            top:0px;
+            left:0px;
+            bottom:0px;
+            right:0px;
+            margin:auto;
+            width:200px;
+            height:150px;
+            font-family:verdana;
+            font-size:13px;
+            padding:10px;
+            background-color:rgb(240,240,240);
+            border:2px solid grey;
+            z-index:100000000000000000;
+        }
+
+        .cancel {
+            display:relative;
+            cursor:pointer;
+            margin:0;
+            float:right;
+            height:10px;
+            width:14px;
+            padding:0 0 5px 0;
+            background-color:red;
+            text-align:center;
+            font-weight:bold;
+            font-size:11px;
+            color:white;
+            border-radius:3px;
+            z-index:100000000000000000;
+        }
+
+        .cancel:hover {
+            background:rgb(255,50,50);
+        }
+    </style>
+</head>
+<body>
+    <button onClick="openPopup('div1');">open div1</button>
+
+    <div id="div1" class="popup" style="display:none;">
+        This is a test message div1
+        <div class="cancel" onclick="closePopup();"></div>
+    </div>
+
+
+    <button onClick="openPopup('div2');">open div2</button>
+
+    <div id="div2" class="popup" style="display:none;">
+        This is a test message div2
+        <div class="cancel" onclick="closePopup();"></div>
+    </div>
+
+<script>
+    function openPopup(el) {
+        $('.popup').hide();
+        $('#' + el).fadeIn(200);
+    }
+
+    function closePopup() {
+        $('.popup').fadeOut(300);
+    }
+
+</script>
+
+</body>
+</html>

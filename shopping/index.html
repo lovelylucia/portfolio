@@ -1,0 +1,87 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Menu Accordion</title>
+<link rel="stylesheet" href="menstyle.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="nav/dist/sidebar-menu.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script type="text/jscript" src="men.js"></script>
+
+</head>
+
+<body>
+<div id="wrapper">
+    <nav>
+        <section>
+            <div class="logo">
+                    <a href="index.html"><img src="images/luke_logo.png" alt="루크로고"></a>
+            </div>
+            <ul class="sidebar-menu">
+              <li>
+                <a href="#">
+                  <span>BEST</span> <i class="fa fa-angle-right pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li><a href="#">Best100</a></li>
+                  <li><a href="#">New</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>TOP</span><i class="fa fa-angle-right pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu" style="display: none;">
+                  <li><a href="#">Shirt</a></li>
+                  <li><a href="#">jacket</a></li>
+                  <li><a href="#">trainning</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>PANTS</span><i class="fa fa-angle-right pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu" style="display: none;">
+                  <li><a href="#">s/s season</a></li>
+                  <li><a href="#">f/w season</a></li>
+                  <li><a href="#">trainning pants</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">
+                  <span>BAG</span>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <span>ACCESARY</span><i class="fa fa-angle-right pull-right"></i>
+                </a>
+                <ul class="sidebar-submenu">
+                  <li><a href="#">Watch</a></li>
+                   <li><a href="#">belt</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a href="#" id="trigger">MENU</a>
+      </section>
+   </nav>    
+
+	<div class="main">
+		<div class="board">
+        	<a href="#"><img class="dandy" src="images/dandy1.jpg" alt="공유"></a>
+            <a href="#"><img class="casual" src="images/casual1.jpg" alt="박보검"></a>
+        </div>
+        <h1 class="text">클래식과 캐주얼<br> 
+         당신의 선택은?</h1>
+    </div>
+  </div>
+  
+  
+<script src="nav/dist/sidebar-menu.js"></script>
+  <script>
+    $.sidebarMenu($('.sidebar-menu'))
+  </script>
+</body>
+</html>

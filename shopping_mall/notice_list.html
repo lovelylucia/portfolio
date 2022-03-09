@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>KSEEKMALL</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            $(function() {
+ 
+                //제목 클릭시 텍스트영역 보이기
+                     $('.selected > .faq_open').click(function() {
+                             $('.selected > .faq_text').toggle('4000');
+                     });
+             });
+        </script>
+</head>
+<body>
+    <div id="wrapper">
+    <!-- HEADER start -->
+        <? require_once("top.php");?>
+    <!-- HEADER end -->   
+        
+    <!-- CONTENT start-->
+            <div id="container" class="center_wrap">
+                <div class="content_inner">
+                    <h3 class="center_tit">고객센터</h3>  
+                   
+                    <div class="tbl_area notice_table">
+                            <h3>공지사항</h3>
+                            <table>
+                                <caption>FAQ 리스트</caption>
+                                <colgroup>
+                                    <col width="10%">
+                                    <col width="12%">
+                                    <col width="63%">
+                                    <col width="15%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">분류</th>
+                                        <th scope="col">제목</th>
+                                        <th scope="col">등록일</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            1
+                                        </td>
+                                        <td>
+                                            당첨자 발표
+                                        </td>
+                                        <td class="left selected">
+                                            <a href="javascript:;" class="faq_open">주방용품 천원의 체험단 50인</a>
+                                            <div class="faq_text">
+                                                <!--<p>안녕하세요 케이시크입니다.</p>
+                                                <p><br/></p>
+                                                <p>반품/교환 신청은 배송이 완료된 후 신청이 가능합니다. </p>
+                                                <p>로그인 후 상단에 MYPAGE 취소/반품/교환 내역 메뉴에서 신청 가능합니다.</p>
+                                                <p><br /></p>
+                                                <p>배송된 제품이 파손/손상되었거나 오염되어 있을 경우, 수령일로부터 15일 이내 무상 교환/반품이 가능합니다. </p>
+                                                <p><br /></p>
+                                                <p>고객 변심에 의한 반품/교환 신청은 반품 규정에 의거, 상품인도 후 7일 이내 신청이 가능합니다. </p>
+                                                <p>(고객 변심에 따른 반품시 배송료가 별도로 청구 됩니다.) </p>
+                                                <p><br /></p>
+                                                <p>제품별 특성상 교환/반품 가능 사항이 상이하니, 구매전 상품별 교환/반품정책 참고부탁드립니다. </p>
+                                                <p><br /></p>
+                                                <p>감사합니다.</p> -->
+                                                <p>저도 이벤트 당첨 참 되고 싶습니다만....</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            2017.6.30
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            2
+                                        </td>
+                                        <td>
+                                            당첨자 발표
+                                        </td>
+                                        <td class="left">
+                                            <a href="javascript:;" class="faq_open">바이홈 세탁건조대 포토후기 이벤트 당첨자 안내</a>
+                                            <div class="faq_text">
+                                                <p>안녕하세요 케이시크입니다.</p>
+                                                <p><br/></p>
+                                                <p>반품/교환 신청은 배송이 완료된 후 신청이 가능합니다. </p>
+                                                <p>로그인 후 상단에 MYPAGE 취소/반품/교환 내역 메뉴에서 신청 가능합니다.</p>
+                                                <p><br /></p>
+                                                <p>배송된 제품이 파손/손상되었거나 오염되어 있을 경우, 수령일로부터 15일 이내 무상 교환/반품이 가능합니다. </p>
+                                                <p><br /></p>
+                                                <p>고객 변심에 의한 반품/교환 신청은 반품 규정에 의거, 상품인도 후 7일 이내 신청이 가능합니다. </p>
+                                                <p>(고객 변심에 따른 반품시 배송료가 별도로 청구 됩니다.) </p>
+                                                <p><br /></p>
+                                                <p>제품별 특성상 교환/반품 가능 사항이 상이하니, 구매전 상품별 교환/반품정책 참고부탁드립니다. </p>
+                                                <p><br /></p>
+                                                <p>감사합니다.</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            2017.6.30
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            3
+                                        </td>
+                                        <td>
+                                            일반
+                                        </td>
+                                        <td class="left">
+                                            <a href="javascript:;" class="faq_open">서버점검안내</a>
+                                            <div class="faq_text">
+                                                <p>안녕하세요 케이시크입니다.</p>
+                                                <p><br/></p>
+                                                <p>2017년 10월 3일 서버점검이 있습니다</p>
+                                                <p><br/></p>
+                                                <p>감사합니다.</p>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            2017.6.30
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                            <div id="page_navigation">
+                                <strong>1</strong>
+                                <a href="#notice?page2">2</a>
+                                <a href="#notice?page2">3</a>
+                            </div>
+                    </div>
+                    <div class="notice_search_area">
+                        <div class="search_left_box">
+                            <div class="search_box_inp">
+                                <form id="" method="" action="">
+                                    <fieldset>
+                                        <select>
+                                            <option>전체</option>
+                                            <option>내용</option>
+                                            <option>제목</option>
+                                        </select>
+                                        <input type="text" name="" placeholder="검색어를 입력하세요" />
+                                        <i class="btn_search">
+                                            <button type="button" class="" onclick="" >검색</button>
+                                        </i>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="phone-banner">
+                        <div class="deposits">
+                                <strong>오프라인</strong>
+                                <em>070-8668-8668</em>
+                                <span>평일 09:00 ~ 18:00</span>
+                        </div>
+                        <div class="online">
+                                <strong>온라인몰</strong>
+                                <em>070-8668-8668</em>
+                                <span>평일 09:00 ~ 18:00</span>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+                            
+        </div>
+    <!--  CONTENT end-->
+    <!-- FOOTER -->
+        <? require_once("footer.php");?>
+    <!-- FOOTER end-->    
+        </div>
+</body>
+</html>
+
+

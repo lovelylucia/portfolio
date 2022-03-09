@@ -1,0 +1,32 @@
+@charset "utf-8";
+/* SIR 지운아빠 */
+/*폰트*/
+
+@font-face {font-family:'NanumBarunGothic';src: url('<?php echo $latest_skin_url ?>/NanumBarunGothic.eot');}
+@font-face {font-family:'NanumGothic';src: url('<?php echo $latest_skin_url ?>/NanumGothic.eot');}
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* 새글 스킨 (latest) */
+.Nb_slt {position:relative;float:left;width:100%;height:100%;}
+
+
+/* 타이틀 */
+.Nb_slt .Nb_slt_title {float:left;padding:15px;font-size:16px;font-weight:bold;color:#fff;width:92%; background-color:#E6515C;font-family: 'Nanum Gothic', sans-serif;}
+
+
+/* 더보기 */
+.Nb_slt .Nb_slt_more {float:right;padding:10px; position:relative;}
+.Nb_slt .Nb_slt_more  a{font-size:20px;font-weight:bold;color:#fff;text-decoration:none;position:absolute; top:-35px; left:-15px;}
+.Nb_slt .Nb_slt_more  a:hover{color:#990000;text-decoration:none}
+
+
+/* 목록 */
+.Nb_slt .Nb_slt_content  {clear:both;padding:0px;margin-left:10px; position:absolute; top:60px; }
+.Nb_slt .Nb_slt_content td{line-height:150%; }
+.Nb_slt .Nb_slt_content  a{font-size:13px;color:#666666; text-decoration:none;font-family: 'Nanum Gothic', sans-serif;}
+.Nb_slt .Nb_slt_content  a:hover{color:#da4553;}
+
+.Nb_slt .cnt_cmt {display:inline-block;margin:0 0 0 3px;font-weight:bold}
+
+.Nb_slt .Nb_slt_content .Nb_slt_datetime  {color:#4175a9; margin-right:25px; font-size:14px;}

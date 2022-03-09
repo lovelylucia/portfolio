@@ -1,0 +1,244 @@
+@charset "utf-8";
+/* CSS Document */
+
+@font-face{
+ font-family:'koverwatch';
+ font-weight:100;
+ src:url('font/koverwatch.eot');   /*ms에서 개발한 ie전용 서체*/
+ src:url('font/koverwatch.eot?#iefix')format('embedded-opentype'),
+  url('font/koverwatch.woff')format('woff'),   /*최신표준포맷.지원되지 않는 브라우저가 많다*/
+  url('font/koverwatch.ttf')format('truetype');   /*대부분의 웹브라우저가 지원한다*/
+}
+
+*{padding:0; margin:0; border:0;}
+ul{list-style:none;}
+a{text-decoration:none; color:#333; font-family:'맑은 고딕','malgun gothic',san-serif;}
+html,body {position:relative; width:100%; height:100%;}
+
+#wrapper{
+	width:100%;
+	min-height:100%;
+	box-sizing:border-box;
+	overflow:hidden;	
+}
+header{
+	width:100%;
+	height: 120px;
+	position:relative;
+}
+.inner {
+	width:100%;
+	height:35px;
+	border:1px solid #ededed;
+}
+.util{
+	width:1200px;
+	height:35px;
+	margin:0 auto;
+	overflow: hidden;
+	position:relative;
+}
+.util ul{
+	position:absolute;
+	right:0;
+	height:35px;
+	line-height:35px;
+}
+.util li{
+	float:left;
+	padding:0 10px;
+	font-size:14px;	
+}
+.util li a {
+	font-size:.95em;
+}
+nav{
+	width:1200px;
+	height:80px;
+	margin:0 auto;
+}
+nav .logo{
+	float:left;	
+}
+nav .logo img{
+	width:130px;
+	height:auto;	
+}
+nav > ul{
+	overflow: hidden;
+	padding:30px 0 0 130px;
+}
+nav > ul > li{
+	float:left;
+	width:20%;
+	text-align:center;
+}
+nav > ul > li:hover{
+	border-bottom:4px solid #fff;	
+}
+nav > ul > li > a{
+	color:#333;	
+	font-size:1.1rem;
+	font-weight:700;
+}
+nav #sub{
+	width:100%;
+	background-color:rgba(115,156,219,0.9);
+	position:absolute;
+	top:120px;
+	left:0;
+	z-index:1000;
+}
+nav #sub .sub_inner{
+	margin-left:720px;	
+}
+nav #sub .menu{
+	float:left;
+	width:120px;
+}
+nav #sub .program{
+	margin-left:30px;
+}
+nav #sub .costume{
+	margin-left:10px;	
+}
+nav #sub .contact{
+	margin-left:100px;	
+}
+nav #sub .menu li{
+	padding:5px; 	
+}
+nav #sub .menu li a{
+	font-size:0.9rem;	
+}
+/*section 시작*/
+
+.swiper-container{
+	width:100%;
+	height:auto;
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+	position:relative;	
+}
+.swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }   
+.text_wrap{
+	display:block;
+	width:1200px;
+	position:absolute;
+	margin: 0 auto;
+}
+.text_wrap h1,
+.text_wrap p,
+.text-wrap span{
+	font-family:'koverwatch','맑은 고딕',san-serif;
+	text-align:left;
+}
+.text_wrap h1{
+	font-size:4.5em;
+	padding:0 0 5px 0;	
+}
+.text_wrap p{
+	font-size:2.5em;
+	padding:3px 0;	
+}
+.text_wrap span{
+	color:#5b79dc;
+}
+
+
+
+/*콘텐츠 부분
+---------------------------------------------------*/
+.content_wrap{
+	width:1200px;
+	height:250px;
+	margin:0 auto;
+}
+.content_wrap .latest_board{
+	position:relative;
+	float:left;
+	width:50%;
+}
+.notice_box, .qna_box{
+	position: absolute;
+	width:100%;
+	height:250px;
+	float:left;
+	border:1px solid #e0e0e0;	
+}
+.info_wrap {
+	width:50%;
+	float:right;
+}
+.program_box, .map_box, .gallery_box {
+	width:33.33%;
+	height:120px;
+	display:block;
+	border:1px solid #e0e0e0;
+	float:left;
+	box-sizing: border-box;
+}
+
+/*footer 시작
+   ---------------------------------*/
+footer{
+	width:100%;
+	height:200px;   
+	background-color:#0f2c46;
+}
+.footer_inner {
+	width:1200px;
+	margin:0 auto;
+	color:#fff;
+	font-style:normal;
+}
+
+/*그누보드 스타일시트
+----------------------------------------------------*/
+
+@font-face {font-family:'NanumBarunGothic';src: url('<?php echo $latest_skin_url ?>/NanumBarunGothic.eot');}
+@font-face {font-family:'NanumGothic';src: url('<?php echo $latest_skin_url ?>/NanumGothic.eot');}
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+
+/* 새글 스킨 (latest) */
+.Nb_slt {position:relative;float:left;width:100%;height:100%;}
+
+
+/* 타이틀 */
+.Nb_slt .Nb_slt_title {float:left;padding:15px;font-size:18px;font-weight:bold;color:#333;width:100%; font-family:'Nanum Gothic', sans-serif;}
+
+
+/* 더보기 */
+.Nb_slt .Nb_slt_more {float:right;padding:10px; position:relative;}
+.Nb_slt .Nb_slt_more  a{font-size:20px;font-weight:bold;color:#fff;text-decoration:none;position:absolute; top:-35px; left:-15px;}
+.Nb_slt .Nb_slt_more  a:hover{color:#990000;text-decoration:none}
+
+
+/* 목록 */
+.Nb_slt .Nb_slt_content  {clear:both;padding:0px;margin-left:10px; position:absolute; top:60px; }
+.Nb_slt .Nb_slt_content td{line-height:150%; }
+.Nb_slt .Nb_slt_content  a{font-size:13px;color:#666666; text-decoration:none;font-family: 'Nanum Gothic', sans-serif;}
+.Nb_slt .Nb_slt_content  a:hover{color:#da4553;}
+
+.Nb_slt .cnt_cmt {display:inline-block;margin:0 0 0 3px;font-weight:bold}
+
+.Nb_slt .Nb_slt_content .Nb_slt_datetime  {color:#4175a9; margin-right:25px; font-size:14px; font-family: 'Nanum Gothic', sans-serif;}

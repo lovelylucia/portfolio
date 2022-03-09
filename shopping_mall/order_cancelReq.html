@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>KSEEKMALL</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+        <link rel="stylesheet" type="text/css" href="css/order_style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            function submit_click(){
+               alert("취소하시겠습니까?"); 
+            };
+        </script>
+</head>
+<body>
+	<div id="wrapper">
+    <!-- HEADER start -->
+        <? require_once("top.php");?>           
+    <!-- HEADER end -->   
+       
+    <!-- CONTENT start-->
+            <div class="order_cancelReq_wrap">
+                <div class="detail_inner">
+                    <h3 class="detail_tit">주문 취소<span>(주문번호: 2017-1003-08231022001)</span></h3>  
+                    <div class="prdInfo con_tbl">
+                        <h2>주문취소 상품</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>주문상품</caption>
+                                <colgroup>
+                                        <col width="10%">
+                                        <col width="42%">
+                                        <col width="10%">
+                                        <col width="13%">
+                                        <col width="12%">
+                                        <col width="13%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">상품/옵션 정보</th>
+                                        <th>수량</th>
+                                        <th>상품금액</th>
+                                        <th>배송비</th>
+                                        <th>주문/배송상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td class="noborder">
+                                                <p><img src="./image/onlee9.jpg"></p>
+                                            </td>
+                                            <td class="goods_info noborder">
+                                                <p class="prd_tit">껍질째 먹는 청송꿀땡이 사과 9월 햇사과 홍로 10kg 5kg</p>
+                                                <ul>
+                                                    <li>
+                                                        <em class="sj_tit"> 햇사과 홍로 5kg</em>
+                                                        <em class="slash">/</em>
+                                                        <em class="sj_number">1개</em>
+                                                        <em class="slash">/</em>
+                                                        <em class="sj_price">22,900원</em>
+                                                        <!--<button class="order_del"></button>-->
+                                                    </li>
+                                                    <li>
+                                                        <em class="sj_tit">맛있는 배 5kg</em>
+                                                        <em class="slash">/</em>
+                                                        <em class="sj_number">1개</em>
+                                                        <em class="slash">/</em>
+                                                        <em class="sj_price">12,900원</em>
+                                                        <!--<button class="order_del"></button>-->
+                                                    </li>
+                                                </ul>
+                                            </td>
+                                            <td>1</td>
+                                            <td>22,900원</td>
+                                            <td>3,000원</td>
+                                            <td><p>입금완료</p></td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                    <div class="payment con_tbl">
+                        <h2>환불정보</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>환불정보</caption>
+                                <colgroup>
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="60%">
+                                </colgroup>
+                                <tbody>
+                                        <tr>
+                                            <th>주문 금액</th>
+                                            <td class="right">25,900원</td>
+                                            <td class="left">상품금액 22,900원 + 배송료 3,000원 </td>
+                                        </tr>                               
+                                        <tr>    
+                                            <th>할인 금액 차감</th>
+                                            <td class="right">0원</td>
+                                            <td class="left"> </td>
+                                        </tr>
+                                        <tr>
+                                            <th>환불 예정 금액</th>
+                                            <td class="sum right"> 25,900원</td>
+                                            <td class="left">
+                                                <p>하나은행 (2659987-69-6651)</p>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                    
+                    <div id="sell_decision">
+                            <p>
+                                <button type="button" onclick="submit_click();" class="btn btn_submit">확인</button>
+                            </p>
+                    </div>
+                </div>
+                            
+            </div>
+    <!--  CONTENT end-->
+    <!-- FOOTER -->
+        <? require_once("footer.php");?>
+    <!-- FOOTER end-->    
+        </div>
+</body>
+</html>
+
+

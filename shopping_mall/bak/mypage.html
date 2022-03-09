@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>상세보기</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+    <!-- HEADER start -->
+        <? require_once("top.php");?>
+    <!-- HEADER end -->   
+       
+    <!-- CONTENT start-->
+            <div class="mypage_wrap">
+                <div class="mypage_inner">
+                    <h3 class="mypage_tit">마이페이지</h3>  
+                    <div class="mypage_state">
+                        <ol>
+                            <li class="on">
+                                <span>주문접수</span>
+                                <em>1</em>
+                            </li>
+                            <li>
+                                <span>결제완료</span>
+                                <em>0</em>
+                            </li>
+                            <li>
+                                <span>배송준비중</span>
+                                <em>0</em>
+                            </li>
+                            <li>
+                                <span>배송중</span>
+                                <em>0</em>
+                            </li>
+                            <li>
+                                <span>배송완료</span>
+                                <em>0</em>
+                            </li>
+                        </ol>
+                        <ul>
+                            <li>
+                                <span>취소</span>
+                                <em>0</em>
+                            </li>
+                            <li>
+                                <span>교환</span>
+                                <em>0</em>
+                            </li>
+                            <li>
+                                <span>반품</span>
+                                <em>0</em>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div>
+                        
+                    </div>
+                    <div class="order_prd">
+                        <h2>주문상품</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>주문상품</caption>
+                                <colgroup>
+                                        <col width="15%">
+                                        <col width="10%">
+                                        <col width="35%">
+                                        <col width="10%">
+                                        <col width="15%">
+                                        <col width="15%">
+                                </colgroup>
+                                <thead>
+                                        <tr>
+                                                <th>주문일자</th>
+                                                <th colspan="2">상품/옵션정보</th>
+                                                <th>수량</th>
+                                                <th>상품금액</th>
+                                                <th>주문상태</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <td>
+                                                    <p>2017-10-13</p>
+                                                    <p>2017-101309325</p>
+                                                    <a href="order_detail.php" class="btn show_detail">주문상세보기</a>
+                                                </td>
+                                                <td class="thumb_goods"><p><img src="image/onlee9.jpg" alt="상품"></p></td>
+                                                <td>껍질째 먹는 청송꿀떙이 사과 9월 햇사과 홍로 10kg 5kg</td>
+                                                <td>1개</td>
+                                                <td class="price">22,900원</td>
+                                                <td>
+                                                    <span>주문접수</span>
+                                                    <button type="button" class="btn cancel">주문취소</button>
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                        <div id="page_navigation">
+                            <strong>1</strong>
+                        </div>
+                </div>        
+                </div>
+                            
+            </div>
+    <!--  CONTENT end-->
+    <!-- FOOTER -->
+        <? require_once("footer.php");?>
+    <!-- FOOTER end-->    
+        </div>
+</body>
+</html>
+
+

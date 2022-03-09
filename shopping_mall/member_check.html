@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>KSEEKMALL</title>
+	<link rel="stylesheet" type="text/css" href="css/order_style.css">
+        <link rel="stylesheet" type="text/css" href="css/customer_style.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            //주문취소 레이어팝업
+            function openCancel(){
+                window.open("order_cancelPopup.php","주문취소새창","width=500, height=300, toolbar=no, menubar=no, scrollbar=no, resizeble=no");
+            };
+            //구매결정완료 레이어팝업
+            function openDecision(){
+                window.open("pch_decision_popup.php","구매결정완료 새창","width=500, height=300, toolbar=no, menubar=no, scrollbar=no, resizeble=no");
+            };
+        </script>                
+</head>
+<body>
+	<div id="wrapper">
+    <!-- HEADER start -->
+        <? require_once("top.php");?>
+    <!-- HEADER end -->   
+       
+    <!-- CONTENT start-->
+            <div id="container" class="memCheck_wrap">
+                <div class="content_inner">
+                    <div class="mypage_leftWrap">
+                        <h3 class="mypage_tit">마이페이지</h3>
+                        <div class="mypage_leftMenu">
+                            <ul class="dep1">
+                                <li>
+                                    <a href="">주문/배송 목록</a>
+                                </li>
+                                <li>
+                                    <a href="cart.php">장바구니</a>
+                                </li>
+                                <li>
+                                    <a href="">취소/반품/교환 목록</a>
+                                </li>
+                                <li>
+                                    <a href="member_check.php">회원정보 수정</a>
+                                </li>
+                                <li>
+                                    <a href="center.php">고객센터</a>
+                                    <ul class="dep2">
+                                        <li><a href="faq.php">자주묻는 질문 FAQ</a></li>
+                                        <li><a href="">나의 상품 문의 내역</a></li>
+                                        <li><a href="center_write.php">1:1문의하기</a></li>
+                                        <li><a href="1on1_list.php"">1:1문의 내역</a></li>
+                                        <li><a href="notice_list.php">공지사항</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="mypage_rightWrap">
+                        <div class="check_area">
+                            <h1>아이디 재인증</h1>
+                            <div class="reLogPw">
+                                <p>개인정보를 안전하게 보호하기 위하여 <br>
+                                    <span>비밀번호를 한번 더 입력</span>해주세요</p>
+                                <form>
+                                    <div>
+                                        <dl>
+                                            <dt>아이디</dt>
+                                            <dd>mshong@naver.com</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>비밀번호</dt>
+                                            <dd>
+                                                <input type="password" class="" name="" title="비밀번호 입력" placeholder="비밀번호 입력">
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="sell_decision">
+                                <p>
+                                    <button href="member_" class="btn_pay_decision" onclick="passwordCheck();">확인</button>
+                                </p>   
+                            </div>
+                         </div>       
+                    </div>
+                </div>
+                            
+            </div>
+    <!--  CONTENT end-->
+    <!-- FOOTER -->
+        <? require_once("footer.php");?>
+    <!-- FOOTER end-->    
+        </div>
+</body>
+</html>
+
+

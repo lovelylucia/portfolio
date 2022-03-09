@@ -1,0 +1,137 @@
+
+/*========================================================================
+/*  화현 홈페이지 공통 스타일 적용 CSS
+/*  초안 작성일자 : 2019.10.21
+/*  최종 작성일자 :
+/*  작성자 : (주)화현 조경아 (lovelylucia@naver.com)
+/*  적용 범위 : www.hawhyun.co.lr
+/*  최종 수정자 : 조경아
+/*  마지막 업데이트 :2019.10.
+    ========================================================================*/
+/* 폰트 */
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-weight: 400;
+    src: url(font/NanumBarunGothicSubset.eot);
+    src: url(font/NanumBarunGothicSubset.eot?#iefix) format('embedded-opentype'),
+    url(font/NanumBarunGothicSubset.woff) format('woff'),
+    url(font/NanumBarunGothicSubset.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-weight: 700;
+    src: url(font/NanumBarunGothicBoldSubset.eot);
+    src: url(font/NanumBarunGothicBoldSubset.eot?#iefix) format('embedded-opentype'),
+    url(font/NanumBarunGothicBoldSubset.woff) format('woff'),
+    url(font/NanumBarunGothicBoldSubset.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-weight: 300;
+    src: url(font/NanumBarunGothicLightSubset.eot);
+    src: url(font/NanumBarunGothicLightSubset.eot?#iefix) format('embedded-opentype'),
+    url(font/NanumBarunGothicLightSubset.woff) format('woff'),
+    url(font/NanumBarunGothicLightSubset.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-weight: 200;
+    src: url(font/NanumBarunGothicUltraLightSubset.eot);
+    src: url(font/NanumBarunGothicUltraLightSubset.eot?#iefix) format('embedded-opentype'),
+    url(font/NanumBarunGothicUltraLightSubset.woff) format('woff'),
+    url(font/NanumBarunGothicUltraLightSubset.ttf) format('truetype');
+}
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,figure,
+form,fieldset,input,textarea,p,blockquote,th,td,a,span {
+    padding: 0;
+    margin: 0;
+    word-break: break-all;
+    word-break: keep-all;
+}
+a{
+    text-decoration:none;
+    color:inherit;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+    font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+    -webkit-text-stroke: 1px rgba(0,0,0,0.1);
+    text-stroke: 1px rgba(0,0,0,0.1);
+    -webkit-font-smoothing: antialiased;
+}
+abbr,acronym { border: 0;}
+button {
+    margin: 0px;
+    padding: 0px;
+    cursor: pointer;
+    border: 0px;
+    background: none;
+    outline: none;
+}
+html, body {
+    position: relative;
+    height: 100%;
+    font-family: 'NanumBarunGothic','malgun gothic',Sans-serif;
+}
+body {
+    background: #eee;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    table-layout: fixed;
+}
+table caption {
+    font: 0/0 a;
+}
+.blind {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    line-height: 0;
+}
+img {
+    max-width: 100%;
+}
+.text_18 {
+    font-size: 18px;
+    line-height: 28px;
+}
+.text_20 {
+    font-size: 20px;
+    line-height: 30px;
+}

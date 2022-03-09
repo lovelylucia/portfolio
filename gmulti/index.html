@@ -1,0 +1,610 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8; IE=Edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="x-UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="와이엘랜드,여유, yeoyou, 도넛라이프, 지파동수, 지파동수샴푸, 지멀티샵">
+    <meta name="description" content="와이엘랜드">
+    <title>지파동수 멀티샵</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.24.0/babel.js"></script>
+    <script src="//cdn.polyfill.io/v1/polyfill.min.js" async defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/js/SmoothScroll.js"></script>
+    <!--<script src="assets/js/app.js"></script>-->
+    <link rel="shortcut icon" type="image/x-icon" href="assets/images/YL.ico">
+    <!--<link rel="stylesheet" type="text/css" href="assets/css/slider.css">-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/reponsive.css">
+    <script>
+        window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, false);
+        if (typeof window.devicePixelRatio != 'undefined' && window.devicePixelRatio > 2) {
+            var meta = document.getElementById ("viewport");
+            meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
+        }
+    </script>
+    <script>
+        $(window).scroll(function () {
+            if ($(document).scrollTop() > 0) {
+                $(".header_wrap").addClass('fixed');
+            } else {
+                $(".header_wrap").removeClass('fixed');
+            }
+        });
+        $(document).ready(function () {
+            $('.gnb_wrap').mouseenter(function() {
+                $(".header_wrap").addClass("on");
+            });
+            $('.gnb_wrap').mouseleave(function(){
+                $(".header_wrap").removeClass("on");
+            });
+
+            // push menu
+            var menuBtn = $(".btn_category");
+            var menuState = false;
+            var navM = $(".open_nav_wrap");
+            var overlay= $('.overlay');
+
+            menuBtn.click(function  () {
+                if ( menuState ) {
+                    menuClose();
+                    menuState = false;
+                    $(this).removeClass("open");
+                }else {
+                    menuOpen();
+                    menuState = true;
+                    $(this).addClass("open");
+                }
+                return false;
+
+            });
+
+            /* 메뉴열기 */
+            function menuOpen () {
+                navM.addClass("open");
+                overlay.addClass("open");
+            }
+            /* 메뉴닫기 */
+            function menuClose () {
+                navM.removeClass("open");
+                overlay.removeClass("open");
+            }
+        });
+    </script>
+</head>
+
+<body class="overflow">
+<div id="wrap">
+    <header class="header_wrap">
+        <h1 class="logo"><a href="index.html">logo</a></h1>
+        <div class="util">
+            <a href="login.php">로그인</a>
+            <a href="join.php">회원가입</a>
+        </div>
+        <nav class="gnb_wrap">
+            <ul class="gnb left_gnb clearfix">
+                <li class="menu">
+                    <a href="sub0101.php" class="gnb_tit">지파동수 소개</a>
+                    <ul class="sub_menu">
+                        <li><a href="sub0101.php">브랜드 소개</a></li>
+                        <li><a href="sub0102.php">상품소개</a></li>
+                        <li><a href="sub0103.php">사용법 및 효과</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="sub0201.php" class="gnb_tit">GSHOP</a>
+                </li>
+                <li class="menu">
+                    <a href="sub0301.php" class="gnb_tit">사용후기</a>
+                    <ul class="sub_menu">
+                        <li><a href="sub0301.php">발모후기</a></li>
+                        <li><a href="sub0302.php">PS등록</a></li>
+                        <li><a href="sub0303.php">PS후기</a></li>
+                    </ul>
+                </li>
+                <li class="menu">
+                    <a href="sub0401.php" class="gnb_tit">G멀티샵</a>
+                    <ul class="sub_menu">
+                        <li><a href="sub0401.php">G멀티샵 소개</a></li>
+                        <li><a href="sub0402.php">베스트샵</a></li>
+                        <li><a href="sub0403.php">지역샵 검색</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="gnb right_gnb clearfix">
+                <li class="menu">
+                    <a href="sub0501.php" class="gnb_tit">이벤트</a></strong>
+                </li>
+                <li class="menu">
+                    <a href="sub0601.php" class="gnb_tit">고객센터</a>
+                    <ul class="sub_menu">
+                        <li><a href="sub0601.php">뉴스 및 공지</a></li>
+                        <li><a href="sub0602.php">1:1 문의</a></li>
+                        <li><a href="sub0603.php">자료실</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="open_nav_wrap">
+            <div class="inner_wrap">
+                <h2 class="m_gnb_logo"><img src="assets/images/logo_black.svg" /></h2>
+                <ul class="menu_list_wrap">
+                    <li class="menu_list">
+                        <a href="sub0101.php">지파동수 소개</a>
+                        <ul class="depth_02">
+                            <li><a href="sub0101.php">- 브랜드소개</a></li>
+                            <li><a href="sub0102.php">- 상품소개</a></li>
+                            <li><a href="sub0103.php">- 사용법 및 효과</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_list">
+                        <a href="sub0201.php">GSHOP</a>
+                    </li>
+                    <li class="menu_list">
+                        <a href="sub0301.php">체험후기</a>
+                        <ul class="depth_02">
+                            <li><a href="sub0301.php">- 발모후기</a></li>
+                            <li><a href="sub0302.php">- PR등록</a></li>
+                            <li><a href="sub0303.php">- PS후기</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_list">
+                        <a href="sub0401.php">G멀티샵</a>
+                        <ul class="depth_02">
+                            <li><a href="sub0401.php">- G멀티샵 소개</a></li>
+                            <li><a href="sub0402.php">- 베스트샵</a></li>
+                            <li><a href="sub0403.php">- 지역샵 검색</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_list">
+                        <a href="sub0501.php">이벤트</a>
+                        <ul class="depth_02">
+                            <li><a href="sub0501.php">- 이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu_list">
+                        <a href="sub0601.php">고객센터</a>
+                        <ul class="depth_02">
+                            <li><a href="sub0601.php">- 뉴스 및 공지</a></li>
+                            <li><a href="sub0602.php">- 1:1 문의</a></li>
+                            <li><a href="sub0603.php">- 자료실</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="btn_category">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="overlay"></div>
+    </header>
+    <div class="container_wrap">
+        <section class="swiper-container main-swiper swiper-container-initialized">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide slider01">
+                    <div class="slider-text">
+                        <div class="wr">
+                            <p>
+                                특허받은 자연유래 계면활성제로<br/>
+                                탈모증상완화를 더 빠르고 더 확실하게
+                                <strong>지파동수 케어토닉</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slider02">
+                    <div class="slider-text">
+                        <div class="wr">
+                            <p>
+                                특허받은 자연유래 계면활성제로<br/>
+                                탈모증상완화를 더 빠르고 더 확실하게
+                                <strong>지파동수 케어토닉</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide slider03">
+                    <div class="slider-text">
+                        <div class="wr">
+                            <p>
+                                특허받은 자연유래 계면활성제로<br/>
+                                탈모증상완화를 더 빠르고 더 확실하게
+                                <strong>지파동수 케어토닉</strong>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="navi-box">
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!--  navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </section>
+        <section class="content_section">
+            <i class="dot_blue"></i>
+            <div class="cont_inner">
+                <div class="cont_review">
+                    <h2>CUSTOMER REVIEW</h2>
+                    <ul>
+                        <li>
+                            <p><span class="region">성남</span><i class="">/</i><span class="age"> 58세</span></p>
+                            <div class="img_wrap">
+                                <span class="review_img" style="background: url(assets/images/case1_1.jpg) no-repeat 50% 50%; background-size: cover;"></span>
+                                <span class="review_img" style="background: url(assets/images/case1_2.jpg) no-repeat 50% 50%; background-size: cover;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>성남 / 58세</p>
+                            <div class="img_wrap">
+                                <span class="review_img" style="background: url(assets/images/case1_1.jpg) no-repeat 50% 50%; background-size: cover;"></span>
+                                <span class="review_img" style="background: url(assets/images/case1_2.jpg) no-repeat 50% 50%; background-size: cover;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>성남 / 58세</p>
+                            <div class="img_wrap">
+                                <span class="review_img" style="background: url(assets/images/case1_1.jpg) no-repeat 50% 50%; background-size: cover;"></span>
+                                <span class="review_img" style="background: url(assets/images/case1_2.jpg) no-repeat 50% 50%; background-size: cover;"></span>
+                            </div>
+                        </li>
+                        <li>
+                            <p>성남 / 58세</p>
+                            <div class="img_wrap">
+                                <span class="review_img" style="background: url(assets/images/case1_1.jpg) no-repeat 50% 50%; background-size: cover;"></span>
+                                <span class="review_img" style="background: url(assets/images/case1_2.jpg) no-repeat 50% 50%; background-size: cover;"></span>
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="cont_product">
+                    <i class="dot_red"></i>
+                    <h2>PRODUCT</h2>
+                    <ul>
+                        <li>
+                            <div class="prd_thumb">
+                                <img src="assets/images/prd_1.png">
+                            </div>
+                            <div class="prd_info">
+                                <p class="prd_tit">지파동수샴푸</p>
+                                <span>헤어샵에서 인정한 기능성 탈모완화샴푸 전문가들이 인정하는데는  이유가 있습니다</span>
+                                <a href="javascript:void(0);" onClick="openPopup('div1');" class="modals">자세히보기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="prd_thumb">
+                                <img src="assets/images/prd_2.png">
+                            </div>
+                            <div class="prd_info">
+                                <p class="prd_tit">지파동수케어토닉</p>
+                                <span>탈모증상완화를 더 빠르고 더 확실하게 모발 뿌리부터 두피까지 빠르고 확실하게 케어합니다</span>
+                                <a href="javascript:void(0);" onClick="openPopup('div2');" class="modals">자세히보기</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="prd_thumb">
+                                <img src="assets/images/prd_3.png">
+                            </div>
+                            <div class="prd_info">
+                                <p class="prd_tit">지파동미스트</p>
+                                <span>피부재생이 빨라지고 수분으로 세포를 채워 피부가 탱탱, 잔주름 예방효과가 탁월합니다</span>
+                                <a href="javascript:void(0);" onClick="openPopup('div3');" class="modals">자세히보기</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="banner_section">
+            <div class="banner_inner">
+                <div class="lbanner">
+                    <p>모발 변화의 행복</p>
+                    <h2>HAIR MAGAZINE</h2>
+                    <a href="#헤어매거진이동">MORE VIEW</a>
+                </div>
+                <div class="rbanner">
+                    <p>고객상담</p>
+                    <h2>1644-5646</h2>
+                    <span>운영시간 09:30 - 17:00</span>
+                </div>
+            </div>
+        </section>
+        <section class="guide_section">
+            <div class="guide_inner">
+                <h2>빠른 발모, 영양침투법</h2>
+                <ul>
+                    <li>
+                        <img src="assets/images/guide_list1.jpg" alt="염색방식의 영양침투법"/>
+                        <h3>염색방식의 <br/> &nbsp;&nbsp;&nbsp; 영양침투법</h3>
+                    </li>
+                    <li>
+                        <img src="assets/images/guide_list2.jpg" alt="첫번째 염색용기에 지샴푸와 지케어토닉(또는 미스트)을 1:2 비율로 혼합"/>
+                        <span>01</span>
+                        <p>염색용기에 지샴푸와 지케어토닉(또는 미스트)을 1:2 비율로 혼합</p>
+                    </li>
+                    <li>
+                        <img src="assets/images/guide_list3.jpg" alt="두번째 염색빗으로 두피부분에 염색하듯 촘촘히 바르기"/>
+                        <span>02</span>
+                        <p>염색빗으로 두피부분에 염색하듯 촘촘히 바르기</p>
+                    </li>
+                    <li>
+                        <img src="assets/images/guide_list4.jpg" alt="세번째 비닐캡 쓰고 30분~2시간 침투시킨 후 씻어내기" />
+                        <span>03</span>
+                        <p>비닐캡 쓰고 30분~2시간 침투시킨 후 씻어내기</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="news_section">
+            <div class="news_inner">
+                <h3>미용회보 10월호 BeautyM 지파동수전문 G멀티샵, <br/> 대한미용사회중앙회장 선거에 1억원 상당 제품 협찬</h3>
+                <p>안녕하세요. (주)와이엘랜드 입니다. <br/>
+                    대한미용사회중앙회가 발행하는 미용회보 10월호에 <br/>
+                    지파동수전문 G멀티샵, 대한미용사회중앙회장 선거에 1억원 상당 제품 협찬관련하여 소개되었습니다.
+                </p>
+                <a href="#뉴스로 이동" title="뉴스보기">뉴스보기</a>
+            </div>
+        </section>
+        <section class="sns_section">
+            <div class="sns_inner">
+                <ul class="sns_pc">
+                    <li>
+                        <a href="https://blog.naver.com/yeoyou_">
+                            <img src="assets/images/ic_blog.png" alt="지파동수네이버블로그">
+                            <span>blog.naver.com/yeoyou_</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCfZuN-WrTESsmoZlSBKqpaA">
+                            <img src="assets/images/youtube.png" alt="지파동수유튜브채널">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/explore/tags/%EC%A7%80%ED%8C%8C%EB%8F%99%EC%88%98/">
+                            <img src="assets/images/ic_insta.png" alt="지파동수인스타그램">
+                            <span>gepadongsu_news</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#카카오채널">
+                            <img src="assets/images/ic_kakao.png" alt="지파동수카카오채널">
+                            <span>와이엘랜드 지파동수 전문브랜드</span>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="sns_mobile">
+                    <li>
+                        <a href="https://blog.naver.com/yeoyou_">
+                            <img src="assets/images/ic_blog_gray.png" alt="지파동수네이버블로그">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/channel/UCfZuN-WrTESsmoZlSBKqpaA">
+                            <img src="assets/images/ic_youtube_gray.png" alt="지파동수유튜브채널">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/explore/tags/%EC%A7%80%ED%8C%8C%EB%8F%99%EC%88%98/">
+                            <img src="assets/images/ic_insta_gray.png" alt="지파동수인스타그램">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#카카오채널">
+                            <img src="assets/images/ic_kakao_gray.png" alt="지파동수카카오채널">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="site_map_section">
+            <div class="site_map_inner">
+                <div class="footer_logo_wrap">
+                    <a href="index.html">
+                        <img src="assets/images/logo.svg" />
+                    </a>
+                </div>
+                <div class="site_map_wrap">
+                    <ul class="">
+                        <li class="menu">
+                            <a href="sub0101.php">지파동수 소개</a></strong>
+                            <ul class="sub_menu">
+                                <li><a href="sub0101.php">브랜드소개</a></li>
+                                <li><a href="sub0102.php">상품소개</a></li>
+                                <li><a href="sub0103.php">사용법 및 가이드</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu">
+                            <a href="sub0201.php">GSHOP</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub0201.php">GSHOP</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu">
+                            <a href="sub0301.php">사용후기</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub0301.php">발모후기</a></li>
+                                <li><a href="sub0301.php">PR등록</a></li>
+                                <li><a href="sub0301.php">PS후기</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu">
+                            <a href="sub0401.php">G멀티샵</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub0401.php">G멀티샵 소개</a></li>
+                                <li><a href="sub0402.php">베스트샵</a></li>
+                                <li><a href="sub0403.php">지역샵 검색</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu">
+                            <a href="sub0501.php">이벤트</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub0501.php">이벤트</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu">
+                            <a href="sub0601.php">고객센터</a>
+                            <ul class="sub_menu">
+                                <li><a href="sub0601.php">고객센터</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer_inner">
+                <div class="footer_util">
+                    <ul>
+                        <li><a href="http://www.ylland.net/">회사소개</a></li>
+                        <li><a href="#이용약관">이용약관</a></li>
+                        <li><a href="#개인정보처리방침">개인정보처리방침</a></li>
+                        <li><a href="cs_center.html">고객센터</a></li>
+                    </ul>
+                </div>
+                <div class="co_info">
+                    <p>사업자등록번호 : 104-86-21733  |  통신판매업신고번호 : 2014-경기성남-1694호  |  대표이사 : 김병주  |  개인정보관리책임 : 박천규(shop@ylland.net)</p>
+                    <p>주소 : 경기도 성남시 분당구 판교역로 230 (삼평동) B동 903호  |  대표전화 : 1644-5646   |   Copyright © Ylland Inc.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="modal">
+        <div class="modal_inner">
+            <div class="user_info">
+                <span class="writer_name">정수지헤어클릭</span>
+                <span class="date">10월 18일 오후 3:28</span>
+            </div>
+            <p class="pr_info"><span class="region">[성남]</span><span class="age"> 58세</span></p>
+            <p class="descript">
+                머리카락에 힘이 생겨서 손질하기가 좋아졌다며 지인들에게 홍보해주시는 고객입니다. 머리카락에 힘이 생겨서 손질하기가 좋아졌다며 지인들에게 홍보해주시는 고객입니다.
+            </p>
+            <div class="img_wrap">
+                <div class="before_img">
+                    <span>Before</span>
+                    <p class="review_img" style="background: url(assets/images/case1_1.jpg) no-repeat 50% 50%; background-size: cover;"></p>
+                </div>
+                <div class="after_img">
+                    <span>After</span>
+                    <p class="review_img" style="background: url(assets/images/case1_2.jpg) no-repeat 50% 50%; background-size: cover;"></p>
+                </div>
+            </div>
+            <button type="button" id="close"></button>
+        </div>
+    </div>
+    <div id="div1" class="prd_modal">
+        <div class="modal_inner">
+            <button type="button" class="close" onclick="closePopup();"></button>
+            <img src="assets/images/co_shampoo.jpg" />
+        </div>
+    </div>
+    <div id="div2" class="prd_modal">
+        <div class="modal_inner">
+            <button type="button" class="close" onclick="closePopup();"></button>
+            <img src="assets/images/co_caretonic.jpg" />
+        </div>
+    </div>
+    <div id="div3" class="prd_modal">
+        <div class="modal_inner">
+            <button type="button" class="close" onclick="closePopup();"></button>
+            <img src="assets/images/co_mist_detail.jpg" />
+        </div>
+    </div>
+    <div id="news_modal" >
+        <div class="modal_inner">
+            <div class="news_title">
+                <h2 class="writer_name">지파동수전문 G멀티샵 - 대한미용사회중앙회장 선거에 1억원 상당 제품 협찬</h2>
+                <p class="news_date">2020.09.25 15:40</p>
+            </div>
+            <div class="img_wrap">
+                <img src="assets/images/news.jpg" />
+            </div>
+            <p class="descript">
+                지난 9월 1일(화) 사단법인 대한미용사회중앙회의 ‘제24대 대한미용사회중앙회장 선거’가 코로나 여파로 인해 전국 14개 권역별 투표로 시행되었다. <br/>
+                이에 제휴 협력사인 G+멀티샵에서 선거 당일 발모샴푸 본품(지파동수샴푸, 케어토닉)을 구성하여 유권자들에게 1억원 상당의 제품을 무상 제공했다.<br/>
+                G+멀티샵은 전국 헤어샵을 대상으로 샵앤샵 개념의 플렛폼을 제공하여 초기비용 부담 없이 기능성샴푸, 케어토닉 등 두발 및 모발상태 개선용 제품을 제공한다.<br/>
+                10월부터 한 달 체험 5명분 주문으로 G+멀티샵 등록이 가능하며 올해 3,000곳을 목표로 다양한 프로모션을 진행하고 있다.<br/>
+                9월 1일 본품 증정 당일에도 G파동수 샴푸에 대한 인기는 엄청 난 것으로 확인 되었다. 현장에서 멀티샵을 등록하거나, 중앙회장 선거가 끝나고 난 뒤에도 G+멀티샵 고객센터로 제품에 대한 문의가 줄을 이었다고 하여, 중앙회 회원 전용 상담원을 배치중이다.<br/>
+                또한 9월1일 멀티샵에서 지원되지 못한 충북/경북/전북/부산/대구/경남에 소속된 지회 대의원에게는 업체(지멀티샵1644-5646)에 문의하면 가입 안내 및 사은품을 택배로 배송해 준다고 한다.<br/>
+
+                이 같은 전문 미용인들의 폭발적인 반응은 어디에서 시작된 걸까? G+멀티샵의 핵심 제품인 ‘지파동수샴푸’는 발모촉진용조성물(특허 제 10-0874225호) 특허성분이 두피에 깊숙이 흡수될 수 있도록 지파동수를 베이스로한 탈모기능성 샴푸다.<br/>
+                G+멀티샵은 코로나 이후 대면 서비스인 미용업계에 새바람을 일으키고 있는데, 온라인 + 모바일로 간편하게 주문할 수 있고, 대량구매를 유도하는 기존 제품 업체와 달리, 다양한 구성으로 헤어샵 원장님들의 매장 상황에 따른 판매에 용이하다.<br/>
+                업체측은 “식약처에서 기능성 화장품으로 인정받아 믿을 수 있는 진짜 두피케어 상품을 판매하게 되어 뿌듯하고, 탈모로 고민하는 사람들에게 희망이 되었으면 하는 바람이다.” 라고 설명하였다.<br/><br/>
+                더 많은 정보는 지파동수 공식블로그/유튜브/인스타그램/카카오채널 등을 통해 확인할 수 있다.
+
+                문의 1644-5646 / 지파동수전문 G멀티샵 www.yyshop.kr / 모발변화 후기 www.발모.com<br/>
+                “검색창에 [지멀티샵]”
+            </p>
+            <button type="button" id="newsClose"></button>
+        </div>
+    </div>
+</div>
+    <script defer src="assets/js/common.js"></script>
+    <script>
+        $( document ).ready(function() {
+            //review popup
+            $('.trigger').on('click', function() {
+                $('#modal').addClass('open');
+                return false;
+            });
+            $('#close').on('click', function(){
+                $('#modal').removeClass('open');
+                return false;
+            });
+
+
+            $('.prd_modal .close').on('click', function() {
+                $('.prd_modal').removeClass('open');
+                return false;
+            });
+
+            //news popup
+            $('.news_modal_btn').on('click', function() {
+                $('#news_modal').addClass('open');
+                return false;
+            });
+            $('#news_modal .close').on('click', function() {
+                $('#news_modal').removeClass('open');
+                return false;
+            });
+        });
+
+        //prd popup
+        function openPopup(el) {
+            $('#' + el).addClass('open');
+        }
+
+        function closePopup() {
+            $('.prd_modal').removeClass('open');
+        }
+
+        var Swiper = new Swiper('.main-swiper', {
+            autoplay:false,
+            loop:true,
+            slidesPerView: 1,
+            simulateTouch:false,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            pagination: {
+                type: 'fraction',
+                el: '.swiper-pagination',
+                clickable: true,
+            }
+        });
+    </script>
+</div>
+</body>
+</html>

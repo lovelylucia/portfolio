@@ -1,0 +1,594 @@
+* {margin: 0; padding: 0; outline: 0;}
+
+
+body {min-width:1200px;
+	font-family: Helvetica, Arial, Verdana, '맑은 고딕', 'Malgun Gothic', sans-serif;
+	font-size: 12px;
+	background:#fff;
+}
+h1, h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	margin:0 0 15px 0;}
+h1 {
+	font-size: 36px;
+	letter-spacing: -1px;
+	line-height: 100%;}
+h2 {font-size: 24px;}
+p {margin: 0 0 15px 0;}
+a {	color: #3e3e3e;}
+.clear {clear: both;}
+.wrap {
+	width: 100%;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	padding: 0;
+	overflow: hidden;
+}s
+ul{padding:0; margin:0;}
+li{list-style:none;}
+
+/*gnb메뉴*/
+.gnb{
+	margin-left:75%;	
+}
+.gnb li{
+	display:inline-block;
+	padding:10px 5px;
+}
+.gnb li a{
+	color:#C7C7C7;
+	text-decoration:none;
+}
+.gnb li a:hover{
+	color:#fff;
+	font-weight:400;	
+}
+
+/*lnb메뉴*/
+.inner {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+	min-height: 60px;
+	padding:30px 0;
+	font-size: 18px;
+	font-family: 'Open Sans', '맑은 고딕', 'Malgun Gothic', sans-serif;
+	font-weight: 300;
+}
+.inner:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+}
+.inner img{
+	width:100px;
+	height:auto;
+	margin:-15px;
+	display:block;	
+}
+.subMenu {
+	height: 60px;
+	z-index: 1000;
+	width: 100%;
+	background: #212121;
+}
+
+.subMenu .inner {
+	padding:0;
+	font-weight: 400;
+	margin: 0 auto;
+}
+.subNavBtn {
+	display: block;
+	height: 45px;
+	width: 10%;
+	float: left;
+	margin: 0px 0px 0 0;
+	text-decoration: none;
+	font-size: 14px;
+	padding: 15px 2% 0 2%;
+	text-align: center;
+	color: #fff;
+	font-family:Gotham, "Helvetica Neue", Helvetica, Arial, sans-serif,;
+	line-height:30px;
+}
+.subMenu a:hover {
+	background-color:white;
+	color:black;
+}
+
+.active {
+	background: #666;
+}
+.end {
+	margin: 0;
+}
+
+
+/* SECTIONS */
+.section {
+	width: 100%;
+	z-index: 10;
+	position: relative;
+	margin: 0 auto;
+	height: auto;
+	overflow: hidden;
+}
+
+.sTop {
+	background:#191919;
+	color:#3d3d3d;
+	height:40px;
+}
+
+.s1 {
+	width:100%;
+	position:relative;
+	overflow:hidden;
+	left:0;
+	color:white;
+	box-sizing:border-box;
+}
+.s1 .bxslider{
+	width:100%;
+	height:100%;
+	padding:0;
+	vertical-align:top;	
+}
+.s1 .bxslider video{
+	width:100%;
+	height:auto;
+}
+.s1 ul li img{
+	width:100%;
+	height:100%;
+	vertical-align:top;	
+}
+.s1 ul li ifame{
+	vertical-align:top;	
+}
+.s1 .s1_title01{
+	position:absolute;
+	top:40%;
+	left:35%;
+	font-size:100px;
+	font-weight:800;
+	color:#fff;	
+}
+.s1 .s1_title02{
+	width:500px;
+	color:#fff;
+	background-color:black;
+	padding:20px;
+	font-size:22px;
+	font-weight:bold;
+	position:absolute;
+	top:10%;
+}
+.s2{
+	width:100%;
+	position:relative;
+}
+.s2 img{
+	width:100%;
+	border:none;	
+	vertical-align:top;
+}
+.s2 .s2_title{
+	width:500px;
+	color:#fff;
+	background-color:black;
+	padding:20px;
+	font-size:20px;
+	font-weight:bold;
+	position:absolute;
+	top:10%;
+}
+.s2 .ghost_button{
+	color:#fff;
+	border:1px solid white;
+	display:block;
+	padding:15px 80px;
+	width:100px;
+	font-size:20px;
+	text-decoration:none;
+	position:absolute;
+	top:75%;
+	left:45%;
+	transition:0.2s;
+	white-space:nowrap;
+}
+.s2 .ghost_button:hover{
+	background-color:white;
+	color:black;
+}
+.s2 .ghost_button:hover:after{
+	content:"+";
+	margin:5px;
+}
+
+.s3{
+	background:url("../images/copa-teaser-background.jpg") no-repeat;
+	position:relative;
+	background-size: cover;	
+}
+.s3 .player,.s4 #container,.s5 .event_inner {
+	width: 1280px;
+	margin:0 auto;
+}
+.s3 .player div{
+	width:33.3%;
+	height:600px;
+	float:left;
+	padding:20px;
+	margin-top:50px;
+	overflow:hidden;
+	position:relative;	
+	box-sizing: border-box;
+}
+.s3 .player div:hover {
+	transform: 1.1;
+	transition:0.2s;
+}
+.s3 .player div img{
+	width:100%;
+	-webkit-transition: all 600ms ease-out;
+  	transition: all 600ms ease-out;
+}
+.s3 .player div:hover img{
+	-webkit-transform: scale(1.1);
+  	-moz-transform: scale(1.1);
+  	-ms-transform: scale(1.1);
+	transform: scale(1.1); 
+}
+.s3 .player div span{
+	position: absolute;
+	bottom: 80px;
+	left: 110px;
+	display: block;
+	width: 160px;
+	font-size:18px;
+	color:white;
+	font-weight: bold;
+	text-align: center;
+	border:1px solid white;
+	padding:18px;
+	transition:all .5 ease-out;	
+}
+.s3 .player div:hover span {
+	background:#FFF;
+	color:#333;
+}
+.s4 {
+	background: #fff;
+	margin:0 auto;
+}
+.s4 h1{
+	color:#333;
+	padding:50px;	
+}
+
+.s4 #slidemenu{height: 40px;text-align:center;}
+.s4	#slidemenu ul{text-align:center;margin:0 auto;padding: 0;list-style-type: none;font-weight: bold; width:650px;}
+.s4	#slidemenu ul li{float:left;display:block;position:relative;width:200px; height:50px; background-color:#999; margin:0 15px 30px 0; line-height:50px;}
+.s4	#slidemenu ul li a{z-index:40; padding:15px 20px;text-decoration:none; color: #FFF; background: transparent; position:relative; font-size:18px; text-align:center;}
+.s4	#slidemenu ul li .hover{height:50px;position:absolute;width:200px; z-index:20;	background: #333 repeat-x;}
+
+
+
+/*선생님 탭소스 시작*/	
+	
+	.s4 #tab{width:1200px;}
+/* 첫 번째 탭 "~"은 input다음에 정의된 첫번째 div의 모든것*/
+	input:nth-of-type(1) { display: none; }
+	input:nth-of-type(1) ~ div:nth-of-type(1) { display: none; }
+	input:nth-of-type(1):checked ~ div:nth-of-type(1) { display: block; }
+	
+	/* 두 번째 탭 */
+	input:nth-of-type(2) { display: none; }
+	input:nth-of-type(2) ~ div:nth-of-type(2) { display: none; }
+	input:nth-of-type(2):checked ~ div:nth-of-type(2) { display: block; }
+			
+	/* 세 번째 탭 */
+	input:nth-of-type(3) { display: none; }
+	input:nth-of-type(3) ~ div:nth-of-type(3) { display: none; }
+	input:nth-of-type(3):checked ~ div:nth-of-type(3) { display: block; }
+	
+/* 탭 모양 구성 */
+	section.buttons { overflow: hidden; }
+	section.buttons > label { 
+		/* 수평 정렬 */
+		display: block; float: left;
+		
+		/* 크기 및 글자 위치 지정*/
+		width: 400px; height: 50px;
+		line-height: 50px;
+		text-align: center;
+		
+		/* 테두리 지정 */
+		box-sizing: border-box;
+		border: 1px solid black;
+		
+		/* 색상 지정*/
+		background: #666;
+		color: white;
+	}
+	input:nth-of-type(1):checked ~ section.buttons >  label:nth-of-type(1) {
+		background: white;
+		color: black;
+		border-bottom:1px solid white;
+	}
+	input:nth-of-type(2):checked ~ section.buttons >  label:nth-of-type(2) {
+		background: white;
+		color: black;
+		border-bottom:1px solid white;
+	}
+	input:nth-of-type(3):checked ~ section.buttons >  label:nth-of-type(3) {
+		background: white;
+		color: black;
+		border-bottom:1px solid white;
+	}
+	.tab_item{
+		width:1217px;
+		box-sizing:border-box;
+		overflow:hidden;
+		margin-top:30px;	
+	}
+	.tab_item img{
+		width:100%;
+		height:auto;
+		border:none;	
+	}
+/*탭소스 끝*/
+
+.s5 {
+	background: #fff;
+	height:auto;
+	margin:30px 0 50px 0;
+}
+.s5 .event_inner {
+	padding:0 50px;
+}
+.s5 .event01, .s5 .event02{
+	width:48%;
+	height:auto;
+	float:left;
+	background-color:#fff;
+	margin-bottom:30px;
+	border:1px solid #ccc;
+}
+.s5 .event03, .s5 .event04, .s5 .event05{
+	max-width:31%;
+	height:auto;
+	float:left;
+	background-color:#fff;
+	border:1px solid #ccc;
+}
+.s5 .event01,.s5 .event03,.s5 .event04{
+	margin-right:3%;	
+}
+.s5 img{
+	width:100%;
+	height:auto;	
+}
+.s5 h1{
+	color:#333;	
+	padding:50px 0;
+}
+.s5 a{
+	font-size:15px;
+	text-decoration:none;
+	color:#333;	
+}
+.s5 p{
+	display:block;
+	font-size:20px;
+	font-weight:bold;
+	line-height:25px;
+	color:#333;
+	padding:5px 10px;
+	margin:0 0 10px 0;
+}
+.s5 span{
+ 	display:block;
+	padding:5px 10px;
+	margin:0 0 10px 0;
+	color:#F00;
+	position:relative;
+}
+.s5 span:after{
+	content:url(../../1209/Appproject/short_round_up_arrow-20.png);
+	position:absolute;
+	top:7px;
+	left:92px;
+	width:15px;
+	height:15px;	
+}
+.s5 .event01:hover{
+	border:1px solid #333;	
+}
+.s5 .event02:hover{
+	border:1px solid #333;	
+}
+.s5 .event03:hover{
+	border:1px solid #333;	
+}
+.s5 .event04:hover{
+	border:1px solid #333;	
+}
+.s5 .event05:hover{
+	border:1px solid #333;	
+}
+
+
+
+#nav { position:fixed; right:30px; top:40%; z-index:100; width:13px; height:90px; border:1px solid red; }
+#nav ul{list-style:none;}
+#nav ul li { margin:10px 0;  }
+#nav ul li a { display:block; width:12px; height:12px; background:#f1f1f1; border-radius:50%; }
+#nav ul li a:hover { background:#ffcc00; }
+
+/*footer*/
+footer{
+	width:100%;
+	background-color:#272727;
+	height:auto;
+	clear: both;
+}
+.footer_inner {
+	width: 1280px;
+	margin:0 auto;
+}
+.footer01{
+	width:100%;
+	margin:0 auto;
+	background-color:#383737;
+	padding:10px 0;		
+}
+.f_icon{
+	width:980px;
+	height:60px;
+	background-color:#383737;
+	display:block;
+	list-style:none;
+	position:relative;
+	margin:0 auto;	
+}
+.f_icon_list{
+	width:980px;
+	margin:0 auto;
+	list-style:none;
+	margin-left:-15px;
+
+}
+.f_icon_list li{
+	float:left;	
+	width:245px;
+}
+.f_icon_list li a{
+	color:#fff;
+	text-decoration:none;
+	font-size:14px;
+	line-height:21px;
+	display:block;	
+}
+.f_icon img{
+	background-repeat:no-repeat;
+	width:40px;
+	height:40px;
+	padding:10px;
+}
+.f_icon01 p{
+	width:100px;
+	position:absolute;
+	top:8px;
+	left:60px;		
+}
+.f_icon02 p{
+	width:100px;
+	position:absolute;
+	top:8px;
+	left:300px;	
+}
+.f_icon03 p{
+	width:100px;
+	position:absolute;
+	top:8px;
+	left:540px;	
+}
+
+.f_icon_list li form #jumpMenu{
+	width:200px;
+	height:30px;
+	margin-left:15px;
+	margin-top:15px;	
+}
+.footer02{
+	width:100%;
+	overflow:hidden;
+	height:200px;
+	line-height:25px;
+}
+.footer02 ul{
+	width:200px;
+	list-style:none;
+	float:left;
+	margin:30px 45px 0 0;
+}
+.footer02 a{
+	color:#d8d8d8;
+	text-decoration:none;	
+}
+.footer02 a:hover{
+	color:#C33;	
+}
+.footer02 .f_info{
+	width:980px;
+	margin:0 auto;
+}
+.footer02 .f_info_title{
+	font-size:18px;
+	color:#d8d8d8;	
+	text-decoration:none;
+	font-weight:bold;
+}
+.footer02 .f_info_sns{
+	margin:20px 0 0 -5px;	
+}
+.footer02 .f_info_sns li{
+	float:left;
+}
+.footer02 .f_info_sns li img{
+	width:30px;
+	padding:0 5px;	
+}
+.footer03{
+	width:100%;
+	clear:both;
+	border-top:2px ridge #333;
+}
+
+.footer03 .footer03_inner{
+	width:980px;
+	margin:0 auto;
+}
+.footer03 .f_inner_info {
+	width:980px;
+	overflow:hidden;
+	margin-top:20px;	
+}
+.footer03 .f_inner_info ul li{
+	float:left;
+	padding:0 20px 10px 0;
+	list-style:none;	
+}
+.footer03 .f_inner_info ul li:hover{
+	text-decoration:underline;	
+}
+.footer03 .f_inner_info ul li a{
+	color:#d8d8d8;
+	text-decoration:none;
+	font-size:13px;	
+}
+
+.footer03 .f_inner_coryright{
+	display:block;
+	width:980px;
+	margin:0 auto;
+	padding:5px 0;
+	line-height:17px;
+	color:#999;
+}
+	
+
+
+
+
+
+
+
+
+
+

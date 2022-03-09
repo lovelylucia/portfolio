@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>KSEEKMALL</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            $(function() {
+                
+                //탭 클릭시 css 추가
+                $('.ui_tabBox > ul > li').click( function() {
+                      $(this).addClass('selected').siblings().removeClass('selected');
+                      return false;
+                    });
+              
+                //제목 클릭시 텍스트영역 보이기
+                     $('.selected > .faq_open').click(function() {
+                             $('.selected > .faq_text').toggle('4000');
+                     });
+                     
+
+                    $('.ui_dateColumn > ul >li').click(function(){
+                        $(this).addClass('on').siblings().removeClass('on');
+                        return false;
+                   });
+             });
+        </script>
+</head>
+<body>
+    <div id="wrapper">
+    <!-- HEADER start -->
+        <? require_once("top.php");?>
+    <!-- HEADER end -->   
+        
+    <!-- CONTENT start-->
+            <div id="container" class="center_wrap">
+                <div class="content_inner">
+                    <h3 class="center_tit">고객센터</h3>  
+                    <div class="search_area">
+                        <div class="search_left_box">
+                            <h3>FAQ<span>검색</span></h3>
+                            <div class="search_box_inp">
+                                <form id="" method="" action="">
+                                    <fieldset>
+                                        <input type="text" name="" placeholder="검색어를 입력하세요" />
+                                        <i class="btn_search">
+                                            <button type="button" class="" onclick="" >검색</button>
+                                        </i>
+                                    </fieldset>
+                                </form>
+                            </div>
+                            <div class="keyword">
+                                <strong>키워드<span class="bullet"></span></strong>
+                                <ul>
+                                    <li>
+                                        <span class="bar">|</span>
+                                        <a href="#">배송</a>
+                                    </li>
+                                    <li>
+                                        <span class="bar">|</span>
+                                        <a href="#">입점문의</a>
+                                    </li>
+                                    <li>
+                                        <span class="bar">|</span>
+                                        <a href="#">환불 접수</a>
+                                    </li>
+                                    <li>
+                                        <span class="bar">|</span>
+                                        <a href="#">결제</a>
+                                    </li>
+                                    <li>
+                                        <span class="bar">|</span>
+                                        <a href="#">모바일</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="search_right_box">
+                            <h3>1:1 문의하기</h3>
+                            <a href="center_write.php" class="btn navy">문의하기</a>
+                            <a href="1on1_list.php" class="btn gray_border">내역확인</a>
+                        </div>
+                    </div>
+                    <div class="ui_tabBox">
+                        <ul>
+                            <li>
+                                <a href="">전체</a>
+                            </li>
+                            <li class="selected">
+                                <a href="">TOP10</a>
+                            </li>
+                            <li>
+                                <a href="">상품</a>
+                            </li>
+                            <li>
+                                <a href="">주문/결제</a>
+                            </li>
+                            <li>
+                                <a href="">배송</a>
+                            </li>
+                            <li>
+                                <a href="">취소/반품/환불</a>
+                            </li>
+                            <li>
+                                <a href="">교환</a>
+                            </li>
+                            <li>
+                                <a href="">이벤트</a>
+                            </li>
+                            <li>
+                                <a href="">기타</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tbl_area faq_table">
+                            <h3>FAQ <span class="arr"></span>TOP10</h3>
+                            <table>
+                                <caption>FAQ 리스트</caption>
+                                <colgroup>
+                                    <col width="20%">
+                                    <col width="80%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">구분</th>
+                                        <th scope="col">제목</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="center">
+                                            취소/반품/환불
+                                        </td>
+                                        <td class="selected">
+                                            <a href="javascript:;" class="faq_open">주문한 상품의 반품/교환은 어떻게 하나요?</a>
+                                            <div class="faq_text">
+                                                <p>안녕하세요 케이시크입니다.</p>
+                                                <p><br/></p>
+                                                <p>반품/교환 신청은 배송이 완료된 후 신청이 가능합니다. </p>
+                                                <p>로그인 후 상단에 MYPAGE 취소/반품/교환 내역 메뉴에서 신청 가능합니다.</p>
+                                                <p><br /></p>
+                                                <p>배송된 제품이 파손/손상되었거나 오염되어 있을 경우, 수령일로부터 15일 이내 무상 교환/반품이 가능합니다. </p>
+                                                <p><br /></p>
+                                                <p>고객 변심에 의한 반품/교환 신청은 반품 규정에 의거, 상품인도 후 7일 이내 신청이 가능합니다. </p>
+                                                <p>(고객 변심에 따른 반품시 배송료가 별도로 청구 됩니다.) </p>
+                                                <p><br /></p>
+                                                <p>제품별 특성상 교환/반품 가능 사항이 상이하니, 구매전 상품별 교환/반품정책 참고부탁드립니다. </p>
+                                                <p><br /></p>
+                                                <p>감사합니다.</p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+                                            회원/멤버십
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" class="faq_open">휴면 계정이란 무엇인가요?</a>
+                                            <div class="faq_text">
+                                                <p>안녕하세요 케이시크입니다.</p>
+                                                <p><br/></p>
+                                                <p>휴면 계정이란1년 동안 로그인한 이력이 없는 계정을 뜻합니다</p>
+                                                <p><br /></p>
+                                                <p>고객님의 개인정보 보호를 위해 1년 동안 케이시크 서비스를 이용하지 않은 고객님의 계정은 휴면으로 전환되며, 전환 된 고객님의 개인정보는 별도 DB로 분리하여 안전하게 보호합니다. 
+휴면 해제는 로그인 시 노출되는 휴면계정 안내 창에서 [확인]버튼을 통해 가능합니다.  </p>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+                                            주문/결제
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" class="faq_open" onclick="openQuetion(this,''); return false;">회원탈퇴 시, 잔여적립금과 미사용티켓은 어떻게 되나요?</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+                                            배송
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" class="faq_open" onclick="openQuetion(this,''); return false;">회원탈퇴 시, 잔여적립금과 미사용티켓은 어떻게 되나요?</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+                                            취소/반품/환불
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" class="faq_open" onclick="openQuetion(this,''); return false;">상품 교환을 신청했는데, 환불로 변경하고 싶습니다. 어디에서 할 수 있나요?</a>
+                                        </td>
+                                    </tr>
+                                     <tr>
+                                        <td class="center">
+                                            취소/반품/환불
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" class="faq_open" onclick="openQuetion(this,''); return false;">교환받을 주소지는 어떻게 변경하나요?</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+                                            취소/반품/환불
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" class="faq_open" onclick="openQuetion(this,''); return false;">교환받을 주소지는 어떻게 변경하나요?</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+                                            취소/반품/환불
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" class="faq_open" onclick="openQuetion(this,''); return false;">교환받을 주소지는 어떻게 변경하나요?</a>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center">
+                                            취소/반품/환불
+                                        </td>
+                                        <td>
+                                            <a href="javascript:;" class="faq_open" onclick="openQuetion(this,''); return false;">교환받을 주소지는 어떻게 변경하나요?</a>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                    <div class="phone-banner">
+                        <div class="deposits">
+                                <strong>오프라인</strong>
+                                <em>070-8668-8668</em>
+                                <span>평일 09:00 ~ 18:00</span>
+                        </div>
+                        <div class="online">
+                                <strong>온라인몰</strong>
+                                <em>070-8668-8668</em>
+                                <span>평일 09:00 ~ 18:00</span>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+                            
+        </div>
+    <!--  CONTENT end-->
+    <!-- FOOTER -->
+        <? require_once("footer.php");?>
+    <!-- FOOTER end-->    
+        </div>
+</body>
+</html>
+
+

@@ -1,0 +1,353 @@
+
+/*========================================================================
+/*  화현 홈페이지 공통 스타일 적용 CSS
+/*  초안 작성일자 : 2019.10.21
+/*  최종 작성일자 :
+/*  작성자 : (주)화현 조경아 (lovelylucia@naver.com)
+/*  적용 범위 : www.hawhyun.co.lr
+/*  최종 수정자 : 조경아
+/*  마지막 업데이트 :2019.10.
+    ========================================================================*/
+/* 폰트 */
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-weight: 400;
+    src: url(font/NanumBarunGothicSubset.eot);
+    src: url(font/NanumBarunGothicSubset.eot?#iefix) format('embedded-opentype'),
+    url(font/NanumBarunGothicSubset.woff) format('woff'),
+    url(font/NanumBarunGothicSubset.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-weight: 700;
+    src: url(font/NanumBarunGothicBoldSubset.eot);
+    src: url(font/NanumBarunGothicBoldSubset.eot?#iefix) format('embedded-opentype'),
+    url(font/NanumBarunGothicBoldSubset.woff) format('woff'),
+    url(font/NanumBarunGothicBoldSubset.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-weight: 300;
+    src: url(font/NanumBarunGothicLightSubset.eot);
+    src: url(font/NanumBarunGothicLightSubset.eot?#iefix) format('embedded-opentype'),
+    url(font/NanumBarunGothicLightSubset.woff) format('woff'),
+    url(font/NanumBarunGothicLightSubset.ttf) format('truetype');
+}
+@font-face {
+    font-family: 'NanumBarunGothic';
+    font-weight: 200;
+    src: url(font/NanumBarunGothicUltraLightSubset.eot);
+    src: url(font/NanumBarunGothicUltraLightSubset.eot?#iefix) format('embedded-opentype'),
+    url(font/NanumBarunGothicUltraLightSubset.woff) format('woff'),
+    url(font/NanumBarunGothicUltraLightSubset.ttf) format('truetype');
+}
+/* Reset CSS
+ * --------------------------------------- */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,figure,
+form,fieldset,input,textarea,p,blockquote,th,td {
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration:none;
+}
+table {
+    border-spacing: 0;
+}
+fieldset,img {
+    border: 0;
+}
+address,caption,cite,code,dfn,em,strong,th,var {
+    font-weight: normal;
+    font-style: normal;
+}
+strong{
+    font-weight: bold;
+}
+ol,ul {
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+caption,th {
+    text-align: left;
+
+}
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+    font-size: 100%;
+    margin:0;
+    padding:0;
+    color:#444;
+}
+abbr,acronym { border: 0;
+}
+
+html, body {
+    position: relative;
+    height: 100%;
+    font-family: 'NanumBarunGothic','malgun gothic',Sans-serif;
+}
+body {
+    background: #eee;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+#header {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    background: #FFF;
+}
+.logo {
+    width: 160px;
+    margin: 0 auto;
+    padding-top: 20px;
+    transition: all ease-in-out 1s;
+}
+.logo.scroll {
+    float: left;
+    padding: 10px 0;
+    transition: all ease-in-out 1s;
+}
+ .logo a {
+    display: block;
+    text-align: center;
+}
+.logo a img {
+    width: 100%;
+}
+.lnb {
+    display: none;
+}
+.white_bg {
+    width: 100%;
+    height: 180px;
+    position: absolute;
+    top: 130px;
+    z-index: -1;
+    background-color: #fff;
+    display: none;
+}
+.gnb {
+    width: 100%;
+    margin: 0 auto;
+    z-index: 20;
+    overflow: hidden;
+    border-bottom: 1px solid #ededed;
+}
+.gnb .menu {
+    overflow: hidden;
+    width: 60%;
+    margin: 0 auto;
+    transition: all ease-in .5s;
+}
+.gnb .menu.scroll {
+    margin: 0;
+    float: left;
+    padding-left: 25%;
+    line-height: 2.2;
+    transition: .5s ease-in-out;
+}
+.gnb .menu > li {
+    float: left;
+    width:25%;
+    color: #000;
+    padding: 12px 0;
+}
+.gnb .menu > li > ul {
+    display: none;
+}
+.gnb .menu > li > ul >li {
+    display: block;
+}
+.gnb .menu li > a{
+    text-decoration:none;
+    color: #000;
+    text-align: center;
+}
+.gnb .menu li.active > a:hover{
+    color: #000;
+}
+.gnb .menu li:hover{
+    background: rgba(255,255,255, 0.8);
+}
+.gnb .menu li > a,
+.gnb .menu li.active >a{
+    padding: 9px 18px;
+    display:block;
+    text-align: center;
+}
+.gnb .menu li.active a{
+    color: #ccc;
+}
+.gnb .menu .sub_menu a {
+    color: #666;
+    font-size: 15px;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.swiper-slide {
+    width:100%;
+    height:100%;
+    webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    -o-transition-property: transform;
+    transition-property: transform;
+    transition-property: transform,-webkit-transform;
+}
+.swiper-slide ul {
+    width:100%;
+    overflow: hidden;
+}
+.swiper-slide ul .bg01 {
+    background: url('../img/bg01.jpg') 50% 0 / cover;
+    background-size: cover;
+    width: 100%;
+    height:940px;
+}
+
+.item:before {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .6);
+    content: '';
+    display: block;
+}
+.business_list > div {
+    width:25%;
+    float: left;
+    height: 100%;
+    display: inline-block;
+    position: relative;
+    background-size: cover;
+    border:1px solid #000;
+    box-sizing: border-box;
+    border:1px solid #000;
+}
+.business_list .bs_headline {
+    display: block;
+    width: 100%;
+    height:100%;
+    text-align: center;
+    padding:0 30px;
+    position:absolute;
+    -webkit-transform: translateY(-50.01%);
+    -ms-transform: translateY(-50.01%);
+    transform: translateY(-50.01%);
+    box-sizing: border-box;
+}
+.business_list .mendle {
+    background: url('../img/mendle.jpg') 50% 0 / cover;
+}
+.business_list .puremay {
+    background: url('../img/puremay.jpg') 50% 0 / cover;
+}
+.business_list .korean_wax {
+    background: url('../img/korean_wax.jpg') 50% 0 / cover;
+}
+.business_list .oxygen {
+    background: url('../img/oxygen.jpg') 50% 0 / cover;
+}
+.bs_headline p {
+    margin: 14px 0 10px;
+    font-size: 20px;
+    color: #ccc;
+    letter-spacing: -0.01em;
+}
+.bs_headline h3 {
+    font-size: 36px;
+    font-weight: 400;
+    letter-spacing: 0.01em;
+    color: #fff;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}
+
+/*news*/
+#scroller {
+    height:100%;
+}
+.news_wrap {
+    display: table;
+    width: 100%;
+    min-height:940px;
+    background: #fff;
+}
+.inner {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner > h4 {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+.inner > p{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom:30px;
+}
+.inner .news_list {
+    margin:0 auto;
+    max-width:1200px;
+    font-size: 0;
+}
+.inner .news_list li {
+    width: 33.33%;
+    display: inline-block;
+    box-sizing: border-box;
+    padding:15px;
+}
+.inner .news_list li a {
+    display: block;
+}
+.inner .news_list li a:hover h4 {
+    color:#f0ad08;
+    -webkit-transition: color 300ms;
+    transition: color 300ms;
+}
+.inner .news_list li a figure {
+    padding-bottom: 41.5%;
+    overflow: hidden;
+}
+.inner .news_list li a figure img {
+    width: 100%;
+    -webkit-transform: scale(1) rotate(0deg);
+    -ms-transform: scale(1) rotate(0deg);
+    transform: scale(1) rotate(0deg);
+    -webkit-transition: -webkit-transform 400ms;
+    transition: -webkit-transform 400ms;
+    transition: transform 400ms;
+    transition: transform 400ms, -webkit-transform 400ms;
+}
+.inner .news_list li a:hover img {
+    -webkit-transform: scale(1.05) rotate(0.01deg);
+    -ms-transform: scale(1.05) rotate(0.01deg);
+    transform: scale(1.05) rotate(0.01deg);
+}
+.section_partnership_txt:before {
+    width: 0;
+    height: 4px;
+    background: #f0ad08;
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    opacity: 0;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+}

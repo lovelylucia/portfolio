@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>회사소개</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+	*{margin:0; padding:0; border:0;}
+	.imgBox{width:960px; height:150px;}
+	
+	.subMenu{float:left; width:200px!important; border-left:1px solid #bcbcbc; border-right:1px solid #bcbcbc; height:700px; border:1px solide red!important; z-index:10;}
+	.subMenu .contactBox{background-color:#BCBCBC;}
+	.subMenu p{height:180px; text-align:center; line-height:180px; font-family:'Nanum Gothic', sans-serif; font-size:30px; font-weight:bold; color:#666;}
+	.subMenu ul{list-style:none;}
+	.subMenu ul li a{display:block; text-decoration:none; border-bottom:1px solid #bcbcbc!important;color:#333!important;
+					padding:15px 20px!important; font-size:15px!important;transition:0.3s;font-family:'Nanum Gothic', sans-serif;}
+	.subMenu ul li a:hover{background-color:#757575; padding-left:30px!important; color:#fff!important;font-family:'Nanum Gothic', sans-serif; }
+	section{float:right; width:760px;}
+	section p{font-family:'Nanum Gothic', sans-serif; font-size:30px; font-weight:bold; color:#da4553!important; text-align:center;margin-top:90px;}
+	section img{width:757px; height:500px;margin-top:55px;}
+	
+</style>
+</head>
+
+
+<body onLoad="MM_preloadImages('images/consult.jpg');">
+	<tr>
+        <td align="center"><? include ("top.php"); ?></td>
+     </tr>
+     <header class="imgBox">
+    	<img src="http://studiolux.woobi.co.kr/images/sub.jpg" alt="빛">
+     </header>
+     <div class="subMenu">
+   		<div class="contactBox">
+			<p>ABOUT</p>
+        </div>
+        <ul>	
+           <li><a href="http://studiolux.woobi.co.kr/sub0101.html">overview</a></li>
+           <li><a href="http://studiolux.woobi.co.kr/g5/bbs/board.php?bo_table=history">history</a></li> 
+           <li><a href="http://studiolux.woobi.co.kr/sub0103.html">organization</a></li>                  	 
+        </ul>
+    </div>
+    <section>
+    	<p>history</p>
+        <img src="http://studiolux.woobi.co.kr/images/organization.jpg" alt="조직도">
+    </section>
+     
+     
+     
+     
+     
+    <tr>
+        <td align="center"><? include ("footer.php"); ?></td>
+     </tr>
+</body>
+</html>

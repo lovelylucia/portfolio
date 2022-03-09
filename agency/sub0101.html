@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>회사소개</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{margin:0; padding:0; border:0;}
+p, span, h1{line-height:30px;}
+.imgBox{width:1000px; height:150px;vertical-align:top;}
+.subMenu{float:left; width:200px!important; border-left:1px solid #ddd; border-right:1px solid #ddd; min-height:1000px!important;}
+.subMenu .contactBox{background-color:#BCBCBC;}
+.subMenu p{height:180px; text-align:center; line-height:180px; font-family:'Nanum Gothic', sans-serif; font-size:30px; font-weight:bold; color:#666;}
+.subMenu ul{list-style:none;}
+.subMenu ul li a{display:block; text-decoration:none; border-bottom:1px solid #ddd!important; z-index:10; color:#333!important;
+				padding:15px 20px!important; font-size:15px!important;transition:0.3s;font-family:'Nanum Gothic', sans-serif;}
+.subMenu ul li a:hover{background-color:#757575; padding-left:30px!important; color:#fff!important;font-family:'Nanum Gothic', sans-serif; }
+section{width:740px; float:left; margin-left:10px;}
+section h3{width:300px;font-family:'Nanum Gothic', sans-serif; padding:20px; text-align:center; margin:50px 200px;
+			border-top:1px solid #999; border-bottom:1px solid #999; display:inline-block; color:#da4553;}
+section .title{line-height:50px; color:#292929; margin-left:20px;}
+section h1{text-align:center;color:#333; font-family:'Nanum Gothic', sans-serif; font-size:30px;}
+section p{text-align:center;color:#333; font-family:'Nanum Gothic', sans-serif; font-size:16px;}
+.explained{padding:30px;}
+.emotion, .innovation, .creation{float:left; width:220px;margin-left:25px; margin-top:30px; margin-bottom: 150px;}
+.emotion h1, .emotion p, .innovation p, .innovation h1, .creation p, .creation h1{text-align:left; letter-spacing: -1px;}
+.emotion h1, .innovation h1, .creation h1{margin-top:6px;}
+.emotion span, .innovation span, .creation span{color:#009688;font-family:'Nanum Gothic', sans-serif;font-weight:bold; font-size:14px;}
+section img{padding:30px 0 10px 0;}
+</style>
+</head>
+
+
+<body onLoad="MM_preloadImages('images/consult.jpg');">
+	<? include ("head.php"); ?>
+     <header class="imgBox">
+    	<img src="http://studiolux.or.kr/agency/images/sub1.jpg" alt="파트너">
+     </header>
+     <div class="subMenu">
+   		<div class="contactBox">
+			<p>ABOUT</p>
+        </div>
+        <ul>	
+           <li><a href="sub0101.html">overview</a></li> 
+           <li><a href="sub0103.html">organization</a></li>                  	 
+        </ul>
+    </div>
+    <section>
+    	<h3>overview</h3>
+		<h1 class="title">럭스는 기술과 디자인을 통해 <br>
+        <span>행복한 세상</span>을 만들고자 합니다.</h1>
+            <p class="explained">럭스는 철저한 프로정신과 도전정신으로 eBusiness의 새로운 지평을 얻어가고 있습니다. <br>
+              럭스는 이러한 개척정신과 더불어 누구도 따라올 수 없는 철학적 이념을 소유한 젊은 인터넷기업입니다.<br>
+              럭스의 모든제품과 서비스에는 '감성', '혁신'과 '창조적가치' 가 내재되어 있으며<br> 
+              이는 고객을 즐겁게하는 중요한 모티브가 되고있습니다.</p>
+        <div class="emotion">
+        	<span>we have</span><br>
+            <h1>Emotion</h1>
+            <img src="http://studiolux.woobi.co.kr/images/about_memeber_line.gif" alt="라인">
+            <p>럭스의 제품과 서비스는<br> 
+            풍부한 감성을 기본으로 합니다.<br> 
+            고객과 럭스의 스태프 모두를<br> 
+            행복하게 할 수 있는 <br>
+            풍부한 감성 만들기가 기본입니다.</p>
+        </div>
+        <div class="innovation">
+        	<span>we have</span>
+            <h1>Innovation</h1>
+            <img src="http://studiolux.woobi.co.kr/images/about_memeber_line.gif" alt="라인">
+            <p>럭스의 제품과 서비스는<br> 
+            항상 혁신적입니다.<br>
+        	새로운 시도를 통해 <br>
+            고객에게 항상 끊이지 않는<br>
+            새로운 즐거움을 선사합니다.</p>
+        </div>
+        <div class="creation">
+        	<span>we have</span><br>
+			<h1>Creation</h1>
+            <img src="http://studiolux.woobi.co.kr/images/about_memeber_line.gif" alt="라인">
+            <p>럭스의 제품과 서비스는<br>
+            항상 독창적입니다.<br>
+            또한 즐거움을 줄 수 있는<br>
+            유머러스함을 통해<br>
+            행복을 창조해갑니다.</p>
+        </div>
+    </section>
+       
+    <tr>
+        <td align="center"><? include ("footer.php"); ?></td>
+     </tr>
+</body>
+</html>

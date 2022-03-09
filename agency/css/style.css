@@ -1,0 +1,94 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*전체 기본 스타일시트*/
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+
+*{margin:0; padding:0;}
+body,html {position:relative; height:100%;}
+ul{padding:0; list-style:none;}
+.wrapper{margin:0 auto; box-sizing:border-box;} 
+	
+/*네비게이션*/
+	
+header{width:1000px; height:120px; margin:0 auto; position:relative;}
+header h1{color:black; font-size:36px; position:absolute; top:45px; left:25px;}
+header ul{height:50px; width:500px; margin:0 auto; position:absolute; left:470px; top:60px;}
+header ul li{display:inline-block; padding:10px;}
+header>ul>li>a{color:#666; text-decoration:none;font-size:16px;font-family: 'Open Sans', sans-serif;}
+header>ul>li>a:hover{border-bottom:3px solid #da4553; color:#da4553;text-decoration:none;} 
+header>ul>li:hover a{color:#da4553; border-bottom:2px solid #da4553;}
+header>ul>li:hover .about a{color:#fff; border:0;}
+header>ul>li:hover .work a{color:#fff; border:0;}
+header>ul>li:hover .contact a{color:#fff; border:0;}
+
+.blank01{position:absolute; left:0px; width:150px; height:100px; z-index:10; display:none;}
+.about{position:absolute; top:14px; left:0px; width:150px;}
+.about li{display:block; background-color:#999;transition:0.3s;}
+.about li:hover{background-color:#666;}
+.about li a{text-decoration:none; color:#fff; font-size:16px;font-family: 'Open Sans', sans-serif;}
+header>ul>li:nth-child(1):hover .blank01{display:block; z-index:10;}
+
+.blank02{position:absolute; left:77px; width:150px; height:100px;z-index:10;; display:none;}
+.work{position:absolute; top:14px; left:0px; width:150px; z-index:10;}
+.work li{display:block; background-color:#999;transition:0.3s }
+.work li:hover{background-color:#666;}
+.work li a{text-decoration:none; color:#fff; font-size:16px;font-family: 'Open Sans', sans-serif;}
+header>ul>li:nth-child(2):hover .blank02{display:block; z-index:10;}
+
+.blank03{position:absolute; left:400px; width:150px; height:100px;z-index:10;; display:none;}
+.contact{position:absolute; top:14px; left:0px; width:150px; z-index:10;}
+.contact li{display:block; background-color:#999;transition:0.3s }
+.contact li:hover{background-color:#666;}
+.contact li a{text-decoration:none; color:#fff; font-size:14px;font-family: 'Open Sans', sans-serif;}
+header>ul>li:nth-child(5):hover .blank03{display:block; z-index:10;}
+
+
+/*비주얼 및 컨텐츠 영역*/	
+	
+.visual{position:relative; height:513px;}
+.visual h1{font-size:46px; color:white;;position:absolute; top:30px;}
+.visual .visual_img01 {width:100%; height:480px; background:url("/agency/images/tumblr_04_1.jpg") center no-repeat;}
+.visual .visual_img02 {width:100%; height:480px; background:url("/agency/images/tumblr_05_1.jpg") center no-repeat}
+.visual .visual_img03 {width:100%; height:480px; background:url("/agency/images/main_visual01.jpg") center no-repeat}
+.visual img{width:100%;}
+.content {width:1000px; margin:0 auto;}
+.consult{width:200px;float:left;}
+.latest01{width:370px; height:202px; border:1px solid #ccc; float:left; box-sizing:border-box; margin-left:13px;}
+.latest01-2{float:right; width:360px; height:200px; border:1px solid #ccc; margin-left:13px;}
+.latest02{height:330px; clear:both;}
+.latest01 p{padding:0;}
+.latest01-2 p{padding:0;}
+.latest02{padding-top:30px;}
+.latest02 .latest02_title{width:100px; height:40px;font-family: 'Nanum Gothic', sans-serif; font-size: 20px; color:#da4553; text-decoration:none; 
+							  font-weight:bold; margin:auto;}
+.latest02 .latest02_title a{font-family: 'Nanum Gothic', sans-serif; font-size: 26px; color:#da4553; text-decoration:none;  text-align:center;
+							  font-weight:bold;}
+
+
+/*_tail & footer 스타일시트*/
+
+
+.main{overflow:hidden; width:1000px; margin:0 auto;}
+.subMenu{float:left;}
+.subMenu{width:160px;min-height:400px;box-sizing:border-box;}
+.subMenu>ul>li>a{display:block; color:#fff; text-decoration:none; border-bottom:1px solid #757575; padding:10px 20px; font-size:13px;transition:0.3s;}
+.subMenu ul li a:hover{background-color:#757575; padding-left:30px; }
+.board{width:100%; background-color:white; float:left; min-height:400px; box-sizing:border-box; margin:0 auto;}
+footer{background-color:#666; color:#CCCCCC; text-align:center; clear:both;}
+footer .footer_inner {width:1000px; height:150px; margin:0 auto; position:relative;}
+footer .white_logo{position:absolute; left:20px; top:30px;}
+footer h1{float:left; margin-left:30px;}
+.info>ul{position:absolute; left:250px;top:15px;}
+.info>ul>li{display:inline-block; padding:0 10px; }
+.info>ul>li>a{color:#fff; text-decoration:none; font-size:13px;font-family: 'Nanum Gothic', sans-serif;}
+.info>ul>li>a:hover{text-decoration:underline;}
+address{font-style:normal; display:inline-block; position:absolute; left:260px;top:45px; font-size:12px; font-family: 'Nanum Gothic', sans-serif;}
+footer p{text-align:left; position:absolute; left:260px; top:65px; font-size:12px; font-family: 'Nanum Gothic', sans-serif;}
+.sns{position:absolute; top:10px; right:20px;  padding:0 30px;}
+.sns li{display:inline-block; padding:0 6px;}
+.sns img{width:30px; height:30px;}
+.family{position:absolute; right:30px; top:30px;}
+#jumpMenu{width:150px; height:30px; font-size:12px; margin-top:20px;}

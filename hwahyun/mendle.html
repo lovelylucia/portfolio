@@ -1,0 +1,93 @@
+<?php
+require_once('top.html');
+?>
+
+<div id="sub_visual">
+    <div class="vis_img_wrap sub_bg_03">
+    </div>
+    <p>사업소개</p>
+</div>
+<div class="sub_contents_wrap">
+    <div class="contents_inner location_inner">
+        <div class="tit_area">
+            <h3 class="title">맨들맨들</h3>
+            <p class="sub_tit">맨들맨들은 왁싱전문 예약 모바일 어플리케이션입니다</p>
+        </div>
+        <dl class="story01">
+            <dt><img src="img/mendle_01.jpg" alt="매끈한 다리 이미지"/></dt>
+            <dd>
+                <h4 class="sub_content_tit">현재 왁싱 예약앱은 필수입니다</h4>
+                <p class="sub_txt text_18">왁싱샵들이 많이 늘어나면서 <br/>
+                    고객들의 왁싱샵에 대한 정보와 <br/>
+                    모바일 예약에 대한 니즈는 불가피하게 되었습니다. <br/>
+                    맨들맨들에서 신뢰와 전문성을 필두로 귀사를 고객에게 소개하고 <br/>
+                    왁싱샵과 소비자들에게 꼭 필요한 시스템 개발을 하고 있습니다.
+                </p>
+            </dd>
+        </dl>
+
+        <div class="slide_seciton">
+            <div class="tit_area">
+                <h3 class="title">서비스 특징</h3>
+            </div>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="img/mendle_slide_01.png" alt="맨들맨들 메인페이지"/>
+                        </div>
+                        <div>
+                            <h4><span>내가 원하는 왁싱샵을</span><br/>빠르고 편리하게</h4>
+                            <p>내 주변의 왁싱 잘하는 샵을<br/>
+                                <span> 빠르고 편리하게</span> 찾을 수 있어요</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="img/mendle_slide_02.png" alt="맨들맨들 후기페이지"/>
+                        </div>
+                        <div>
+                            <h4><span>왁싱샵의 생생한</span><br/> 후기를 한 눈에!</h4>
+                            <p>왁싱샵을 다녀간 이용자들의<br/>
+                                <span>솔직한 후기</span>를 확인할 수 있습니다</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div>
+                            <img src="img/mendle_slide_03.png" alt="맨들맨들 메인페이지"/>
+                        </div>
+                        <div>
+                            <h4><span>초 간편 결제,</span><br/>할인 혜택이 이곳에!</h4>
+                            <p>예약부터 결제까지 너무 간편하게!<br/>
+                                <span>쿠폰, 할인</span> 등 다양한 이벤트 혜택까지!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(document).ready(function () {
+        var mySwiper = new Swiper ('.swiper-container', {
+            autoplay: true,
+            speed:600,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            loop:true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        })
+    });
+</script>
+<?php
+require_once('bottom.html');
+?>
+

@@ -1,0 +1,54 @@
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>ABOUT</title>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{margin:0; padding:0; border:0;}
+.imgBox{width:960px; height:150px;}
+
+.subMenu{float:left; width:200px!important; border-left:1px solid #ddd; border-right:1px solid #ddd; min-height:750px!important;}
+.subMenu .contactBox{background-color:#BCBCBC;}
+.subMenu p{height:180px; text-align:center; line-height:180px; font-family:'Nanum Gothic', sans-serif; font-size:30px; font-weight:bold; color:#666;}
+.subMenu ul{list-style:none;}
+.subMenu ul li a{display:block; text-decoration:none; border-bottom:1px solid #ddd!important; z-index:10; color:#333!important;
+				padding:15px 20px!important; font-size:14px!important;transition:0.3s;font-family:'Nanum Gothic', sans-serif;}
+.subMenu ul li a:hover{background-color:#757575; padding-left:30px!important; color:#fff!important;font-family:'Nanum Gothic', sans-serif; }
+section{float:left; width:700px; height:550px;}
+section h3{width:300px;font-family:'Nanum Gothic', sans-serif; padding:20px; text-align:center; margin:50px 200px;
+			border-top:1px solid #999; border-bottom:1px solid #999; display:inline-block; color:#da4553;}
+</style>
+</head>
+
+<body>
+	<? include ("head.php"); ?>
+	<div class="imgBox">
+    	<img src="http://studiolux.woobi.co.kr/images/sub1.jpg" alt="파트너">
+    </div>
+    <div class="subMenu">
+   		<div class="contactBox">
+			<p>CONTACT</p>
+        </div>
+        <div>   
+             <ul>	
+               <li><a href="sub0501.html">견적의뢰</a></li>
+               <li><a href="sub0502.html">찾아오시는 길</a></li>                   	 
+            </ul>
+        </div>
+    </div>
+    <section>
+ 
+            <h3>견적의뢰</h3>
+            <iframe id="mailform" src="https://db.blueweb.co.kr/formmail/formmail.html?dataname=lovelylucia0" name="iframe" width="700px" height="700px" frameborder="0"></iframe>
+
+    </section>
+
+     <tr>
+        <td align="center"><? include ("footer.php"); ?></td>
+     </tr>
+</body>
+</html>

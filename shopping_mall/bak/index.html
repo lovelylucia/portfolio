@@ -1,0 +1,419 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>KSEEKMALL</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+	<script src="./js/jquery-1.8.2.min.js"></script>
+	<script src="./js/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript" src="./js/jquery.min.js"></script>
+	 <script type="text/javascript" src="./js/tab.js"></script>
+	<script type="text/javascript" src="./js/jquery.ioslide.js"></script>
+    	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#main_visual').ioslide({
+				controls: true,
+				pager: true,
+				auto: true,
+                subtext: false,
+				style:'slide',
+				speed:400,
+				totalSpeed : 3000
+		});
+	});
+	</script>
+</head>
+<body>
+	<div id="wrapper">
+                <div class="header_wrap">
+                        <div class="gnb_wrap">
+                            <div class="gnb_inner">
+                                <ul class="gnb_left">
+					<li><a href="#">즐겨찾기</a></li>
+					<li><a href="#">입점문의</a></li>
+					<li><a href="#">쇼핑몰관리자바로가기</a></li>
+				</ul>
+				<ul class="gnb_right">
+					<li><a href="login.php">로그인</a></li>
+					<li><a href="join.html">회원가입</a></li>
+					<li><a href="#">고객센터</a></li>
+				</ul>
+                            </div>
+			</div>
+			<header>
+				<h1 class="logo">
+					<a href="index.html"><img src="image/logo_black_.png"></a>
+				</h1> 
+				<div class="search_area">
+					<div class="srcbar">
+						<form name="search_form" method="get" action="">
+							<fieldset>
+								<legend>상품검색</legend>
+								<label for=""><input type="text" title="검색어 입력" placeholder="요즘은 사과가 맛있는 계절이죠!" /></label>
+								<button type="submit" id="" class="btn btn_search"><img src="image/search_icon_red.png" alt="검색 아이콘">검색</button>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+				<div class="icon_menu">
+					<ul>
+						<li>
+							<a href="cart.html">
+								<span class="myshop_icon"><img src="image/customer_small.png" alt="마이페이지 아이콘"></span>
+								<span class="myshop_title">마이페이지</span>
+							</a>
+						</li>
+						<li>
+							<a href="#">
+								<span class="cart_icon"><img src="image/cart_small.png" alt="장바구니 아이콘"></span>
+								<span class="cart_title">장바구니</span>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</header>
+			<nav>
+				<ul>
+					<li><a href="">식품</a>
+						<ul class="sub_menu">
+							<li><a href="">과일&middot;채소</a></li>
+							<li><a href="">쌀&middot;잡곡</a></li>
+							<li><a href="">정율&middot;계란류</a></li>
+							<li><a href="">수산물&middot;건어류</a></li>
+						</ul>
+					</li>
+					<li><a href="">컴퓨터/주변기기</a>
+						<ul class="sub_menu">
+							<li><a href="">노트북&middot;테스크탑</a></li>
+							<li><a href="">태블릿</a></li>
+							<li><a href="">저장장치</a></li>
+							<li><a href="">모니터</a></li>
+							<li><a href="">프린터&middot;복합기&middot;잉크</a></li>
+						</ul>
+					</li>
+					<li><a href="">가전제품</a>
+						<ul class="sub_menu">
+							<li><a href="">TV&middot;냉장고&middot;세탁기</a></li>
+							<li><a href="">주방가전</a></li>
+							<li><a href="">생활가전</a></li>
+							<li><a href="">이미용가전</a></li>
+						</ul>
+					</li>
+					<li><a href="">유아/아동/출산</a>
+						<ul class="sub_menu">
+							<li><a href="">기저귀&middot;물티슈</a></li>
+							<li><a href="">분유&middot;유아식품</a></li>
+							<li><a href="">수유&middot;이유용품</a></li>
+							<li><a href="">유아동 의류</a></li>
+							<li><a href="">완구&middot;교구&middot;도서</a></li>
+						</ul>
+					</li>
+					<li><a href="">패션/잡화</a>
+						<ul class="sub_menu">
+							<li><a href="">여성의류</a></li>
+							<li><a href="">남성의류</a></li>
+							<li><a href="">시계&middot;쥬얼리</a></li>
+							<li><a href="">가방&middot;액세서리</a></li>
+						</ul>
+					</li>
+					<li><a href="">뷰티</a>
+						<ul class="sub_menu">
+							<li><a href="">스킨케어</a></li>
+							<li><a href="">클렌징&middot;필링</a></li>
+							<li><a href="">메이크업&middot;썬케어</a></li>
+							<li><a href="">바디케어</a></li>
+							<li><a href="">헤어케어</a></li>
+							<li><a href="">향수</a></li>
+						</ul>
+					</li>
+					<li><a href="">가구/침구/데코</a>
+						<ul class="sub_menu">
+							<li><a href="">침실가구</a></li>
+							<li><a href="">거실&middot;수납가구</a></li>
+							<li><a href="">주방가구</a></li>
+							<li><a href="">서재&middot;사무용가구</a></li>
+							<li><a href="">침구</a></li>
+							<li><a href="">커튼&middot;블라인드</a></li>
+							<li><a href="">인테리어소품</a></li>
+						</ul>
+					</li>
+					<li><a href="">레져/스포츠</a>
+						<ul class="sub_menu">
+							<li><a href="">스포츠의류</a></li>
+							<li><a href="">스포츠용품</a></li>
+							<li><a href="">스포츠잡화</a></li>
+							<li><a href="">캠핑 용품</a></li>
+							<li><a href="">요가&middot;헬스</a></li>
+						</ul>
+					</li>
+				</ul>
+			</nav>
+                </div>
+                <div class="container">
+			<div id="main_visual">
+				<div class="img_vis_01"></div>
+				<div class="img_vis_02"></div>
+				<div class="img_vis_03"></div>
+				<div class="img_vis_04"></div>
+			</div>
+			<div class="tvshop_prd">
+                            <h3>TV 쇼핑</h3>
+                            <ul>
+                                <li class="present_prd">
+                                    <div>
+                                        <a href="#판매상품" title="현재 tv 판매중인 상품">
+                                            <span class="title">현재 TV판매중인 상품</span>
+                                            <span class="prd_name">명품 나주배 10kg 49,000원</span>
+                                            <span class="thumb"><img src="image/pear.png"/></span>
+                                        </a>
+                                    </div>
+                                </li>
+                                <li class="past_prd">
+                                    <div>
+                                        <a href="#판매상품" title="지난 tv 판매상품">
+                                            <span class="title">지난 tv판매상품</span>
+                                            <span class="prd_name">하림 치즈스틱 1kg<br /></span>
+                                            <span class="thumb"><img src="image/stick.png"/></span>
+                                        </a>
+                                    </div>
+                                </li>
+                            </ul>
+			</div>
+			<div class="mdpick_prd">
+                            <h3 class="mdpick_title">MD PICK 케이시크가 엄선한 추천상품입니다</h3>
+                            <ul>
+                                    <li>
+                                        <a href="product_view.html"> 
+                                            <div class="thumb">
+                                                <img src="./image/onlee9.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">껍질째 먹는 청송꿀땡이 사과 9월 햇사과 홍로 10kg 5kg</p>
+                                                <span class="md_price">22,900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> 
+                                            <div class="thumb">
+                                                <img src="./image/steak_01.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">슈리네 스테이크</p>
+                                                <span class="md_price">18,900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> 
+                                            <div class="thumb">
+                                                <img src="./image/pear.png" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href=""> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                            </ul>
+			</div>
+			<div class="total_prd">
+                            <h3 class="total_title">전체보기</h3>
+                            <ul class="list_sorting">
+                                    <li class="on"><a href="">추천순</a></li>
+                                    <li><a href="">최신순</a></li>
+                            </ul>
+                            <ul class="total_common_list">
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/steak_01.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">슈리네 스테이크</p>
+                                                <span class="md_price">18,900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/pear.png" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#"> 
+                                            <div class="thumb">
+                                                <img src="./image/prd_1.jpg" />
+                                            </div>
+                                            <div class="info">
+                                                <p class="md_title">기장하트미역 생일선물로 인기</p>
+                                                <span class="md_price">900원</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+			</div>
+		</div>
+		<!-- FOOTER -->
+                <div id="footer_wrap" class="footer_wrap">
+                        <div class="footer_inner">
+                            <h4 class="blind">푸터영역</h4>
+                            <div class="co_info_area">
+                                    <ul>
+                                            <li><a href="#이용약관">이용약관</a></li>
+                                            <li class="bar"></li>
+                                            <li><a href="#개인정보처리방침">개인정보처리방침</a></li>
+                                            <li class="bar"></li>
+                                            <li><a href="#법적고지">법적고지</a></li>
+                                            <li class="bar"></li>
+                                            <li><a href="#입점안내">입점안내</a></li>
+                                            <li class="bar"></li>
+                                            <li><a href="#고객센터">고객센터</a></li>
+                                    </ul>
+                            </div>
+                            <p class="co_marketing">
+                                    케이시크는 결제정보의 중개서비스 또는 통신판매중개시스템의 제공자로서, <br />
+                                    통신판매의 당사자가 아니며 상품의 주문, 배송 및 환불 등과 관련한 의무와 책임은 각 판매자에게 있습니다.
+                            </p>
+                            <address class="co_address">
+                                    사업자등록번호: 000-00-00000  
+                                    <span class="bar">|</span>   
+                                    통신판매업신고번호:  제2000-대전-000호  
+                                    <span class="bar">|</span>  
+                                    대표이사: 김영렬    
+                                    <span class="bar">|</span>   
+                                    사업자등록정보확인 <br />
+                                            주소: 대전광역시 서구 둔산남로 9번길 71  향천빌딩 3층  (35234)  
+                                            <span class="bar">|</span> 
+                                            대표전화 070-8668-8668  
+                                            <span class="bar">|</span> 
+                                            팩스  0505-482-7995
+                                    </address>
+                            <p class="co_copyright">
+                                    <a class="co_logo" href="http://www.kseek.com"><img src="image/kseek_logo.png"></a>
+                                    <span>Copyright ⓒ <strong>KSEEK  Corp.</strong> All Rights REseved.</span>
+                            </p>
+                        </div>
+                </div>
+            <!-- FOOTER end-->    
+            </div>
+        </div>
+</body>

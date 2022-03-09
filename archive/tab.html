@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>탭메뉴만들기</title>
+<style>
+	*{margin:0; padding:0;}
+	body{font-size:14px; font-family:"맑은 고딕","Malgun Gothic", arial; color:#333;}
+	a{text-decoration:none; color:#333;}
+	ul{list-style:none;}
+	
+	#tab{width:500px; margin-top:100px; margin-left:100px;}
+	#tab .title{overflow:hidden;}
+	#tab .title li{float:left; width:100px; height:40px; text-align:center; font-size:17px; font-weight:bold;}
+	#tab .title li a{border:1px solid #ffcc00; display:block; padding:10px 0; }
+	#tab .title li:first-of-type a{border-radius:10px 0 0 0;}
+	#tab .title li:last-of-type a{border-radius:0 10px 0 0;}
+	#tab .title li a.select{background-color:#ffff00; color:black; border-bottom:none;}
+	
+	#tab .content{border:1px solid #ffcc00; padding:10px; margin-top:-1px;}
+	#tab .content strong{color:#ff0000; display:block;}
+</style>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script>
+	$(function(){
+		$(".content li").hide();
+		$("#web1").show();
+		$(".title a").click(function(){
+			$(".title a").removeClass('select');//현재 활성화된 애는 제거하라
+			$(".content li").slideUp('fast');//사라지게 하는 액션
+			$(this).addClass('select');
+			$($(this).attr('href')).slideDown('fast');//나타나는 액션
+		});
+	});
+</script>
+</head>
+
+<body>
+	<div id="tab">
+    	<ul class="title">
+        	<li><a href="#web1" class="select">web1</a></li>
+            <li><a href="#web2">web2</a></li>
+            <li><a href="#web3">web3</a></li>
+        </ul>
+        
+        <ul class="content">
+        	<li id="web1"><strong>web1</strong><img src="images/ulsan01.jpg" alt="울산 현대팀">
+            </li>
+            <li id="web2"><strong>web2</strong><img src="images/suwon.jpg" alt="수원 삼성팀">
+            </li>
+            <li id="web3"><strong>web3</strong><img src="images/Busan_ipark.jpg" alt="부산 아이파크팀">
+            </li>
+            
+        </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>판매자 회원가입</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+    <!-- HEADER start -->
+        <? require_once("top.php");?>
+    <!-- HEADER end -->   
+       
+    <!-- CONTENT start-->
+    	<div class="join_content_wrap">
+    		<div class="join_content_inner">
+                    <h3 class="seller_step3_tit">판매자 회원가입</h3>
+                    <div class="info_wrap">
+                        <div class="info_title">
+                            <h4>2. 필수 정보입력 <span>기본 정보</span></h4>
+                        </div>
+                        <div class="info_area">
+                            <form>
+                                <fieldset>
+                                    <legend>회원가입</legend>
+                                    <table class="join_form" cellpadding="0" cellspacing="0" border="0">
+                                        <colgroup>
+                                            <col width="20%">
+                                            <col width="80%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">대표자명</label>        
+                                                </th>
+                                                <td>
+                                                    <span>송중기</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">아이디</label>
+                                                </th>
+                                                <td> 
+                                                    <input type="text" id="" value="" placeholder="영문과 숫자를 혼합하여 6-15자" />
+                                                    <p class="state">사용 가능한 아이디입니다</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">비밀번호</label>
+                                                </th>
+                                                <td>
+                                                    <input type="password" id="" value="" placeholder="영문,숫자,특수문자를 혼합하여 6-15자" />
+                                                    <p class="state">안전한 비밀번호입니다.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">비밀번호 확인</label>
+                                                </th>
+                                                <td>
+                                                    <input type="password" id="" value="" placeholder="비밀번호를 확인합니다." />
+                                                    <p class="state">비밀번호와 일치합니다.</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">전화번호</label>
+                                                </th>
+                                                <td>
+
+                                                    <select>
+                                                            <option selected="selected">02</option>
+                                                            <option value="031">031</option>
+                                                            <option value="032">032</option>
+                                                            <option value="033">033</option>
+                                                            <option value="041">041</option>
+                                                            <option value="042">042</option>
+                                                            <option value="043">043</option>
+                                                            <option value="044">044</option>
+                                                            <option value="051">051</option>
+                                                            <option value="052">052</option>
+                                                            <option value="053">053</option>
+                                                            <option value="054">054</option>
+                                                            <option value="055">055</option>
+                                                            <option value="061">061</option>
+                                                            <option value="062">062</option>
+                                                            <option value="063">063</option>
+                                                            <option value="064">064</option>
+                                                            <option value="0130">0130</option>
+                                                            <option value="070">070</option>
+                                                            <option value="080">080</option>
+                                                    </select>
+                                                    <span class="dash">-</span>
+                                                    <input type="text" name="" id="" class="mobile_temp2" maxlength="4"/>
+                                                    <span class="dash">-</span>
+                                                    <input type="text" name="" id="" class="mobile_temp3" maxlength="4"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">휴대폰</label>
+                                                </th>
+                                                <td>
+
+                                                    <select>
+                                                            <option>휴대폰번호</option>
+                                                            <option>010</option>
+                                                            <option>011</option>
+                                                            <option>016</option>
+                                                            <option>017</option>
+                                                            <option>018</option>
+                                                            <option>019</option>
+                                                    </select>
+                                                    <span class="dash">-</span>
+                                                    <input type="text" name="" id="" class="mobile_temp2" maxlength="4"/>
+                                                    <span class="dash">-</span>
+                                                    <input type="text" name="" id="" class="mobile_temp3" maxlength="4"/>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">이메일</label> 
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="" value="" class="mail_input" placeholder="이메일" />
+                                                    <select>
+                                                            <option>직접입력</option>
+                                                            <option>naver.com</option>
+                                                            <option>hamail.net</option>
+                                                            <option>daum.net</option>
+                                                            <option>nate.com</option>
+                                                            <option>hotmail.com</option>
+                                                            <option>gmail.com</option>
+                                                    </select>
+                                                </td>
+                                            </tr>
+                                             <tr>
+                                                 <th>
+                                                    <label for="" class="control-label">사업장 주소</label>
+                                                </th>
+                                                <td class="addr_wrap">
+                                                    <input type="text" id="" value="" readonly="readonly" style="width:150px"/>
+                                                    <button type="button" onclick="" class="btn zip_search">우편번호 찾기</button>
+                                                    <div class="addr_input">
+                                                        <input type="text" id="" value="" class="" />
+                                                        <input type="text" id="" value="" class=""/>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">메일 수신여부</label>
+                                                </th>
+                                                <td class="mail_choice">
+                                                    <label>
+                                                        <input type="radio" id="" name="" checked="checked" value="수신"/>수신
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" id="" name="" value="수신안함"/>수신안함
+                                                    </label>   
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">SMS 수신여부</label>
+                                                </th>
+                                                <td class="sms_choice">
+                                                    <label>
+                                                        <input type="radio" id="" name="" checked="checked" value="수신"/>수신
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" id="" name="" value="수신안함"/>수신안함
+                                                    </label>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </fieldset>
+                            </form>
+                        </div>  
+                    </div>
+                    <div class="info_wrap">
+                        <div class="info_title">
+                            <h4>3. 필수 정보입력 <span> 판매 정보</span></h4>
+                        </div>
+                        <div class="info_area">
+                            <form>
+                                <fieldset>
+                                    <legend>필수 정보 입력 판매 정보</legend>
+                                    <table class="join_form" cellpadding="0" cellspacing="0" border="0">
+                                        <colgroup>
+                                            <col width="20%">
+                                            <col width="80%">
+                                        </colgroup>
+                                        <tbody>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">통신판매업번호</label>        
+                                                </th>
+                                                <td>
+                                                    <input type="text" id="" value="" maxlength="10" />
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">업태</label>        
+                                                </th>
+                                                <td>
+                                                     <input type="text" id="" value="" />
+                                                     <span>사업자등록증에 있는 업태내용을 입력하세요.  예) 서비스,제조,도소매 등</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">종목</label>        
+                                                </th>
+                                                <td>
+                                                     <input type="text" id="" value="" />
+                                                     <span>사업자등록증에 있는 종목내용을 입력하세요.  예) 인터넷쇼핑, 전자상거래, 커피, 식품 등</span>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">정산대금 입금계좌</label>
+                                                </th>
+                                                <td> 
+                                                    <span>은행명</span>
+                                                    <select>
+                                                        <option selected="selected">선택</option>
+                                                        <option>하나은행</option>
+                                                        <option>기업은행</option>
+                                                        <option>농협</option>
+                                                    </select>
+                                                    <span>예금주명</span>
+                                                    <input type="text" neme="" id=""  style="width:100px"/>
+                                                    <span>계좌번호</span>
+                                                    <input type="text" neme="" id=""  style="width:200px" placeholder="-없이 계좌번호 입력"/>
+                                                    <button type="button"> 계좌번호 인증</button>
+                                                    <p class="account_info">입력하신 예금주는 상호(법인명) 또는 대표자명과 일치 하여야 정산이 가능하며, <span>입력하신 계좌벙보에 대한 통장사본을 제출</span>하셔야 합니다<br />
+                                                    예금주가 상호(법인명) 또는 대표자명과 일치하지 않는 계좌를 입력하여, 그에 따른 문제가 발생할 경우, 당사는 책임지지 않습니다</p>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" class="control-label">출고지 주소</label>
+                                                </th>
+                                                <td>
+                                                    <div class="addr_conts address_name">
+                                                        <label>출고지 관리이름</label>
+                                                        <input type="text" name="" class=""/>
+                                                        <p>
+                                                            <label for=""><input type="checkbox" id="" name="" class=""/>대표주소와 동일</label>
+                                                        </p>
+                                                    </div>                                                  
+                                                    <div class="addr_conts address_cell1">                                                      
+                                                        <label>연락처1</label>
+                                                        <div class="cell_info">
+                                                                <select name="" id="" title="전화번호 앞자리" style="width: 85px;">
+                                                                    <option value="">선택</option>
+                                                                    <option value="000">전국번호</option>
+                                                                    <option value="02">02</option>
+                                                                    <option value="031">031</option>
+                                                                    <option value="032">032</option>
+                                                                    <option value="033">033</option>
+                                                                    <option value="041">041</option>
+                                                                    <option value="042">042</option>
+                                                                    <option value="043">043</option>
+                                                                    <option value="044">044</option>
+                                                                    <option value="051">051</option>
+                                                                    <option value="052">052</option>
+                                                                    <option value="053">053</option>
+                                                                    <option value="054">054</option>
+                                                                    <option value="055">055</option>
+                                                                    <option value="061">061</option>
+                                                                    <option value="062">062</option>
+                                                                    <option value="063">063</option>
+                                                                    <option value="064">064</option>
+                                                                    <option value="010">010</option>
+                                                                    <option value="011">011</option>
+                                                                    <option value="016">016</option>
+                                                                    <option value="017">017</option>
+                                                                    <option value="018">018</option>
+                                                                    <option value="019">019</option>
+                                                                    <option value="0130">0130</option>
+                                                                    <option value="070">070</option>
+                                                                    <option value="080">080</option>
+                                                                    <option value="0504">0504</option>
+                                                                    <option value="0505">0505</option>
+                                                                    <option value="0506">0506</option>
+                                                                    <option value="0507">0507</option>
+                                                                    <option value="0503">0503</option>
+                                                                    <option value="0502">0502</option>
+                                                                    <option value="0303">0303</option>
+                                                                    <option value="050">050</option>
+                                                                </select>
+                                                            -
+                                                            <input type="text" name="" id="" class="" title="전화번호 가운데" maxlength="4" style="width:85px;"/> 
+                                                            <input type="text" name="" id="" class="" title="전화번호 마지막" maxlength="4" style="width:85px;"/> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="addr_conts address_cell2">                                                      
+                                                        <label>연락처2</label>
+                                                        <div class="cell_info">
+                                                                <select name="" id="" title="전화번호 앞자리" style="width: 85px;">
+                                                                    <option value="">선택</option>
+                                                                    <option value="000">전국번호</option>
+                                                                    <option value="02">02</option>
+                                                                    <option value="031">031</option>
+                                                                    <option value="032">032</option>
+                                                                    <option value="033">033</option>
+                                                                    <option value="041">041</option>
+                                                                    <option value="042">042</option>
+                                                                    <option value="043">043</option>
+                                                                    <option value="044">044</option>
+                                                                    <option value="051">051</option>
+                                                                    <option value="052">052</option>
+                                                                    <option value="053">053</option>
+                                                                    <option value="054">054</option>
+                                                                    <option value="055">055</option>
+                                                                    <option value="061">061</option>
+                                                                    <option value="062">062</option>
+                                                                    <option value="063">063</option>
+                                                                    <option value="064">064</option>
+                                                                    <option value="010">010</option>
+                                                                    <option value="011">011</option>
+                                                                    <option value="016">016</option>
+                                                                    <option value="017">017</option>
+                                                                    <option value="018">018</option>
+                                                                    <option value="019">019</option>
+                                                                    <option value="0130">0130</option>
+                                                                    <option value="070">070</option>
+                                                                    <option value="080">080</option>
+                                                                    <option value="0504">0504</option>
+                                                                    <option value="0505">0505</option>
+                                                                    <option value="0506">0506</option>
+                                                                    <option value="0507">0507</option>
+                                                                    <option value="0503">0503</option>
+                                                                    <option value="0502">0502</option>
+                                                                    <option value="0303">0303</option>
+                                                                    <option value="050">050</option>
+                                                                </select>
+                                                            -
+                                                            <input type="text" name="" id="" class="" title="전화번호 가운데" maxlength="4" style="width:85px;"/> 
+                                                            <input type="text" name="" id="" class="" title="전화번호 마지막" maxlength="4" style="width:85px;"/> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="addr_conts input_address">
+                                                        <input type="text" name="" id="" maxlength="6" readonly="" onclick="" title="우편번호" class="text post_num" style="width:100px;">
+                                                        <a href="#주소찾기" class="btn addr_search"><span>주소 찾기</span></a>
+                                                        <div class="address">
+                                                                <input type="text" name="" readonly="" onclick="" title="기본주소" class="text addr_basic">
+                                                                <input title="text" type="text" name="" class="text addr_detail" placeholder="나머지주소">
+                                                        </div>		
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    <label for="" for="" class="control-label">반품/교환지 주소</label>
+                                                </th>
+                                                <td>
+                                                    <div class="addr_conts">
+                                                        <label>반품/교환지 관리이름</label>
+                                                        <input type="text" name="" class=""/>
+                                                        <p>
+                                                            <label for=""><input type="checkbox" id="" name="" class=""/>대표주소와 동일</label>
+                                                        </p>                                                        
+                                                    </div>
+                                                    <div class="addr_conts">                                                      
+                                                        <label>연락처1</label>
+                                                        <div class="cell_info">
+                                                            
+                                                            <select name="" id="" title="전화번호 앞자리" style="width: 85px;">
+                                                                <option value="">선택</option>
+                                                                <option value="000">전국번호</option>
+                                                                <option value="02">02</option>
+                                                                <option value="031">031</option>
+                                                                <option value="032">032</option>
+                                                                <option value="033">033</option>
+                                                                <option value="041">041</option>
+                                                                <option value="042">042</option>
+                                                                <option value="043">043</option>
+                                                                <option value="044">044</option>
+                                                                <option value="051">051</option>
+                                                                <option value="052">052</option>
+                                                                <option value="053">053</option>
+                                                                <option value="054">054</option>
+                                                                <option value="055">055</option>
+                                                                <option value="061">061</option>
+                                                                <option value="062">062</option>
+                                                                <option value="063">063</option>
+                                                                <option value="064">064</option>
+                                                                <option value="010">010</option>
+                                                                <option value="011">011</option>
+                                                                <option value="016">016</option>
+                                                                <option value="017">017</option>
+                                                                <option value="018">018</option>
+                                                                <option value="019">019</option>
+                                                                <option value="0130">0130</option>
+                                                                <option value="070">070</option>
+                                                                <option value="080">080</option>
+                                                                <option value="0504">0504</option>
+                                                                <option value="0505">0505</option>
+                                                                <option value="0506">0506</option>
+                                                                <option value="0507">0507</option>
+                                                                <option value="0503">0503</option>
+                                                                <option value="0502">0502</option>
+                                                                <option value="0303">0303</option>
+                                                                <option value="050">050</option>
+                                                            </select>
+
+                                                            -
+                                                            <input type="text" name="" id="" class="" title="전화번호 가운데" maxlength="4" style="width:85px;" /> -
+                                                            <input type="text" name="" id="" class="" title="전화번호 마지막" maxlength="4" style="width:85px;" /> 
+                                                        </div>
+                                                    </div>
+                                                    <div class="addr_conts">                                                      
+                                                        <label>연락처2</label>
+                                                        <div class="cell_info">           
+                                                                <select name="" id="" title="전화번호 앞자리" style="width: 85px;">
+                                                                <option value="">선택</option>
+                                                                <option value="000">전국번호</option>
+                                                                <option value="02">02</option>
+                                                                <option value="031">031</option>
+                                                                <option value="032">032</option>
+                                                                <option value="033">033</option>
+                                                                <option value="041">041</option>
+                                                                <option value="042">042</option>
+                                                                <option value="043">043</option>
+                                                                <option value="044">044</option>
+                                                                <option value="051">051</option>
+                                                                <option value="052">052</option>
+                                                                <option value="053">053</option>
+                                                                <option value="054">054</option>
+                                                                <option value="055">055</option>
+                                                                <option value="061">061</option>
+                                                                <option value="062">062</option>
+                                                                <option value="063">063</option>
+                                                                <option value="064">064</option>
+                                                                <option value="010">010</option>
+                                                                <option value="011">011</option>
+                                                                <option value="016">016</option>
+                                                                <option value="017">017</option>
+                                                                <option value="018">018</option>
+                                                                <option value="019">019</option>
+                                                                <option value="0130">0130</option>
+                                                                <option value="070">070</option>
+                                                                <option value="080">080</option>
+                                                                <option value="0504">0504</option>
+                                                                <option value="0505">0505</option>
+                                                                <option value="0506">0506</option>
+                                                                <option value="0507">0507</option>
+                                                                <option value="0503">0503</option>
+                                                                <option value="0502">0502</option>
+                                                                <option value="0303">0303</option>
+                                                                <option value="050">050</option>
+                                                            </select>
+                  
+                                                            -
+                                                            <input type="text" name="" id="" class="" title="전화번호 가운데" maxlength="4" style="width:85px;"/> -
+                                                            <input type="text" name="" id="" class="" title="전화번호 마지막" maxlength="4" style="width:85px;"/> 
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr> 
+                                        </tbody>
+                                    </table>
+                                </fieldset>
+                            </form>
+                        </div>  
+                    </div>
+                    
+                    <div class="join_decision">
+                        <p>
+                            <button type="button" class="" onclick="">가입하기</button>
+                        </p>
+                    </div>
+    		</div>
+    	</div>
+	<!--  CONTENT end-->
+	<!-- FOOTER -->
+	    <? require_once("footer.php");?>
+	<!-- FOOTER end-->    
+	</div>
+</body>
+</html>
+
+

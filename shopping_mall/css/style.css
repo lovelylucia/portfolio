@@ -1,0 +1,149 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+body {margin:0; padding:0 ; font-family: 'Noto Sans KR';}
+/*----------------------------------------------------
+/*  공통 스타일 적용 CSS
+/*  초안 작성일자 : 2017.09.05
+/*  최종 작성일자 : 2017.09.13
+/*  작성자 : (주)케이시크 이슬 (dew0826@segio.com)
+/*  적용 범위 : product page
+/*  최종 수정자 : 조경아
+/*  마지막 업데이트 :2017.09.13
+----------------------------------------------------*/
+/* Standard Selector Property */
+html {overflow:auto; overflow-x:auto; overflow-y:auto;}
+* {padding:0; margin:0;}
+th, td, textarea, div, body,input {font-family: 'Noto Sans KR'; color:#666; font-size:15px; margin:0px}
+body {width: 100%; height: 100%; background: #fff;}
+form {margin:0; padding:0;}
+fieldset {border:0 none; padding:0; margin:0;}
+legend {display:none;}
+caption {display:none;}
+img {border:0;}
+address {font-style:normal;}
+h1 {margin:0; padding:0;}
+h2 {margin: 20px 0 10px 0;}
+h3 {margin:10px 0; padding:0;}
+a {color:#333; text-decoration:none; font-weight: normal;}
+address {padding:35px 0 0 0;}
+ul,ol,dl,li {margin:0; padding:0; list-style-type:none}
+button {font-family: inherit; font-size: 15px; height: 35px; border: none; outline: 0; cursor: pointer;}
+button, input[type=text], input[type=password], select {border-radius: 4px; vertical-align: middle;}
+input[type=text], input[type=password], select {min-width: 50px; height: 30px; line-height: 30px; font-size: 15px; font-family: inherit; color: #666; box-sizing: border-box; border:1px solid #ddd;}
+input[type=text], input[type=password], textarea {transition: all 0.2s ease;}
+strong {font-weight: bold;}
+.clear {clear: both; display: block; float: none; font-size: 0 !important; height: 0; line-height: 0 !important; margin: 0 !important; overflow: hidden; padding: 0 !important; width: 100%;}
+.blind {overflow: hidden; position: absolute; top: 0; width: 1px; height: 1px; margin:-1px; font-size: 0; line-height: 0; visibility: visible;}
+
+
+
+
+/* 스토어 메인화면 */
+#container {width: 100%; margin:0; padding:0;}
+.shop_wrap {width: 1000px; margin:0 auto;}
+.shop_header .shop_title {text-align: center; margin:30px auto;}
+.shop_header .shop_url { width:77%; float: left;}
+.shop_header .shop_url a {font-size:13px; color:#6A6A6A;}
+.shop_content .best_product h3:after {display:block; width: 100%; height:3px; color:#000;}
+.search_btn {width:30px; height: 30px; background: #ddd;}
+.search_btn img {margin:6px 6px;}
+.shop_content { margin:10px 0; width:100%; height:400px;}
+.type1 li.normal {float: left; width:23.5%; margin-left:20px;}
+.type1 li.normal:first-child {margin-left:0;}
+.prd_img {display:block; width:100%; height:280px; border:1px solid #ddd; overflow:hidden;}
+.prd_name {margin-top:10px; font-weight: 600; height:30px;}
+
+/* 전체상품 */
+.best_product {display:block; width: 100%; height:430px; }
+.type2 li {width: 100%; height:140px; margin:20px 0; overflow:hidden; border-bottom: 1px solid #ddd; padding-bottom:20px;}
+.type2 li .prd_total_img {float:left; width: 140px; height: 140px; border:1px solid #ddd; }
+.type2 li .prd_total_img img {max-width:140px; max-height: 140px; }
+.type2 li .prd_total_info {float: left; margin-left:20px;}
+.prd_total_info dt a {font-size: 17px; }
+.prd_total_info dd.prm {margin-top:30px;}
+.prd_total_info dd.price {margin-top:20px;}
+
+
+
+
+/*상품보기*/
+#wrapper {min-width:1000px; overflow: hidden; margin: 0 auto;}
+
+#header {width: 100%; overflow: hidden; border-bottom: 1px solid #e6e6e6;}
+#header .header_inner {width: 1000px; margin:0 auto;}
+#header .header_inner img {width:135px; height:auto;}
+.breadCrumbs {width:1000px; margin:0 auto; border-bottom:3px solid #404052; overflow: hidden;}
+.breadCrumbs h3 {width:1000px; margin:10px auto; padding-top:20px; font-size:13px; overflow: hidden;}
+
+#content_wrap {width:1000px; margin:0 auto; overflow: hidden; position: relative;}
+#content_wrap .product_top {width: 100%; overflow:hidden; position: relative; line-height: 1.5;}
+.detail_column_left {width: 550px; height: 800px; float: left; padding:30px 30px 30px 0; box-sizing: border-box;}
+.detail_column_left .prd_img {width: 510px; height: 510px; position: relative;} 
+.detail_column_left .prd_img .img_center {min-width: auto; min-height: auto; max-width: 100%; max-height: 100%; width:100%; position: absolute; margin:auto; top: -100%;
+                                           bottom: -100%; left:-100%; right:-100%; }
+.detail_column_right {width: 450px; height: 800px; float:right; padding:30px 30px 0 0; box-sizing: border-box;} 
+.detail_column_right .detail_name {margin-bottom: 20px;}
+.detail_column_right .detail_name .title {font-size: 24px; font-weight: 500; color: #393939;}
+.detail_column_right .detail_name .price {font-size: 28px; color:#e95808; font-weight: bold;}
+.detail_column_right .detail_delivery {line-height: 1.5; margin-bottom: 30px; padding-bottom:20px; border-bottom: 1px solid #e7e7e7; color:#999; }
+.detail_column_right .detail_delivery .delivery_price {margin-bottom: 10px; color:#393939;} 
+.detail_column_right .prd_option {position: relative; overflow: hidden; line-height: 45px; font-size: 13px; margin-top: 10px;}
+.detail_column_right .prd_option .select_title {display: block; position: relative; padding: 0 29px 0 13px; color: #222; font-size:15px; border: 1px solid #d0d4d9; overflow: hidden; 
+	 text-overflow: ellipsis; white-space:nowrap;}
+.detail_column_right .prd_option a.select_title:hover,.detail_column_right .prd_option a.select_title:focus {border:1px solid #62a7ee;}
+.detail_column_right .prd_option ul.combobox_list {display: none; background-color:#FFF; border-bottom: 1px solid #9e9e9e;}
+.detail_column_right .prd_option ul.combobox_list li {font-size:15px; }
+.detail_column_right .prd_option ul.combobox_list li:hover { background-color:#f9f5c5;}
+.detail_column_right .prd_option ul.combobox_list li > a {display: block; padding:0 13px; border-top:1px solid #f1f2f4; border-left:1px solid #9e9e9e; border-right:1px solid #9e9e9e;
+    border-left: 1px solid #9ca3ac;}
+.detail_column_right .prd_result {overflow:hidden; margin-top: 20px; padding-top: 15px;}
+.detail_column_right .prd_result > p { color:#222; }
+.detail_column_right .prd_result .quantity {width:260px; float:left; overflow: hidden; position: relative; margin-top: 10px;}
+.detail_column_right .prd_result .quantity a {width:46px; height:46px; border:1px solid #ddd; background-color: #f1f2f4; float: left; }
+.detail_column_right .prd_result .quantity a.minus_indent {width:45px; height:46px; background: url('image/minus.png') no-repeat 5px 5px #f1f2f4; background-size:35px 35px; display: inline-block;}
+.detail_column_right .prd_result .quantity a.plus_indent {width:45px; height:46px; background: url('image/plus.png') no-repeat 5px 5px #f1f2f4; background-size:35px 35px; display: inline-block;}
+.detail_column_right .prd_result .quantity > input {float:left; display: inline-block; width:46px; height:48px; text-align: center; border:none; border-top: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd; border-radius: 0;}
+.detail_column_right .prd_result .price {width:120px; height:45px; float: left; margin:10px 0 0 5px;  line-height: 45px; text-align: center; border: 1px solid #ddd;
+    color:#666; } 
+.detail_column_right .prd_result .delete {width:20px; height: 20px; display: block; background: url('image/cancel_btn.png') no-repeat; background-size: 15px 15px; 
+    margin: 24px 0; float: right; cursor: pointer;}  
+.detail_column_right .detail_total {clear: both; overflow: hidden; padding:20px 0; margin-top: 20px; border-top: 1px solid #e7e7e7; }
+.detail_column_right .detail_total > p {width:50%; float: left; color: #222; margin-top: 12px;}
+.detail_column_right .total_price {width:50%; float: right; text-align: right;}
+.detail_column_right .total_price span {color: #8c8c8c; }
+.detail_column_right .total_price strong {font-size: 24px; color:#4d4d4d;}
+.detail_column_right .indent_btn_area {overflow: hidden; }
+.detail_column_right .indent_btn_area a.cart {width: 49.5%; height:55px; float: left; border:1px solid #969696;  border-right: none; display: block; text-align: center; line-height: 55px;}
+.detail_column_right .indent_btn_area a.buy {width:49.5%; height:55px; float: left; display: block; background: #6a6a6a; color:#fff; border:1px solid #969696; text-align: center; line-height: 55px;}
+
+
+
+/*상품 상세보기*/
+
+/*상품 정보 탭*/
+.product_display {clear: both; width: 100%;}
+.product_display ul {overflow: hidden; position: relative; height: 50px; border-top: 2px solid #282828; background-color:#f5f5f5; margin-bottom: 50px;}
+.product_display ul li {float: left; width: 125px; border-left:1px solid #ccc; border-bottom: 1px solid #ccc;}
+.product_display ul li:last-child { border-right:1px solid #ccc;}
+.product_display ul li.select_li {background-color: #fff;}
+.product_display ul li a {display: block; height: 50px; line-height: 50px; text-align: center; }
+
+/*상품 정보 */
+.detail_info, .qna_info, .return_info {padding:0 0 100px 10px;}
+
+
+/*footer*/
+#footer_wrap {clear: both; width:100%; margin: 0 auto; padding: 20px 0; background:#ededed; border-top:1px solid #ebebeb; overflow: hidden; line-height: 1.8; }
+.footer_inner {width:1000px; margin:0 auto;}
+.co_info_area {overflow: hidden; margin-bottom: 12px;}
+.co_info_area ul {text-align: center;}
+.co_info_area li {width:auto; display: inline-block;}
+.co_info_area li.bar {display:inline-block; overflow: hidden; width:1px; height:11px; background-color:#d7d7d7; overflow: hidden; margin:1px; vertical-align: middle;  }
+.co_info_area li > a {padding:0 10px; font-size: 14px;}
+.co_marketing {text-align: center; line-height:1.5;font-size: 13px; font-weight: 400; color:#888;}
+.co_address {padding:10px 0 0 0; text-align: center; font-size: 13px;}
+.co_address .bar {display:inline-block; width:1px; height:11px; margin:0 10px; background-color:#d7d7d7; overflow: hidden; vertical-align: middle;}
+.co_copyright {text-align: center;}
+.co_copyright a.co_logo {width: 120px; height: 55px; display: inline-block; overflow: hidden;}
+.co_copyright span {display: inline-block; text-align: center; vertical-align: super; font-size: 12px;}

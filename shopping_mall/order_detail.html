@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>주문상세보기</title>
+	<link rel="stylesheet" type="text/css" href="css/customer_style.css">
+        <link rel="stylesheet" type="text/css" href="css/order_style.css">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+    <!-- HEADER start -->
+         <? require_once("top.php");?>        
+    <!-- HEADER end -->   
+       
+    <!-- CONTENT start-->
+            <div id="container" class="ordDetail_wrap">
+                <div class="content_inner">
+                    <h3 class="detail_tit">주문/배송 상세<span>(주문번호: 2017-1003-08231022001)</span></h3>  
+                    <div class="payment con_tbl">
+                        <h2>결제정보</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>주문상품</caption>
+                                <colgroup>
+                                        <col width="20%">
+                                        <col width="20%">
+                                        <col width="60%">
+                                </colgroup>
+                                <tbody>
+                                        <tr>
+                                            <th>주문 금액</th>
+                                            <td class="right">25,900원</td>
+                                            <td class="left">상품금액 22,900원 + 배송료 3,000원 </td>
+                                        </tr>                               
+                                        <tr>    
+                                            <th>할인 금액</th>
+                                            <td class="right">0원</td>
+                                            <td class="left"> </td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="2">총 결제금액</th>
+                                            <td rowspan="2" class="sum right"> 25,900원</td>
+                                            <td class="left">(입금대기중) 무통장입금</td>
+                                        </tr>
+                                        <tr>
+                                            <td class="left">
+                                                <p>하나은행 (2659987-69-6651)</p>
+                                                <p>입금기한:2017-10-22</p>
+                                            </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                    <div class="prdInfo con_tbl">
+                        <h2>주문상품 정보</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>주문상품</caption>
+                                <colgroup>
+                                        <col width="10%">
+                                        <col width="42%">
+                                        <col width="10%">
+                                        <col width="13%">
+                                        <col width="12%">
+                                        <col width="13%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th colspan="2">상품/옵션 정보</th>
+                                        <th>수량</th>
+                                        <th>상품금액</th>
+                                        <th>배송비</th>
+                                        <th>주문/배송상태</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                            <td class="noborder">
+                                                <p><img src="./image/onlee9.jpg" alt="상품이미지" /></p>
+                                            </td>
+                                            <td class="noborder">
+                                                <p class="goods_tit">껍질째 먹는 청송꿀땡이 사과 9월 햇사과 홍로 10kg 5kg </p>
+                                                <p class="opt_tit">햇사과 홍로 10kg</p>
+                                            </td>
+                                            <td>1</td>
+                                            <td>22,900원</td>
+                                            <td rowspan="2">3,000원</td>
+                                            <td rowspan="2"><p>입금대기중</p><p>(10-22이내)</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="noborder">
+                                                <p><img src="./image/onlee9.jpg" alt="상품이미지" /></p>
+                                            </td>
+                                            <td class="noborder">
+                                                <p class="goods_tit">껍질째 먹는 청송꿀땡이 사과 9월 햇사과 홍로 10kg 5kg </p>
+                                                <p class="opt_tit">맛있는 배 5kg</p>
+                                            </td>
+                                            <td>1</td>
+                                            <td>12,900원</td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                    </div>
+                    <div class="delInfo con_tbl">
+                        <h2>배송지 정보</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>주문상품</caption>
+                                <colgroup>
+                                        <col width="20%">
+                                        <col width="80%">
+                                </colgroup>
+                                <tbody>
+                                        <tr>
+                                            <th>받는 사람</th>
+                                            <td class="left"> 
+                                                <p class="name">홍진영</p>
+                                                <p>대전광역시 둔산남로 72 향촌빌딩 3층</p>
+                                                <p>070-8668-8668</p>
+                                            </td>
+                                        </tr>                               
+                                </tbody>
+                        </table>
+                    </div>
+                    <div id="sell_decision">
+                            <p>
+                                <a href="mypage.php" class="btn btn_submit">확인</a>
+                            </p>
+                    </div>
+                </div>
+                            
+            </div>
+    <!--  CONTENT end-->
+    <!-- FOOTER -->
+        <? require_once("footer.php");?>
+    <!-- FOOTER end-->    
+        </div>
+</body>
+</html>
+
+

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>KSEEKMALL</title>
+	<link rel="stylesheet" type="text/css" href="css/order_style.css">
+        <link rel="stylesheet" type="text/css" href="css/customer_style.css">
+        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+	<script type="text/javascript" src="js/tab.js"></script>
+	<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script>
+            //구매결정완료 레이어팝업
+            function openWin(){
+                window.open("pch_decision.php","구매결정새창","width=500, height=300, toolbar=no, menubar=no, scrollbar=no, resizeble=no");
+            };
+        </script>                
+</head>
+<body>
+	<div id="wrapper">
+    <!-- HEADER start -->
+        <? require_once("top.php");?>
+    <!-- HEADER end -->   
+       
+    <!-- CONTENT start-->
+            <div class="mypage_wrap">
+                <div class="mypage_inner detail_inner">
+                    <h3 class="mypage_tit">마이페이지</h3>  
+                    <div class="mypage_state">
+                        <ol>
+                            <li class="on">
+                                <a href="#" onclick="">
+                                    <span>주문접수</span>
+                                    <em>1</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="">
+                                    <span>결제완료</span>
+                                    <em>0</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="">
+                                    <span>배송완료</span>
+                                    <em>0</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="">
+                                    <span>배송중</span>
+                                    <em>0</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="">
+                                    <span>배송완료</span>
+                                    <em>0</em>
+                                </a>
+                            </li>
+                        </ol>
+                        <ul>
+                            <li>
+                                <a href="#" onclick="">
+                                    <span>취소</span>
+                                    <em>0</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="">
+                                    <span>교환</span>
+                                    <em>0</em>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" onclick="">
+                                    <span>반품</span>
+                                    <em>0</em>
+                                </a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                    <div class="search_area">
+                        <div class="ui_datePicker">
+                            <ul>
+                                <li class="on"><button>1주일</button></li>
+                                <li><button>1개월</button></li>
+                                <li><button>3개월</button></li>
+                                <li><button>6개월</button></li>
+                            </ul>
+                            <div class="period_box">
+                                <input type="text" id="" value="2017.10.03" name="" title="검색 시작일 입력"><button type="button" class="date_check">기간조회</button>
+                                <span>~</span>
+                                <input type="text" id="" value="2017.10.03" name="" title="검색 마지막일 입력"><button type="button" class="date_check">기간조회</button>
+                            </div>   
+                                <select>
+                                    <option>전체</option>
+                                    <option>주문접수</option>
+                                    <option>입금대기중</option>
+                                    <option>결제완료</option>
+                                    <option>배송준비중</option>
+                                    <option>배송중</option>
+                                    <option>배송완료</option>
+                                    <option>반품신청</option>
+                                    <option>반품완료</option>
+                                    <option>교환중</option>
+                                    <option>교환완료</option>
+                                    <option>주문취소(미입금)</option>
+                                </select>
+                                <button type="button" id="" class="btn btn_inquiry">조회</button>
+                            
+                        </div>
+                    </div>
+                    <div class="prdInfo con_tbl">
+                        <h2>주문상품</h2>
+                        <table cellpadding="0" cellspacing="0" class="tbTypeA">
+                                <caption>주문상품</caption>
+                                <colgroup>
+                                        <col width="15%">
+                                        <col width="55%">
+                                        <col width="15%">
+                                        <col width="10%">
+                                        <col width="10%">
+                                </colgroup>
+                                <thead>
+                                        <tr>
+                                                <th>주문일자</th>
+                                                <th>상품/옵션정보</th>
+                                                <th>상품금액(수량)</th>
+                                                <th>주문상태</th>
+                                                <th>확인/신청</th>
+                                        </tr>
+                                </thead>
+                                <tbody>
+                                        <tr>
+                                                <td class="noborder">
+                                                    <p class="ord_number">2017-12-21</p>
+                                                    <p class="ord_date">2017-101344525</p>
+                                                    <a href="order_detail.php" class="show_detail">주문상세보기asdfasdf</a>
+                                                </td>
+                                                <td class="thumb_goods">
+                                                    <p class="thumbNail"><img src="image/onlee9.jpg" alt="상품"></p>
+                                                    <div class="tit_wrap">
+                                                        <p class="prd_tit">껍질째 먹는 청송꿀떙이 사과 9월 햇사과 홍로 10kg 5kg </p>
+                                                        <ul>
+                                                            <li>
+                                                                <em class="sj_tit"> 햇사과 홍로 10kg</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_number">1개</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_price">22,900원</em>
+                                                                <!--<button class="order_del"></button>-->
+                                                            </li>
+                                                            <li>
+                                                                <em class="sj_tit">맛있는 배 5kg</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_number">1개</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_price">12,900원</em>
+                                                                <!--<button class="order_del"></button>-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td class="price">
+                                                     <strong>35,800원</strong>
+                                                    (2개)
+                                                </td>
+                                                <td>
+                                                    <span>배송중</span>
+                                                    <a href="" class="btn btn_deli">배송조회</a>
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="noborder">
+                                                    <p class="ord_number">2017-12-21</p>
+                                                    <p class="ord_date">2017-101344525</p>
+                                                    <a href="order_detail.php" class="show_detail">주문상세보기</a>
+                                                </td>
+                                                <td class="thumb_goods">
+                                                    <p class="thumbNail"><img src="image/onlee9.jpg" alt="상품"></p>
+                                                    <div class="tit_wrap">
+                                                        <p class="prd_tit">껍질째 먹는 청송꿀떙이 사과 9월 햇사과 홍로 10kg 5kg </p>
+                                                        <ul>
+                                                            <li>
+                                                                <em class="sj_tit"> 햇사과 홍로 10kg</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_number">1개</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_price">22,900원</em>
+                                                                <!--<button class="order_del"></button>-->
+                                                            </li>
+                                                            <li>
+                                                                <em class="sj_tit">맛있는 배 5kg</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_number">1개</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_price">12,900원</em>
+                                                                <!--<button class="order_del"></button>-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td class="price">
+                                                     <strong>35,800원</strong>
+                                                    (2개)
+                                                </td>
+                                                <td>
+                                                    <span>배송중</span>
+                                                    <a href="" class="btn btn_deli">배송조회</a>
+                                                </td>
+                                                <td>
+                                                    &nbsp;
+                                                </td>
+                                        </tr>
+                                        <tr>
+                                                <td class="noborder">
+                                                    <p class="ord_number">2017-08-05</p>
+                                                    <p class="ord_date">2017-101309325</p>
+                                                    <a href="order_detail.php" class="show_detail">주문상세보기</a>
+                                                </td>
+                                                <td class="thumb_goods">
+                                                    <p class="thumbNail"><img src="image/2015091601419_0.jpg" alt="상품"></p>
+                                                    <div class="tit_wrap">
+                                                        <p class="prd_tit">겨울에 먹으면 더 맛있는 따땃한 어묵 10개입</p>
+                                                        <ul>
+                                                            <li>
+                                                                <em class="sj_tit"> 일반어묵 10개입</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_number">1개</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_price">9,900원</em>
+                                                                <!--<button class="order_del"></button>-->
+                                                            </li>
+                                                            <li>
+                                                                <em class="sj_tit">안매운 어묵 10개입</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_number">1개</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_price">11,900원</em>
+                                                                <!--<button class="order_del"></button>-->
+                                                            </li>
+                                                            <li>
+                                                                <em class="sj_tit">매운 어묵 10개입</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_number">1개</em>
+                                                                <em class="slash">/</em>
+                                                                <em class="sj_price">12,900원</em>
+                                                                <!--<button class="order_del"></button>-->
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </td>
+                                                <td class="price">
+                                                     <strong>34,700원</strong>
+                                                    (3개)
+                                                </td>
+                                                <td>
+                                                    <span>배송완료</span>
+                                                    <a href="" class="btn btn_deli">배송조회</a>
+                                                </td>
+                                                <td>
+                                                    <a href="javascript:openWin();"  class="btn btn_decision">구매결정완료</a>
+                                                    <a href="order_returnReq.php" class="btn btn_claim">반품신청</a>
+                                                    <a href="order_exchangeReq.php" class="btn btn_claim">교환신청</a>
+                                                </td>
+                                        </tr>
+                                </tbody>
+                        </table>
+                        <div id="page_navigation">
+                            <strong>1</strong>
+                        </div>
+                </div>        
+                </div>
+                            
+            </div>
+    <!--  CONTENT end-->
+    <!-- FOOTER -->
+        <? require_once("footer.php");?>
+    <!-- FOOTER end-->    
+        </div>
+</body>
+</html>
+
+

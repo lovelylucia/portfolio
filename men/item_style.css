@@ -1,0 +1,197 @@
+@charset "utf-8";
+/* CSS Document */
+
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+*{padding:0; margin:0;}
+#wrapper{position:relative;font-size:inherit; font-family: 'Nanum Gothic', sans-serif;width:80%; height:100%; float:right;}
+	div {display: block;}
+	p{
+		font-family: 'Nanum Gothic', sans-serif;
+	}
+.content {
+    text-align: center;
+    padding-bottom: 80px;
+}
+.content .title {
+    position: relative;
+    margin: 44px auto;
+    width: 800px;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.content .title .htxt {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 2.67em;
+    line-height: normal;
+    text-transform: uppercase;
+    letter-spacing: 1.8px;
+}
+.content .title .bar {
+    width: 9px;
+    height: 2px;
+    background: #000;
+    margin: 14px auto 14px;
+}
+.content .title .stxt {
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: .92em;
+    line-height: normal;
+    color: #888;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+.item .view {
+    overflow: hidden;
+    width: 800px;
+    margin: 0 auto;
+}
+.item .view .it {
+    float: left;
+    border: #333 solid 1px;
+	width:550px;
+	height:550px;
+}
+.item .view .rt {
+    float: right;
+    text-align: left;
+	width:210px;
+	height:auto;
+}
+.item .view .rt p{
+	width:50px;	
+}
+.item .view .rt .vtitle {
+    width: 200px;
+    word-break: break-all;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-weight:bold;
+    font-size: 1.42em;
+    line-height: 1.71em;
+}
+.item .view .rt .info {
+    display: table;
+    width: 100%;
+    margin: 16px 0 30px;
+    border-collapse: collapse;
+}
+.item .view .rt .info .line {
+    display: table-row;
+}
+.item .view .rt .info .line .d_1{
+    font-family: 'Nanum Gothic', sans-serif;
+	font-weight:bold;
+	font-size:14px;
+    line-height: normal;
+    color: #333;
+    display: table-cell;
+	vertical-align: middle;
+	width:80px;
+    height: 20px;
+	position:relative;
+}
+/*.item .view .rt .info .line .d_1 span {
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    background: #333;
+    vertical-align: middle;
+    margin-right: 7px;
+	font-family: 'Nanum Gothic', sans-serif;
+	position:absolute;
+}*/
+.item .view .rt .info .line .d_2 {
+    font-family: 'NanumGothic Regular';
+    font-size: 1.1em;
+    line-height: 1.92em;
+    color: #333;
+    display: table-cell;
+    --padding-bottom: 5px;
+    width: 130px;
+    word-break: break-all;
+    vertical-align: middle;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.d_2 .blue{
+	display:block;
+	width:10px;
+	height:10px;
+	background-color:#1B2735;
+}
+.item .view .rt .cut {
+    overflow: hidden;
+    width: 210px;
+	height:210px;
+	display:block;
+}
+.cut p {
+    min-width: 93px;
+    float: left;
+	display:block;
+    border: #dfdfdf solid 1px;
+    margin: 0 10px 10px 0px;
+    cursor: pointer;
+	font-family: 'Nanum Gothic', sans-serif;
+}
+.item .view .rt .cut p.on {
+    border: #333 solid 1px;
+}
+.btn{
+	margin-top:40px;	
+}
+.btn button{
+	width:200px;
+	height:50px;
+	text-align:center;
+	background-color:#414141;
+	color:#fff;
+	font-family: 'Nanum Gothic', sans-serif;
+	font-size:18px;
+	border:none;
+	display:inline-block;	
+}
+.btn button:hover{
+	background-color:#fff;
+	color:#414141;
+	border:2px solid #414141;	
+}
+
+/*리스트상품 스타일시트*/
+
+.list{
+	width:860px;
+	margin:0 auto;
+	overflow:hidden;	
+}
+.list a{
+	display:block;
+	width:230px;
+	position:relative;
+	float:left;
+	margin:0 27px 54px;
+	text-decoration:none;
+	color:#333;	
+}
+.list a .vis img{
+	width:100%;	
+}
+.list .cover{
+	display:none;
+	position:absolute;
+	left:0;
+	top:0;	
+}
+.list a:hover .cover{
+	display:block;
+}
+.list a:hover{
+	text-decoration:none;	
+}
+@media screen and (max-width:767px){
+.wrap .container{width:100%; height:100%;}
+.content{width:100%; height:auto;}
+.content .title {width:100%;}
+.item .view{float:none; width:100%;display:block; padding:0 20px; margin:auto; box-sizing:border-box;}	
+.item .view .it{width:100%;}	
+.item .view .rt,.item .view .rt .info{float:none; margin:30px auto; width:100%;}
+.item .view .rt .vtitle{float:none; width:100%; display:block; text-align:center;}
+.item .view .rt .cut{width:100%;}
+}

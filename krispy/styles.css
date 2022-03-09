@@ -1,0 +1,186 @@
+body {
+    color: #888;
+    font-size: 18px;
+    line-height: 1.4;
+    -webkit-font-smoothing: antialiased;
+    background:url(img/bg.jpg) center center fixed;
+	background-size:cover;
+}
+.features-container{
+    position: relative;
+    height: 490px; 
+}
+
+.carousel {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.carousel-control {
+    position: absolute;
+    width: 80px;
+    color: #000;
+    background: none !important;   
+}
+.carousel-control.left {
+    left: -80px;
+}
+.carousel-control.right {
+    right: -80px;
+}
+.carousel .carousel-inner,
+.carousel .item,
+.carousel .content {
+    height: 100%;
+}
+
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    line-height: 40px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    background: #00d7b2;
+	cursor:pointer;
+}
+.content-green .close-btn {
+    background: #fff;   
+}
+.close-btn:hover {
+    background: #494b52;
+    color: #fff;   
+}
+
+.content {
+    padding: 30px;
+}
+.content h2 {
+    font-size: 28px;
+    margin: 0 0 5px;
+}
+.content-green {
+    background: #00d7b2;   
+}
+.content-green h2 {
+    color: #fff;
+}
+.content-yellow {
+    background: #ffcb4a;   
+}
+.content-yellow h2 {
+    color: #333;
+}
+.content-white {
+    background: #fff;
+}
+.content-white h2 {
+    color: #333;
+}
+.content-grey {
+    background: #494b52;
+}
+.content-grey h2 {
+    color: #fff;
+}
+.content-grey p {
+    color: #999;
+}
+.content-red {
+    background: #ff5a55;
+}
+.content-red h2 {
+    color: #fff;
+}
+.content-red p {
+    color: #fff;
+}
+.content-white-green {
+    background: #fff;
+}
+.content-white-green h2 {
+    color: #00d7b2;
+}
+
+.grid > :first-child {
+	margin-top:40px;
+    margin-bottom: 30px;   
+}
+.grid .row > * {
+    position: static;
+}
+.grid .content {
+    height: 230px;
+    cursor: pointer;
+    overflow: hidden;
+}
+.grid img {
+    float: right;
+    margin: -50px 0 0 20px;
+       
+}
+.grid .content.animate {
+    transition: all 0.4s ease;
+}
+.grid .content.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.feature-img {
+    float: right;
+    margin: -30px -30px 0 30px;
+    width: calc(50% + 30px);
+    height: 490px;
+}
+
+@media (max-width: 992px) {
+    .grid img {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .features-container {
+        height: 390px; 
+    }
+    .row > div {
+        padding: 5px;
+    }
+    .grid .content {
+        padding: 15px;
+        height: 180px;
+    }
+    .content h2 {
+        font-size: 18px;
+    }
+    .content p {
+        font-size: 14px;
+    }
+    .feature-img {
+        height: 390px; 
+    }
+}
+
+.menu_prd {position:relative;min-height:480px;padding-left:380px;z-index:110;border:1px solid red;}
+.menu_prd .prd_img{position:absolute;left:0;top:0; border:1px solid red;}
+.menu_prd .prd_name{display: block;padding-bottom: 3px;;color:#000000;font-size:30px;line-height: 30px;font-weight:700;letter-spacing:-1px;}
+.menu_prd .prd_name_eng{display: block;color:#d31145;font-size:20px;line-height: 30px;font-weight:700;}
+.menu_prd .prd_description{margin:19px 0 27px 0;font-size: 14px;line-height: 20px;}
+.menu_prd .sns_area{left:63px;top:377px;width: 360px;z-index:150}
+.menu_prd .nutrient_area{position:relative;left:0;top:0;width:360px;margin:25px 0 0 25px}
+
+.prd_info_table{width: 380px;margin-bottom:25px;}
+.prd_info_table{width: 380px;margin-bottom:25px}
+.prd_info_table table{width:100%;text-align: center;border:1px solid #000;border-left:none;border-right:none}
+.prd_info_table td, .prd_info_table th{height:40px;text-align: center}
+.prd_info_table th{border-right:1px solid #d3cec4;border-bottom:1px solid #d3cec4;background-color:#EDEBE6;font-size:16px;font-weight: 700;}
+.prd_info_table td{border-right:1px solid #d3cec4;background-color:#EDEBE6;}
+.prd_info_table .last{border-right:none}
+.prd_info_table .prd_price{display: inline-block;margin-top:18px;padding:56px 0 18px 0;background: url(img/ico_price.png) no-repeat center 0;color:#d31145;font-size:16px;font-weight:700}
+.prd_info_table .ico_size{position:relative;top:1px;*top:2px;padding-right:7px;vertical-align:top}
